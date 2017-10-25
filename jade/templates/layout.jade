@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+html(lang="en")
+
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        block title
+            title Template
+        script(src="https://use.fontawesome.com/d2e3dc5d54.js")
+        script(src="js/jquery-3.2.1.min.js")
+        script(src="js/function.js") 
+        link(href="css/style.css" rel="stylesheet")
+
+    body
+        .wrapper
+            // begin header
+            include header.jade
+            // end header
+            // begin aside
+            include aside.jade
+            // end aside
+            
+            // begin content
+            .crm__container
+                block content
+            // end content
