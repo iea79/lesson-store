@@ -437,6 +437,8 @@ img {
         -webkit-transform: rotate(0deg);
         -ms-transform: rotate(0deg);
         transform: rotate(0deg); }
+      .crm__menu-item_accordeon.open .crm__menu-sub {
+        margin-top: -10px; }
     .crm__menu-item_accordeon .crm__menu-item_name {
       padding-right: 40px; }
   .crm__menu-toggle {
@@ -461,7 +463,6 @@ img {
   .crm__menu-sub {
     width: 100%;
     display: block;
-    margin-top: -10px;
     margin-bottom: 10px; }
     .crm__menu-sub_link {
       display: block;
