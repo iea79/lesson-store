@@ -21,7 +21,7 @@
 	&__wrapper {
 		padding-left: $grid_padding;
 		padding-bottom: $grid_padding;
-		@include flex(1 0);
+		@include flex(1 0 auto);
 		float: left;
 		&.width {
 			&_1_1 {

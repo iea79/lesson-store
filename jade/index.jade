@@ -10,17 +10,19 @@ block content
                 img(src='img/1.png')
             h3.profile__persons-title Алексей Умный
             .profile__persons-proof Преподаватель
-            a.button.curve.green(href='#') Добавить в друзья
-            button.button.curve.blue(href='#') Написать                    
-            //- a.button.curve.reverse(href='#') 
-            //-     span first
-            //-     span second
-            //- a.button.curve.reverse.red(href='#') 
-            //-     span first
-            //-     span second  
-            //- div.button__group
-            //-     a.button.curve при                            
-            //-     a.button.curve.red отка                            
+            a.button.curve.button__green(href='#') Добавить в друзья
+            button.button.curve.button__blue(href='#') Написать                    
+            a.button.curve.button__reverse(href='#') 
+                span first
+                span second
+            a.button.curve.button__reverse.button__red(href='#') 
+                span first
+                span second  
+            .button__group.button__group-2
+                div
+                    a.button.curve принять                           
+                div
+                    a.button.curve.button__red отказать                            
         .profile__persons-info
             .profile__persons-info_names
                 i.fa.fa-envelope(aria-hidden="true")

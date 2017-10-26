@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&subset=cyrillic,cyrillic-ext,latin-ext");
-.grid:after, .wrapper:after, .crm__header:after, .crm__container:after, .crm__content:after, .store__filter:after, .store__filter_bottom:after {
+.grid:after, .wrapper:after, .button__group:after, .crm__header:after, .crm__container:after, .crm__content:after, .store__filter:after, .store__filter_bottom:after {
   content: '';
   display: table;
   clear: both; }
@@ -122,11 +122,11 @@ img {
   .grid__wrapper {
     padding-left: 20px;
     padding-bottom: 20px;
-    -webkit-box-flex: 1 0;
-    -moz-box-flex: 1 0;
-    -webkit-flex: 1 0;
-    -ms-flex: 1 0;
-    flex: 1 0;
+    -webkit-box-flex: 1 0 auto;
+    -moz-box-flex: 1 0 auto;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
     float: left; }
     .grid__wrapper.width_1_1 {
       -webkit-box-flex: 1 0 100%;
@@ -202,7 +202,14 @@ img {
     flex: 1 0 20%; }
 
 .icon-search:before {
-  content: url("../img/zoom.png"); }
+  content: '';
+  background-image: url("../img/zoom.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 24px;
+  height: 27px;
+  display: inline-block; }
 
 .text-lblue {
   color: #27a9f8; }
@@ -288,19 +295,17 @@ img {
         display: none; }
 
 .button__group {
-  width: 100%;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center; }
+  margin-left: -10px; }
+  .button__group > div {
+    padding-left: 10px;
+    float: left; }
+  .button__group-2 > div {
+    width: 50%; }
+  .button__group-3 > div {
+    width: 33.3%; }
   .button__group .button {
-    margin: 0 10px;
     font-size: 12px;
-    width: 70px;
+    width: 48%;
     padding: 10px 0; }
 
 .crm__header {
@@ -509,6 +514,9 @@ img {
         color: #939aab;
         text-decoration: none;
         background-color: rgba(71, 133, 252, 0.1); }
+  @media (max-width: 1199px) {
+    .crm__menu-item i {
+      padding-left: 20px; } }
   @media (max-width: 991px) {
     .crm__menu {
       width: 250px;
@@ -521,12 +529,12 @@ img {
       -o-transition: left .3s;
       transition: left .3s;
       z-index: 10; }
+      .crm__menu-list {
+        padding-left: 9px; }
       .crm__menu.open {
         left: 0; }
         .crm__menu.open .crm__menu-item_name {
-          display: table-cell; }
-      .crm__menu-item_name {
-        display: none; } }
+          display: table-cell; } }
 
 .crm__content {
   padding: 30px;
@@ -554,8 +562,7 @@ img {
       .profile__persons-header .img-circle img {
         display: block; }
     .profile__persons-header .button {
-      width: 100%;
-      font-size: 16px; }
+      width: 100%; }
   .profile__persons-title {
     font-size: 26px;
     margin-bottom: 15px; }
@@ -620,8 +627,6 @@ img {
     display: inline-block; }
     .profile__persons .button.curve {
       margin: 5px; }
-    .profile__persons .button__group .curve {
-      width: 66px; }
 
 .profile__events {
   height: 100%;
@@ -808,7 +813,10 @@ img {
     .store__filter_search .icon-search {
       position: absolute;
       top: 5px;
-      left: 5px; }
+      left: 12px;
+      display: block; }
+      .store__filter_search .icon-search:before {
+        width: 20px; }
   .store__filter_btn {
     float: right;
     margin-left: 15px; }
@@ -848,7 +856,23 @@ img {
         font-size: 30px; }
   .store__filter {
     margin: 10px 0;
-    max-width: none; } }
+    max-width: none;
+    position: relative;
+    padding: 15px;
+    padding-bottom: 65px; }
+    .store__filter_search {
+      overflow: initial; }
+    .store__filter_btn {
+      float: none;
+      position: absolute;
+      bottom: 15px;
+      margin-left: 0;
+      left: 15px;
+      right: 15px; }
+    .store__filter_bottom-label {
+      float: none; }
+    .store__filter_bottom-tags .button:not(:last-child) {
+      margin-right: 6px; } }
 
 .grid__cube .grid__wrapper {
   width: 25%; }
@@ -877,11 +901,20 @@ img {
 .grid__cube .button {
   border-radius: 18px; }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .grid__cube .grid__wrapper {
     width: 50%; }
   .grid__cube .grid__item {
     padding: 40px 20px; } }
+
+@media (max-width: 767px) {
+  .grid__cube {
+    margin-left: -10px; }
+    .grid__cube .grid__wrapper {
+      padding-left: 10px;
+      padding-bottom: 10px; }
+    .grid__cube .grid__item {
+      padding: 40px 20px; } }
 
 @media (max-width: 480px) {
   .grid__cube .grid__wrapper {
