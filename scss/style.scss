@@ -262,20 +262,27 @@ $lblue-gray: #90a4ae;
 
 .crm__container {
     max-height: 100%;
+    padding-left: 20%;
     overflow-x: hidden;
     overflow-y: auto;
+    background: $light-gray;
     @extend %clear_a;
+    @media (max-width: 991px) {
+        padding-left: 0;
+    }
 }
 //menu
 .crm__menu {
     width: 20%;
     background: #fff;
+    position: fixed;
+    top: 76px;
+    bottom: 0;
+    z-index: 5;
     border-right: 1px solid $border-gray;
     overflow-y: auto;
-    float: left;
     &-list {
         padding: 9px 0 0 20px;
-        
     }
     &-item {
         position: relative;
@@ -401,9 +408,8 @@ $lblue-gray: #90a4ae;
 }
 
 //content
-.crm__content{
+.crm__content {
     padding: 30px;
-    background: $light-gray;
     position: relative;
     @extend %clear_a;
     @media (max-width: 767px) {

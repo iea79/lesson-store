@@ -388,15 +388,23 @@ img {
 
 .crm__container {
   max-height: 100%;
+  padding-left: 20%;
   overflow-x: hidden;
-  overflow-y: auto; }
+  overflow-y: auto;
+  background: #f8f9fc; }
+  @media (max-width: 991px) {
+    .crm__container {
+      padding-left: 0; } }
 
 .crm__menu {
   width: 20%;
   background: #fff;
+  position: fixed;
+  top: 76px;
+  bottom: 0;
+  z-index: 5;
   border-right: 1px solid #ededed;
-  overflow-y: auto;
-  float: left; }
+  overflow-y: auto; }
   .crm__menu-list {
     padding: 9px 0 0 20px; }
   .crm__menu-item {
@@ -496,7 +504,6 @@ img {
 
 .crm__content {
   padding: 30px;
-  background: #f8f9fc;
   position: relative; }
   @media (max-width: 767px) {
     .crm__content {
