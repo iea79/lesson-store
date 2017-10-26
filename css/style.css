@@ -226,7 +226,7 @@ img {
   outline: none;
   border: 1px solid #04be5b;
   border-radius: 3px;
-  background: #fff;
+  background-color: transparent;
   padding: 10px 15px;
   color: #04be5b;
   font-size: 14px;
@@ -236,7 +236,7 @@ img {
   text-align: center; }
   .button:hover {
     color: #fff;
-    background: #04be5b;
+    background-color: #04be5b;
     text-decoration: none; }
   .button.curve {
     border-radius: 25px;
@@ -247,19 +247,19 @@ img {
     border-color: #4785fc; }
     .button__blue:hover {
       color: #fff;
-      background: #4785fc; }
+      background-color: #4785fc; }
   .button__green {
     color: #04be5b;
     border-color: #04be5b; }
     .button__green:hover {
       color: #fff;
-      background: #04be5b; }
+      background-color: #04be5b; }
   .button__red {
     color: red;
     border-color: red; }
     .button__red:hover {
       color: #fff;
-      background: red; }
+      background-color: red; }
   .button__tag {
     border-color: #f5f8f9;
     background-color: #f5f8f9;
@@ -740,7 +740,6 @@ img {
   width: 45px; }
 
 .event__content .button {
-  background-color: transparent;
   width: 110px; }
 
 @media (max-width: 1199px) {

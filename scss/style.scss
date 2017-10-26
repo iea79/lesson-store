@@ -41,7 +41,7 @@ $lblue-gray: #90a4ae;
     outline: none;
     border: 1px solid $green;
     border-radius: 3px;
-    background: #fff;
+    background-color: transparent;
     padding: 10px 15px;
     color: $green;
     font-size: 14px;
@@ -51,7 +51,7 @@ $lblue-gray: #90a4ae;
     text-align: center;
     &:hover {
         color: #fff;
-        background: $green;
+        background-color: $green;
         text-decoration: none;
     }
     
@@ -65,7 +65,7 @@ $lblue-gray: #90a4ae;
         border-color: $blue;
         &:hover{
             color: #fff;
-            background: $blue;
+            background-color: $blue;
         }
     }
     &__green {
@@ -73,7 +73,7 @@ $lblue-gray: #90a4ae;
         border-color: $green;
         &:hover{
             color: #fff;
-            background: $green;
+            background-color: $green;
         }
     }
     &__red {
@@ -81,7 +81,7 @@ $lblue-gray: #90a4ae;
         border-color: red;
         &:hover{
             color: #fff;
-            background: red;
+            background-color: red;
         }
     }
     &__tag {
@@ -739,7 +739,6 @@ $lblue-gray: #90a4ae;
         width: 45px;
     }
     .button {
-        background-color: transparent;
         width: 110px;
     }
     @media (max-width: 1199px) {
