@@ -16,12 +16,12 @@
 .grid {
 	margin-left: -$grid_padding;
 	@include flexbox();
-	@include flex-flow(row nowrap);
+	@include flex-flow(row wrap);
 	@extend %clear_all;
 	&__wrapper {
 		padding-left: $grid_padding;
 		padding-bottom: $grid_padding;
-		@include flex(1 0 auto);
+		@include flex(1 0);
 		float: left;
 		&.width {
 			&_1_1 {

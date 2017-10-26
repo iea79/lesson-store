@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&subset=cyrillic,cyrillic-ext,latin-ext");
-.grid:after, .wrapper:after, .crm__header:after, .crm__container:after, .crm__content:after {
+.grid:after, .wrapper:after, .crm__header:after, .crm__container:after, .crm__content:after, .store__filter:after, .store__filter_bottom:after {
   content: '';
   display: table;
   clear: both; }
@@ -8,6 +8,10 @@
   content: '';
   display: table;
   clear: both; }
+
+.shadow, .store__filter, .grid__cube .grid__item {
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1); }
 
 * {
   margin: 0;
@@ -25,8 +29,11 @@ html, body, .wrapper {
   box-sizing: content-box; }
 
 body {
-  font: 14px "Roboto";
+  font: 16px "Roboto";
   line-height: 1.2; }
+  @media (max-width: 767px) {
+    body {
+      font-size: 14px; } }
 
 input, textarea {
   outline: 0; }
@@ -106,20 +113,20 @@ img {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -webkit-flex-flow: row nowrap;
+  -webkit-flex-flow: row wrap;
   /* Safari 6.1+ */
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap; }
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap; }
   .grid__wrapper {
     padding-left: 20px;
     padding-bottom: 20px;
-    -webkit-box-flex: 1 0 auto;
-    -moz-box-flex: 1 0 auto;
-    -webkit-flex: 1 0 auto;
-    -ms-flex: 1 0 auto;
-    flex: 1 0 auto;
+    -webkit-box-flex: 1 0;
+    -moz-box-flex: 1 0;
+    -webkit-flex: 1 0;
+    -ms-flex: 1 0;
+    flex: 1 0;
     float: left; }
     .grid__wrapper.width_1_1 {
       -webkit-box-flex: 1 0 100%;
@@ -194,12 +201,11 @@ img {
     -ms-flex: 1 0 20%;
     flex: 1 0 20%; }
 
+.icon-search:before {
+  content: url("../img/zoom.png"); }
+
 .text-lblue {
   color: #27a9f8; }
-
-.shadow {
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1); }
 
 .wrapper {
   max-width: 100%;
@@ -216,52 +222,69 @@ img {
   background: #fff;
   padding: 10px 15px;
   color: #04be5b;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
   cursor: pointer;
   line-height: 1;
   text-align: center; }
   .button:hover {
     color: #fff;
-    background: #04be5b !important;
+    background: #04be5b;
     text-decoration: none; }
   .button.curve {
     border-radius: 25px;
     padding: 13px 15px;
     display: block; }
-  .button.blue {
+  .button__blue {
     color: #4785fc;
     border-color: #4785fc; }
-    .button.blue:hover {
+    .button__blue:hover {
       color: #fff;
-      background: #4785fc !important; }
-  .button.red {
+      background: #4785fc; }
+  .button__green {
+    color: #04be5b;
+    border-color: #04be5b; }
+    .button__green:hover {
+      color: #fff;
+      background: #04be5b; }
+  .button__red {
     color: red;
     border-color: red; }
-    .button.red:hover {
+    .button__red:hover {
       color: #fff;
-      background: red !important; }
-  .button.reverse {
+      background: red; }
+  .button__tag {
+    border-color: #f5f8f9;
+    background-color: #f5f8f9;
+    color: #222222;
+    font-size: 13px;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-weight: 300; }
+    .button__tag:hover {
+      color: #222222;
+      background-color: #e5edef; }
+  .button__reverse {
     border-color: #ededed; }
-    .button.reverse span {
+    .button__reverse span {
       color: #ededed; }
-    .button.reverse span:last-child {
+    .button__reverse span:last-child {
       display: none; }
-    .button.reverse:hover {
+    .button__reverse:hover {
       background: #fff !important;
       border-color: #04be5b; }
-      .button.reverse:hover span:last-child {
+      .button__reverse:hover span:last-child {
         display: inline;
         color: #04be5b; }
-      .button.reverse:hover span:first-child {
+      .button__reverse:hover span:first-child {
         display: none; }
-    .button.reverse.red:hover {
+    .button__reverse.red:hover {
       background: #fff !important;
       border-color: red; }
-      .button.reverse.red:hover span:last-child {
+      .button__reverse.red:hover span:last-child {
         display: inline;
         color: red; }
-      .button.reverse.red:hover span:first-child {
+      .button__reverse.red:hover span:first-child {
         display: none; }
 
 .button__group {
@@ -315,7 +338,8 @@ img {
     height: 75px;
     display: table; }
     .crm__header_right i {
-      color: #939aab; }
+      color: #939aab;
+      font-size: 20px; }
     .crm__header_right .drop {
       display: table-cell;
       vertical-align: middle;
@@ -384,7 +408,9 @@ img {
         .crm__header .search__toggle:hover {
           text-decoration: none; }
       .crm__header .search.open {
-        display: block; } }
+        display: block; }
+    .crm__header_right i {
+      font-size: 16px; } }
 
 .crm__container {
   max-height: 100%;
@@ -727,5 +753,140 @@ img {
       text-align: center; }
   .event__content .button {
     width: 100%; } }
+
+.store__ban {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  margin: -30px -30px 50px;
+  position: relative;
+  overflow: hidden; }
+  .store__ban img {
+    display: block; }
+  .store__ban_title {
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center; }
+    .store__ban_title-text {
+      vertical-align: middle;
+      display: table-cell;
+      padding: 30px;
+      font-size: 42px;
+      color: #ffffff; }
+    .store__ban_title-wrap {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0; }
+
+.store__filter {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  margin: -100px auto 30px;
+  max-width: 700px;
+  position: relative; }
+  .store__filter_search {
+    position: relative;
+    overflow: hidden; }
+    .store__filter_search input {
+      border: 1px solid transparent;
+      border-radius: 5px;
+      background-color: #f5f8f9;
+      padding: 10px 12px 10px 50px;
+      width: 100%;
+      color: #959ba9; }
+      .store__filter_search input::-webkit-input-placeholder {
+        color: #959ba9; }
+      .store__filter_search input:-moz-placeholder {
+        color: #959ba9; }
+      .store__filter_search input::-moz-placeholder {
+        color: #959ba9; }
+      .store__filter_search input:-ms-input-placeholder {
+        color: #959ba9; }
+    .store__filter_search .icon-search {
+      position: absolute;
+      top: 5px;
+      left: 5px; }
+  .store__filter_btn {
+    float: right;
+    margin-left: 15px; }
+  .store__filter_bottom {
+    margin-top: 13px;
+    margin-bottom: -2px; }
+    .store__filter_bottom-label {
+      float: left;
+      margin: 6px 15px 5px 0;
+      font-size: 13px;
+      color: #9a9fab; }
+    .store__filter_bottom-tags {
+      overflow: hidden; }
+      .store__filter_bottom-tags .button {
+        margin: 2px 0; }
+        .store__filter_bottom-tags .button:not(:last-child) {
+          margin-right: 15px; }
+
+@media (max-width: 991px) {
+  .store__ban_title-text {
+    padding-bottom: 50px; } }
+
+@media (max-width: 767px) {
+  .store__ban {
+    min-height: 150px;
+    margin: -10px -10px 10px; }
+    .store__ban img {
+      position: absolute;
+      top: 0;
+      min-width: 100%;
+      min-height: 100%;
+      max-width: none; }
+    .store__ban_title {
+      max-width: 100%; }
+      .store__ban_title-text {
+        padding: 15px;
+        font-size: 30px; }
+  .store__filter {
+    margin: 10px 0;
+    max-width: none; } }
+
+.grid__cube .grid__wrapper {
+  width: 25%; }
+
+.grid__cube .grid__item {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 40px 20px;
+  text-align: center; }
+
+.grid__cube_img {
+  height: 65px;
+  margin-bottom: 20px; }
+  .grid__cube_img img {
+    display: inline-block; }
+
+.grid__cube_name {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 10px; }
+
+.grid__cube_sub {
+  color: #cdcfd5;
+  margin-bottom: 30px; }
+
+.grid__cube .button {
+  border-radius: 18px; }
+
+@media (max-width: 767px) {
+  .grid__cube .grid__wrapper {
+    width: 50%; }
+  .grid__cube .grid__item {
+    padding: 40px 20px; } }
+
+@media (max-width: 480px) {
+  .grid__cube .grid__wrapper {
+    width: 100%; }
+  .grid__cube .grid__item {
+    padding: 30px 20px; } }
 
 /*# sourceMappingURL=style.css.map */

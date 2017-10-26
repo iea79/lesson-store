@@ -1,12 +1,21 @@
 $(document).ready(function(){
 
-	function setHeiHeight() {
+	function checkOnResize() {
 	    $('.crm__container').css({
 	        height: $(window).height() + 'px'
 	    });
+
+	    // Высота плиток
+	    $('[data-grid-match] > .grid__wrapper').each( function() {
+    		gridItem = $(this).find('.grid__item');
+
+			gridItem.css('minHeight', $(this).height());
+			// console.log($(this).height())
+			// console.log(gridItem.innerHeight())
+	    });
 	}
-	setHeiHeight(); // устанавливаем высоту окна при первой загрузке страницы
-	$(window).resize( setHeiHeight ); // обновляем при изменении размеров окна
+	checkOnResize();
+	$(window).resize( checkOnResize );
 
 
 	// Reset link whte attribute href="#"
@@ -42,3 +51,4 @@ $(document).ready(function(){
 		$('.search').toggleClass('open');
 	});
 });
+

@@ -46,6 +46,10 @@
 	@extend %clear_b;
 }
 
+%shadow {
+	box-shadow: $shadow;
+}
+
 // Transition speed for element
 @mixin trs($trs_speed) {
 	@include transition(all $trs_speed+s);

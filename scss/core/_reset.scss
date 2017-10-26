@@ -16,8 +16,11 @@ html,body,.wrapper {
 }
 
 body { 
-	font: 14px $main_font_family;
+	font: 16px $main_font_family;
 	line-height: 1.2;
+	@media (max-width: 767px) {
+		font-size: 14px;
+	}
 }
 
 input, textarea {
