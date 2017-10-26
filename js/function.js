@@ -13,7 +13,15 @@ function isIOS() { return TempApp.iOS(); } // for iPhone iPad iPod
 
 $(document).ready(function(){
 
+	var resizedTo = false;
+	
 	function checkOnResize() {
+        var windowWidth = $(window).width();
+
+        if (resizedTo == windowWidth) { return; }
+
+        resizedTo = windowWidth;
+
 		var headerHeight = $('header').height();
 
 	    $('.crm__container').css({
@@ -21,10 +29,12 @@ $(document).ready(function(){
 	    });
 
 	    // Высота плиток/grid
+	    gridHei = $('[data-grid-match] > .grid__wrapper').height();
+	    $('.grid__item').removeAttr('style');
 	    $('[data-grid-match] > .grid__wrapper').each( function() {
-    		gridItem = $(this).find('.grid__item');
+			gridItem = $(this).find('.grid__item');
 
-			gridItem.css('minHeight', $(this).height());
+			gridItem.css('minHeight', gridHei);
 			// console.log($(this).height())
 			// console.log(gridItem.innerHeight())
 	    });
