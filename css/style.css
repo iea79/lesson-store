@@ -516,7 +516,10 @@ img {
         background-color: rgba(71, 133, 252, 0.1); }
   @media (max-width: 1199px) {
     .crm__menu-item i {
-      padding-left: 20px; } }
+      padding-left: 20px; }
+    .crm__menu-sub_link {
+      padding: 7px 15px 7px 50px;
+      font-size: 14px; } }
   @media (max-width: 991px) {
     .crm__menu {
       width: 250px;

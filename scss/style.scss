@@ -425,6 +425,16 @@ $lblue-gray: #90a4ae;
                 // display: none;
             }
         }
+        &-sub {
+            &_item {
+            }
+            &_link {
+                padding: 7px 15px 7px 50px;
+                font-size: 14px;
+                &:hover{
+                }
+            }
+        }
     }
     @media (max-width: 991px) {
         width: 250px;
