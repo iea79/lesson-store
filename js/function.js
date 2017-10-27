@@ -29,19 +29,23 @@ $(document).ready(function(){
 	    });
 
 	    // Высота плиток/grid
-	    gridHei = $('[data-grid-match] > .grid__wrapper').height();
-	    $('.grid__item').removeAttr('style');
-	    $('[data-grid-match] > .grid__wrapper').each( function() {
-			gridItem = $(this).find('.grid__item');
-
-			gridItem.css('minHeight', gridHei);
-			// console.log($(this).height())
-			// console.log(gridItem.innerHeight())
-	    });
+	    if ('[data-grid-match]') {
+		    gridDef = 0;
+		    $('[data-grid-match] .grid__item').removeAttr('style');
+		    $('[data-grid-match] > .grid__wrapper').each( function() {
+			    var gridHei = $(this).height();
+		    	if (gridDef < gridHei) {
+		    		gridDef = gridHei;
+		    	}
+				$('[data-grid-match] .grid__item').css('minHeight', gridDef);
+				console.log(gridDef)
+		    });
+			console.log(gridDef)
+	    }
 	}
+
 	checkOnResize();
 	$(window).resize( checkOnResize );
-
 
 	// Reset link whte attribute href="#"
 	$('[href*="#"]').click(function(event) {

@@ -1,0 +1,52 @@
+extends templates/layout.jade
+
+block title
+    title Store
+
+block content
+    .store
+        .store__ban
+            img(src="img/store2.jpg", alt="")
+            .store__ban_title-wrap
+                .store__ban_title
+                    .store__ban_title-text.store__ban_title-text--bottom 
+                        .store__ban_title-left 
+                            .store__ban_title-name Одночлены
+                            .store__ban_title-subname 4 урока
+                        .store__ban_title-right 
+                            .store__ban_title-price 289 руб.
+                            .store__ban_title-btn 
+                                .button.button__white Купить категорию
+
+        // begin grid__cube
+        .grid.grid__cube(data-grid-match="")
+            .grid__wrapper
+                .grid__item 
+                    .grid__cube_subname Деление одночлена на одночлен 
+                    .grid__cube_btn 
+                        .button.button__green Посмотреть урок 
+                    .grid__cube_btn
+                        .button.button__blue Купить за 15 руб.
+            .grid__wrapper
+                .grid__item 
+                    .grid__cube_subname Умножение одночленов и возведение их в степень 
+                    .grid__cube_btn 
+                        .button.button__green Посмотреть урок 
+                    .grid__cube_btn
+                        .button.button__blue Купить за 15 руб.
+            .grid__wrapper
+                .grid__item 
+                    .grid__cube_subname Сложение одночленов. <br>Подобные слагаемые. 
+                    .grid__cube_btn 
+                        .button.button__green Посмотреть урок 
+                    .grid__cube_btn
+                        .button.button__blue Купить за 15 руб.
+            .grid__wrapper
+                .grid__item 
+                    .grid__cube_subname Одночлены. <br>Введение.
+                    .grid__cube_btn 
+                        .button.button__green Посмотреть урок 
+                    .grid__cube_btn
+                        .button.button__blue Купить за 15 руб.
+        // end grid__cube
+        

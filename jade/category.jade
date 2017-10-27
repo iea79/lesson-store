@@ -1,0 +1,56 @@
+extends templates/layout.jade
+
+block title
+    title Store
+
+block content
+    .store
+        .store__ban
+            img(src="img/store2.jpg", alt="")
+            .store__ban_title-wrap
+                .store__ban_title
+                    .store__ban_title-text.store__ban_title-text--bottom 
+                        .store__ban_title-left 
+                            .store__ban_title-name Математика
+                            .store__ban_title-subname 490 уроков
+                        .store__ban_title-right 
+                            .store__ban_title-price 1990 руб.
+                            .store__ban_title-btn 
+                                .button.button__white Купить категорию
+
+        // begin grid__cube
+        .grid.grid__cube(data-grid-match="")
+            .grid__wrapper
+                .grid__item 
+                    .grid__cube_name Одночлены 
+                    .grid__cube_sub 8 уроков 
+                    .grid__cube_btn 
+                        .button.button__green Подробнее 
+                    .grid__cube_btn
+                        .button.button__blue Купить за 289 руб.
+            .grid__wrapper
+                .grid__item 
+                    .grid__cube_name Многочлены 
+                    .grid__cube_sub 8 уроков 
+                    .grid__cube_btn 
+                        .button.button__green Подробнее 
+                    .grid__cube_btn
+                        .button.button__blue Купить за 229 руб.
+            .grid__wrapper
+                .grid__item 
+                    .grid__cube_name Квадратные корни 
+                    .grid__cube_sub 12 уроков 
+                    .grid__cube_btn 
+                        .button.button__green Подробнее 
+                    .grid__cube_btn
+                        .button.button__blue Купить за 199 руб.
+            .grid__wrapper
+                .grid__item 
+                    .grid__cube_name Квадратные уровнения
+                    .grid__cube_sub 2 урока 
+                    .grid__cube_btn 
+                        .button.button__green Подробнее 
+                    .grid__cube_btn
+                        .button.button__blue Купить за 129 руб.
+        // end grid__cube
+        

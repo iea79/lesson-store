@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&subset=cyrillic,cyrillic-ext,latin-ext");
-.grid:after, .wrapper:after, .button__group:after, .crm__header:after, .crm__container:after, .crm__content:after, .store__filter:after, .store__filter_bottom:after {
+.grid:after, .wrapper:after, .button__group:after, .crm__header:after, .crm__container:after, .crm__content:after, .store__ban_title-text:after, .store__filter:after, .store__filter_bottom:after {
   content: '';
   display: table;
   clear: both; }
@@ -260,6 +260,13 @@ img {
     .button__red:hover {
       color: #fff;
       background-color: red; }
+  .button__white {
+    color: #222;
+    border-color: #fff;
+    background-color: #fff; }
+    .button__white:hover {
+      color: #fff;
+      background-color: transparent; }
   .button__tag {
     border-color: #f5f8f9;
     background-color: #f5f8f9;
@@ -780,12 +787,36 @@ img {
       padding: 30px;
       font-size: 42px;
       color: #ffffff; }
+      .store__ban_title-text--bottom {
+        vertical-align: bottom; }
     .store__ban_title-wrap {
       position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0; }
+    .store__ban_title-left {
+      float: left;
+      text-align: left; }
+    .store__ban_title-right {
+      float: right;
+      text-align: right; }
+    .store__ban_title-name {
+      font-size: 30px;
+      margin-bottom: 5px; }
+    .store__ban_title-subname {
+      font-size: 18px;
+      color: #dfdfdf; }
+    .store__ban_title-price {
+      display: inline-block;
+      font-size: 26px;
+      margin-right: 15px; }
+    .store__ban_title-btn {
+      display: inline-block;
+      vertical-align: middle; }
+      .store__ban_title-btn .button {
+        font-size: 18px;
+        padding: 15px 25px; }
 
 .store__filter {
   background-color: #fff;
@@ -856,6 +887,18 @@ img {
       .store__ban_title-text {
         padding: 15px;
         font-size: 30px; }
+      .store__ban_title-wrap {
+        position: relative; }
+      .store__ban_title-left {
+        float: none;
+        margin-bottom: 20px;
+        text-align: center; }
+      .store__ban_title-right {
+        float: none;
+        text-align: center; }
+      .store__ban_title-price {
+        display: block;
+        margin-bottom: 10px; }
   .store__filter {
     margin: 10px 0;
     max-width: none;
@@ -896,9 +939,19 @@ img {
   font-size: 18px;
   margin-bottom: 10px; }
 
+.grid__cube_subname {
+  margin-bottom: 28px; }
+
 .grid__cube_sub {
   color: #cdcfd5;
   margin-bottom: 30px; }
+
+.grid__cube_btn + .grid__cube_btn {
+  margin-top: 15px; }
+
+.grid__cube_btn .button {
+  width: 100%;
+  max-width: 200px; }
 
 .grid__cube .button {
   border-radius: 18px; }
