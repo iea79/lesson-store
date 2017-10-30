@@ -16,12 +16,17 @@ html(lang="en")
             // begin header
             include header.jade
             // end header
-            // begin aside
-            include aside.jade
-            // end aside
+            // begin menu
+            include menu.jade
+            // end menu
             
             // begin content
             .crm__container
+                
+                // begin aside
+                block aside
+                // end aside
+                
                 .crm__content
                     block content
             // end content

@@ -1,0 +1,82 @@
+extends templates/layout.jade
+
+block title
+    title Share material
+
+block aside
+    .aside.ban__traning.hidden-xs(style="background-image: url('img/ban-bg.jpg')")
+        img.ban__traning_img(src="img/english-w.png", alt="") 
+        .ban__traning_text Более 3000 готовых тренировок в нашем магазине 
+        .button.ban__traning_btn Выбрать тренировку
+
+
+block content
+    .profile__events.shadow
+        .tab-menu.tab-menu--short
+            .tab-menu__label.active(data-tab="tab1") Тренировки
+            .tab-menu__label(data-tab="tab2") Тестирования 
+        .tab-content
+            .tab-content__item.event__content.show#tab1
+                .table__row 
+                    .table__row_item 
+                        a(href="#") Тренировка
+                    .table__row_item Математика
+                    .table__row_item 3 класс
+                    .table__row_item 30 заданий
+                    .table__row_item 
+                        .table__row_label От 
+                        a(href="#") Евгений Воронов 
+                    .table__row_item 
+                        .table__row_label Кому 
+                        a(href="#") Станислав Черкасов 
+                    .table__row_item 
+                        a(href="#but_drop").button.button__green.button__drop Действия 
+                            i.fa.fa-angle-down
+                        #but_drop.button__drop_wrap 
+                - var x = 6;
+                - for (var i = 1; i <= x; i++) {
+                    .table__row 
+                        .table__row_item 
+                            a(href="#") Тренировка
+                        .table__row_item Математика 
+                            .table__row_sub 3 класс
+                        .table__row_item 
+                            .table__row_label От 
+                            a(href="#") Евгений Воронов
+                        .table__row_item 
+                            .table__row_label Кому 
+                            a(href="#") Станислав Черкасов
+                        .table__row_item 
+                            .button__group
+                                a(href="#").button.button__green Открыть
+                                a(href="#").button.button__blue.button__icon 
+                                    i.fa.fa-paper-plane-o
+                                a(href="#").button.button__yellow.button__icon 
+                                    i.fa.fa-print
+                                a(href="#").button.button__red.button__icon
+                                    i.fa.fa-trash-o
+                -}
+            .tab-content__item.event__content#tab2
+                - var x = 9;
+                - for (var i = 1; i <= x; i++) {
+                    .table__row 
+                        .table__row_item 
+                            a(href="#") Тренировка
+                        .table__row_item Математика 
+                            .table__row_sub 3 класс
+                        .table__row_item 
+                            .table__row_label От 
+                            a(href="#") Евгений Воронов
+                        .table__row_item 
+                            .table__row_label Кому 
+                            a(href="#") Станислав Черкасов
+                        .table__row_item 
+                            .button__group
+                                a(href="#").button.button__green Открыть
+                                a(href="#").button.button__blue.button__icon 
+                                    i.fa.fa-paper-plane-o
+                                a(href="#").button.button__yellow.button__icon 
+                                    i.fa.fa-print
+                                a(href="#").button.button__red.button__icon
+                                    i.fa.fa-trash-o
+                -}

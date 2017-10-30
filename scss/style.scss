@@ -84,6 +84,14 @@ $lblue-gray: #90a4ae;
             background-color: red;
         }
     }
+    &__yellow {
+        color: #efbb4f;
+        border-color: #efbb4f;
+        &:hover{
+            color: #fff;
+            background-color: #efbb4f;
+        }
+    }
     &__white {
         color: #222;
         border-color: #fff;
@@ -104,6 +112,20 @@ $lblue-gray: #90a4ae;
         &:hover {
             color: #222222;
             background-color: darken(#f5f8f9, 5%);
+        }
+    }
+    &__icon {
+        max-width: 35px;
+        font-size: 20px;
+    }
+    &__drop {
+        position: relative;
+        padding-right: 25px;
+        i {
+            position: absolute;
+            right: 10px;
+            top: 9px;
+            font-size: 16px;
         }
     }
     &__reverse {
@@ -483,6 +505,7 @@ $lblue-gray: #90a4ae;
 .crm__content {
     padding: 30px;
     position: relative;
+    overflow: hidden;
     @extend %clear_a;
     @media (max-width: 767px) {
         padding: 10px;
@@ -642,6 +665,13 @@ $lblue-gray: #90a4ae;
     }
 }
 
+.aside {
+    float: right;
+    @media (max-width: 1199px) {
+        float: none;
+    }
+}
+
 
 .tab {
     &-menu {
@@ -661,6 +691,13 @@ $lblue-gray: #90a4ae;
                 border-bottom: 3px solid $light-blue;
                 //color: $blue;
                 padding-bottom: 19px;
+            }
+        }
+        &--short {
+            // width: auto;
+            .tab-menu__label {
+                display: inline-block;
+                margin: 0 15px;
             }
         }
 
@@ -736,9 +773,29 @@ $lblue-gray: #90a4ae;
 .table__row {
     display: table;
     width: 100%;
+    // table-layout: fixed;
     &_item {
         display: table-cell;
         padding: 5px;
+        .button__group {
+            white-space: nowrap;
+            text-align: right;
+            .button {
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+            }
+        }
+        &:last-child {
+            text-align: right;            
+        }
+    }
+    &_label {
+        display: block;
+    }
+    &_sub {
+        display: block;
+        color: $blue-gray;
     }
     &+.table__row {
         margin-top: 15px;
@@ -751,6 +808,7 @@ $lblue-gray: #90a4ae;
         &_item {
             padding: 12px 15px;
             vertical-align: middle;
+            line-height: 1.5;
         }
     }
     .img-circle {
@@ -768,6 +826,9 @@ $lblue-gray: #90a4ae;
         }
         .button {
             width: 80px;
+            &__drop {
+                width: auto;
+            }
         }
     }
     @media (max-width: 767px) {
@@ -781,6 +842,18 @@ $lblue-gray: #90a4ae;
         }
         .button {
             width: 100%;
+            &__group {
+                text-align: center;
+                .button {
+                    width: auto;
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    width: 46%;
+                    &__icon {
+                        padding: 9px;
+                    }
+                }
+            }
         }
     }
 }
@@ -1076,6 +1149,57 @@ $lblue-gray: #90a4ae;
             &__item {
                 padding: 30px 20px;
             }
+        }
+    }
+}
+
+.aside {
+}
+
+.ban__traning {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left top;
+    box-shadow: 0 3px 5px rgba(34, 34, 34, 0.07);
+    border-radius: 5px;
+    background-color: #ffffff;
+    overflow: hidden;
+    text-align: center;
+    width: 300px;
+    padding: 30px;
+    margin: 30px 30px 30px 0;
+    &_img {
+        margin-bottom: 20px;
+    }
+    &_text {
+        color: #fff;
+        font-size: 36px;
+        margin-bottom: 60px;
+    }
+    &_btn {
+        background-color: #fff;
+        border: 1px solid #fff;
+        color: #222222;
+        border-radius: 20px;
+        padding: 12px 20px;
+        font-size: 16px;
+        &:hover {
+            background-color: transparent;
+            color: #fff;
+        }
+    }
+    @media (max-width: 1599px) {
+        float: none;
+        margin: 30px 30px 0 30px;
+        width: auto;
+        padding: 20px;
+        &_img {
+            width: 60px;
+            margin-bottom: 10px;
+        }
+        &_text {
+            font-size: 30px;
+            margin-bottom: 25px;
         }
     }
 }

@@ -46,6 +46,9 @@ a {
   a:focus {
     outline: 0; }
 
+a:not([class]) {
+  color: #4785fc; }
+
 ol, ul {
   list-style: none;
   padding: 0;
@@ -260,6 +263,12 @@ img {
     .button__red:hover {
       color: #fff;
       background-color: red; }
+  .button__yellow {
+    color: #efbb4f;
+    border-color: #efbb4f; }
+    .button__yellow:hover {
+      color: #fff;
+      background-color: #efbb4f; }
   .button__white {
     color: #222;
     border-color: #fff;
@@ -278,6 +287,17 @@ img {
     .button__tag:hover {
       color: #222222;
       background-color: #e5edef; }
+  .button__icon {
+    max-width: 35px;
+    font-size: 20px; }
+  .button__drop {
+    position: relative;
+    padding-right: 25px; }
+    .button__drop i {
+      position: absolute;
+      right: 10px;
+      top: 9px;
+      font-size: 16px; }
   .button__reverse {
     border-color: #ededed; }
     .button__reverse span {
@@ -548,7 +568,8 @@ img {
 
 .crm__content {
   padding: 30px;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   @media (max-width: 767px) {
     .crm__content {
       padding: 10px; } }
@@ -662,6 +683,12 @@ img {
     float: none;
     width: 100%; } }
 
+.aside {
+  float: right; }
+  @media (max-width: 1199px) {
+    .aside {
+      float: none; } }
+
 .tab-menu {
   padding: 0 30px;
   width: 100%;
@@ -678,6 +705,9 @@ img {
     .tab-menu__label:hover, .tab-menu__label.active {
       border-bottom: 3px solid #27a9f8;
       padding-bottom: 19px; }
+  .tab-menu--short .tab-menu__label {
+    display: inline-block;
+    margin: 0 15px; }
 
 .tab-content__item {
   background: #fff;
@@ -736,6 +766,18 @@ img {
   .table__row_item {
     display: table-cell;
     padding: 5px; }
+    .table__row_item .button__group {
+      white-space: nowrap;
+      text-align: right; }
+      .table__row_item .button__group .button:not(:last-child) {
+        margin-right: 10px; }
+    .table__row_item:last-child {
+      text-align: right; }
+  .table__row_label {
+    display: block; }
+  .table__row_sub {
+    display: block;
+    color: #939aab; }
   .table__row + .table__row {
     margin-top: 15px; }
 
@@ -743,7 +785,8 @@ img {
   background: #f8f9fc; }
   .event__content .table__row_item {
     padding: 12px 15px;
-    vertical-align: middle; }
+    vertical-align: middle;
+    line-height: 1.5; }
 
 .event__content .img-circle {
   display: inline-block;
@@ -756,7 +799,9 @@ img {
   .event__content .table__row_item {
     padding: 12px 5px; }
   .event__content .button {
-    width: 80px; } }
+    width: 80px; }
+    .event__content .button__drop {
+      width: auto; } }
 
 @media (max-width: 767px) {
   .event__content .table__row {
@@ -766,7 +811,16 @@ img {
       padding: 15px;
       text-align: center; }
   .event__content .button {
-    width: 100%; } }
+    width: 100%; }
+    .event__content .button__group {
+      text-align: center; }
+      .event__content .button__group .button {
+        width: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 46%; }
+        .event__content .button__group .button__icon {
+          padding: 9px; } }
 
 .store__ban {
   -webkit-box-sizing: content-box;
@@ -976,5 +1030,47 @@ img {
     width: 100%; }
   .grid__cube .grid__item {
     padding: 30px 20px; } }
+
+.ban__traning {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left top;
+  -webkit-box-shadow: 0 3px 5px rgba(34, 34, 34, 0.07);
+  box-shadow: 0 3px 5px rgba(34, 34, 34, 0.07);
+  border-radius: 5px;
+  background-color: #ffffff;
+  overflow: hidden;
+  text-align: center;
+  width: 300px;
+  padding: 30px;
+  margin: 30px 30px 30px 0; }
+  .ban__traning_img {
+    margin-bottom: 20px; }
+  .ban__traning_text {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 60px; }
+  .ban__traning_btn {
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #222222;
+    border-radius: 20px;
+    padding: 12px 20px;
+    font-size: 16px; }
+    .ban__traning_btn:hover {
+      background-color: transparent;
+      color: #fff; }
+  @media (max-width: 1599px) {
+    .ban__traning {
+      float: none;
+      margin: 30px 30px 0 30px;
+      width: auto;
+      padding: 20px; }
+      .ban__traning_img {
+        width: 60px;
+        margin-bottom: 10px; }
+      .ban__traning_text {
+        font-size: 30px;
+        margin-bottom: 25px; } }
 
 /*# sourceMappingURL=style.css.map */

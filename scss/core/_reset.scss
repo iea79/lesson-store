@@ -38,6 +38,11 @@ a {
 	}
 }
 
+a:not([class]) {
+    color: $blue;
+}
+
+
 ol,ul {
 	list-style: none;
 	padding: 0;
