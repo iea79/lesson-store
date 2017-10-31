@@ -79,5 +79,21 @@ $(document).ready(function(){
 		event.preventDefault();
 		$('.search').toggleClass('open');
 	});
+
+	// Отправить тренеровку
+	$('.send__traning_btn--send').on('click', function(event) {
+		event.preventDefault();
+		$(this).closest('.tab-content').addClass('disabled');
+		$('.send__traning_top').addClass('hide');
+		$('.send__traning_bottom').removeClass('hide');
+	});
+
+	$('.send__traning_btn--cancel').on('click', function(event) {
+		event.preventDefault();
+		$(this).closest('.tab-content').removeClass('disabled');
+		$('.send__traning_top').removeClass('hide');
+		$('.send__traning_bottom').addClass('hide');
+	});
+
 });
 

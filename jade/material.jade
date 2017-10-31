@@ -17,6 +17,59 @@ block content
             .tab-menu__label(data-tab="tab2") Тестирования 
         .tab-content
             .tab-content__item.event__content.show#tab1
+                .send__traning
+                    .send__traning_top 
+                        .send__traning_left 
+                            a(href="#").button.button__blue.send__traning_btn--quest 
+                                i.fa.fa-question
+                                |Вопросы и ответы
+                        .send__traning_right 
+                            a(href="#").button.button__green--full.send__traning_btn--send Отправить тренировку
+                    .send__traning_bottom.hide 
+                        .send__traning_bottom-right 
+                            .button__group
+                                a(href="#").button.button__green.send__traning_btn--cancel Отменить
+                                a(href="#").button.button__green--full Отправить
+                        .send__traning_bottom-center Отправить тренировку 
+                        .send__traning_form 
+                            .send__traning_column 
+                                .send__traning_column-item 
+                                    .send__traning_form-label Выбрать получателя
+                                    .send__traning_form-field 
+                                        .form-field-search
+                                            i.fa.fa-search 
+                                            input(type="text" placeholder="Имя получателя").form-field
+                                    .send__traning_form-rezult 
+                                        .send__traning_drop-item 
+                                            .send__traning_drop-img 
+                                                img(src="img/2.png", alt="") 
+                                            .send__traning_drop-center
+                                                .send__traning_drop-name Алексей Новак
+                                                .send__traning_drop-proof Ученик 3-го класса
+                                            .send__traning_drop-right 
+                                                .button.button__green Добавить
+                                        .send__traning_drop-item 
+                                            .send__traning_drop-img 
+                                                img(src="img/2.png", alt="") 
+                                            .send__traning_drop-center
+                                                .send__traning_drop-name Алексей Новак
+                                                .send__traning_drop-proof Ученик 3-го класса
+                                            .send__traning_drop-right 
+                                                .button.button__green Добавить
+                                .send__traning_column-item 
+                                    .send__traning_form-label Выбрать тренировку
+                                    .send__traning_form-field 
+                                        .form-field-search
+                                            i.fa.fa-search 
+                                            input(type="text" placeholder="Название тренировки").form-field.
+                                    .send__traning_form-rezult 
+                                        .send__traning_drop-item 
+                                            .send__traning_drop-center
+                                                .send__traning_drop-name Тренировка
+                                                .send__traning_drop-proof Математика
+                                            .send__traning_drop-right 
+                                                .button.button__blue Праметры
+                                                .button.button__red Удалить
                 .table__row 
                     .table__row_item 
                         a(href="#") Тренировка
