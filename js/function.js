@@ -65,9 +65,10 @@ $(document).ready(function(){
 
 	// aside menu
 	$('.crm__menu-toggle').on('click', function(event) {
-		if ($(this).parent('.crm__menu-item_accordeon')) {
+		var wrap = $(this).closest('.crm__menu-item');
+		if (wrap.hasClass('crm__menu-item_accordeon')) {
 			event.preventDefault();
-			$(this).closest('.crm__menu-item_accordeon').toggleClass('open');
+			wrap.toggleClass('open');
 		}
 	});
 
