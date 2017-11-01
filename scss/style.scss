@@ -1105,7 +1105,7 @@ $lblue-gray: #90a4ae;
 .grid__cube {
     .grid {
         &__wrapper {
-            width: 25%;
+            width: 24.9%;
         }
         &__item {
             @extend %shadow;
@@ -1149,7 +1149,7 @@ $lblue-gray: #90a4ae;
     @media (max-width: 991px) {
         .grid {
             &__wrapper {
-                width: 50%;
+                width: 49.9%;
             }
             &__item {
                 padding: 40px 20px;

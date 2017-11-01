@@ -38,9 +38,9 @@ $(document).ready(function(){
 		    		gridDef = gridHei;
 		    	}
 				$('[data-grid-match] .grid__item').css('minHeight', gridDef);
-				console.log(gridDef)
+				// console.log(gridDef)
 		    });
-			console.log(gridDef)
+			// console.log(gridDef)
 	    }
 	}
 
