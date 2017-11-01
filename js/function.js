@@ -24,9 +24,9 @@ $(document).ready(function(){
 
 		var headerHeight = $('header').height();
 
-	    $('.crm__container').css({
-	        height: $(window).height() - headerHeight
-	    });
+	    // $('.crm__container').css({
+	    //     height: $(window).height() - headerHeight
+	    // });
 
 	    // Высота плиток/grid
 	    if ('[data-grid-match]') {
