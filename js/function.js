@@ -85,14 +85,16 @@ $(document).ready(function(){
 		event.preventDefault();
 		$(this).closest('.tab-content').addClass('disabled');
 		$('.send__traning_top').addClass('hide');
-		$('.send__traning_bottom').removeClass('hide');
+		$('.send__traning_bottom').slideDown(300);
 	});
 
 	$('.send__traning_btn--cancel').on('click', function(event) {
 		event.preventDefault();
 		$(this).closest('.tab-content').removeClass('disabled');
-		$('.send__traning_top').removeClass('hide');
-		$('.send__traning_bottom').addClass('hide');
+		$('.send__traning_bottom').slideUp(300);
+		setTimeout(function() {
+			$('.send__traning_top').removeClass('hide');
+		}, 300);
 	});
 
 });

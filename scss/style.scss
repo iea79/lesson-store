@@ -445,7 +445,7 @@ $lblue-gray: #90a4ae;
         }
         &_link {
             display: block;
-            padding: 7px 15px 7px 73px;
+            padding: 7px 15px 7px 61px;
             position: relative;
             padding-right: 30px;
             color: $blue-gray;
@@ -1267,6 +1267,7 @@ $lblue-gray: #90a4ae;
         border-radius: 18px;
     }
     &_bottom {
+        display: none;
         @extend %clear_a;
         &-right {
             float: right;

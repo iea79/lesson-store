@@ -540,7 +540,7 @@ img {
     margin-bottom: 10px; }
     .crm__menu-sub_link {
       display: block;
-      padding: 7px 15px 7px 73px;
+      padding: 7px 15px 7px 61px;
       position: relative;
       padding-right: 30px;
       color: #939aab; }
@@ -1119,22 +1119,24 @@ img {
   .send__traning .button {
     width: auto;
     border-radius: 18px; }
-  .send__traning_bottom-right {
-    float: right;
-    margin-bottom: 20px; }
-  .send__traning_bottom-center {
-    overflow: hidden;
-    text-align: center;
-    font-size: 22px;
-    padding: 5px;
-    margin-bottom: 20px; }
-  .send__traning_bottom .button__group {
-    margin: 0; }
-    .send__traning_bottom .button__group .button {
-      padding-left: 14px;
-      padding-right: 14px; }
-      .send__traning_bottom .button__group .button:first-child {
-        margin-right: 15px; }
+  .send__traning_bottom {
+    display: none; }
+    .send__traning_bottom-right {
+      float: right;
+      margin-bottom: 20px; }
+    .send__traning_bottom-center {
+      overflow: hidden;
+      text-align: center;
+      font-size: 22px;
+      padding: 5px;
+      margin-bottom: 20px; }
+    .send__traning_bottom .button__group {
+      margin: 0; }
+      .send__traning_bottom .button__group .button {
+        padding-left: 14px;
+        padding-right: 14px; }
+        .send__traning_bottom .button__group .button:first-child {
+          margin-right: 15px; }
   .send__traning_form {
     text-align: center;
     background-color: #f8f9fc;
