@@ -452,14 +452,19 @@ img {
       font-size: 16px; } }
 
 .crm__container {
-  height: 100%;
+  top: 76px;
+  bottom: 0;
+  right: 0;
+  left: 0;
   padding-left: 20%;
   overflow-x: hidden;
   overflow-y: auto;
+  position: fixed;
   background: #f8f9fc; }
   @media (max-width: 991px) {
     .crm__container {
-      padding-left: 0; } }
+      padding-left: 0;
+      top: 60px; } }
 
 .crm__menu {
   width: 20%;
