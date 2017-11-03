@@ -1324,6 +1324,29 @@ $lblue-gray: #90a4ae;
             margin: 30px;
             width: 40%;
         }
+        select {
+            border-radius: 0;
+            outline: 0;
+            height: 35px;
+            -webkit-appearance: none;
+            line-height: 1;
+            /* for FF */
+            -moz-appearance: none;
+            text-indent: 0.01px; 
+            text-overflow: '';
+            /* for IE */
+            -ms-appearance: none;
+            appearance: none!important;
+            color: #90a4ae;
+            border-radius: 7px;
+            border: 1px solid $border-gray;
+            background-color: #fff;
+            width: 100%;
+            padding-left: 45px;
+            &::-ms-expand {
+              display: none;
+            }
+        }
     }
 
     .button__green {}

@@ -1119,6 +1119,28 @@ img {
     display: inline-block;
     margin: 30px;
     width: 40%; }
+  .send__traning_column select {
+    border-radius: 0;
+    outline: 0;
+    height: 35px;
+    -webkit-appearance: none;
+    line-height: 1;
+    /* for FF */
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    -o-text-overflow: '';
+    text-overflow: '';
+    /* for IE */
+    -ms-appearance: none;
+    appearance: none !important;
+    color: #90a4ae;
+    border-radius: 7px;
+    border: 1px solid #ededed;
+    background-color: #fff;
+    width: 100%;
+    padding-left: 45px; }
+    .send__traning_column select::-ms-expand {
+      display: none; }
   .send__traning_drop-item {
     display: table;
     width: 100%;
