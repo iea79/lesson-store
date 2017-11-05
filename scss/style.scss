@@ -146,11 +146,11 @@ $lblue-gray: #90a4ae;
             display: none;
         }
         &:hover{
-            background: #fff !important;
-            border-color: $green;
+            // background: #fff !important;
+            // border-color: $green;
             span:last-child{
                 display: inline;
-                color: $green;
+                // color: $green;
             }
             span:first-child{
                 display: none;
@@ -242,7 +242,7 @@ $lblue-gray: #90a4ae;
             color: $blue-gray;
             font-size: 20px;
         }
-        .drop{
+        .drop {
             display: table-cell;
             vertical-align: middle;
             text-align: center;
@@ -250,8 +250,10 @@ $lblue-gray: #90a4ae;
             width: 75px;
             border-left: 1px solid transparentize(#d3d3d3, .4);
             cursor: pointer;
+            position: relative;
+            outline: 0;
         }
-        .profile{
+        .profile {
             &__img{
                 width: 64%;
                 height: 64%;
@@ -259,6 +261,48 @@ $lblue-gray: #90a4ae;
                 overflow: hidden;
                 border-radius: 50%;
             }
+            &__dropdown {
+                width: 225px;
+                position: absolute;
+                top: 76px;
+                right: 0;
+                background-color: #fff;
+                @extend %shadow;
+                z-index: 20;
+                display: none;
+                &_item {
+                    display: block;
+                    white-space: nowrap;
+                    text-align: left;
+                    font-size: 14px;
+                    &:hover {
+                        background: transparentize($blue, .3);
+                        text-decoration: none;
+                        .fa {
+                            color: #fff;
+                        }
+                    }
+                }
+                &_link {
+                    padding: 12px 24px;
+                    display: block;
+                    color: $blue-gray;
+                    &:hover {
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+                .fa {
+                   font-size: 14px;
+                   margin-right: 10px;
+                   width: 20px; 
+                }
+            }
+            // &.open {
+            //     .profile__dropdown {
+            //         display: block;
+            //     }
+            // }
         }
     }
     @media (max-width: 991px) {
@@ -290,6 +334,11 @@ $lblue-gray: #90a4ae;
             .drop {
                 width: 60px;
                 height: 60px;
+            }
+            .profile {
+                &__dropdown {
+                    top: 60px;
+                }
             }
         }
     }

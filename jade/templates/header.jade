@@ -10,9 +10,22 @@ header.crm__header
             i.fa.fa-bell
         a(href='#').drop.bell
             i.fa.fa-envelope
-        a(href='#').drop.profile
+        .drop.profile
             .profile__img
-                img(src='img/1.png')
+                img(src='img/1.png') 
+        .profile__dropdown 
+            .profile__dropdown_item
+                a(href="/").profile__dropdown_link 
+                    i.fa.fa-credit-card 
+                    |Кошелек
+            .profile__dropdown_item
+                a(href="#").profile__dropdown_link 
+                    i.fa.fa-gear
+                    |Настройки
+            .profile__dropdown_item
+                a(href="#").profile__dropdown_link 
+                    i.fa.fa-external-link
+                    |Выйти
 
     // search
     .crm__header_center

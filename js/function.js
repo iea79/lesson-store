@@ -100,5 +100,10 @@ $(document).ready(function(){
 		}, 300);
 	});
 
+	$('.crm__header .profile').on('click', function(event) {
+		event.preventDefault();
+		$('.profile__dropdown').slideToggle(300);
+	});
+
 });
 

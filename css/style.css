@@ -9,7 +9,7 @@
   display: table;
   clear: both; }
 
-.shadow, .store__filter, .grid__cube .grid__item, .send__traning_drop-item {
+.shadow, .crm__header_right .profile__dropdown, .store__filter, .grid__cube .grid__item, .send__traning_drop-item {
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1); }
 
@@ -265,14 +265,10 @@ img {
       color: #ededed; }
     .button__reverse span:last-child {
       display: none; }
-    .button__reverse:hover {
-      background: #fff !important;
-      border-color: #04be5b; }
-      .button__reverse:hover span:last-child {
-        display: inline;
-        color: #04be5b; }
-      .button__reverse:hover span:first-child {
-        display: none; }
+    .button__reverse:hover span:last-child {
+      display: inline; }
+    .button__reverse:hover span:first-child {
+      display: none; }
     .button__reverse.red:hover {
       background: #fff !important;
       border-color: red; }
@@ -340,13 +336,44 @@ img {
       height: 75px;
       width: 75px;
       border-left: 1px solid rgba(211, 211, 211, 0.6);
-      cursor: pointer; }
+      cursor: pointer;
+      position: relative;
+      outline: 0; }
     .crm__header_right .profile__img {
       width: 64%;
       height: 64%;
       display: inline-block;
       overflow: hidden;
       border-radius: 50%; }
+    .crm__header_right .profile__dropdown {
+      width: 225px;
+      position: absolute;
+      top: 76px;
+      right: 0;
+      background-color: #fff;
+      z-index: 20;
+      display: none; }
+      .crm__header_right .profile__dropdown_item {
+        display: block;
+        white-space: nowrap;
+        text-align: left;
+        font-size: 14px; }
+        .crm__header_right .profile__dropdown_item:hover {
+          background: rgba(71, 133, 252, 0.7);
+          text-decoration: none; }
+          .crm__header_right .profile__dropdown_item:hover .fa {
+            color: #fff; }
+      .crm__header_right .profile__dropdown_link {
+        padding: 12px 24px;
+        display: block;
+        color: #939aab; }
+        .crm__header_right .profile__dropdown_link:hover {
+          text-decoration: none;
+          color: #fff; }
+      .crm__header_right .profile__dropdown .fa {
+        font-size: 14px;
+        margin-right: 10px;
+        width: 20px; }
   @media (max-width: 991px) {
     .crm__header {
       height: 60px; }
@@ -371,7 +398,9 @@ img {
         height: 60px; }
         .crm__header_right .drop {
           width: 60px;
-          height: 60px; } }
+          height: 60px; }
+        .crm__header_right .profile__dropdown {
+          top: 60px; } }
   @media (max-width: 767px) {
     .crm__header_center {
       float: left;
