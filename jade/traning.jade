@@ -1,0 +1,227 @@
+extends templates/layout.jade
+
+block title
+    title Share material
+
+block aside
+
+block content
+    .wihite__box.shadow
+        .traning 
+            .traning__title Название тренировки
+            .traning__top 
+                a(href="#").button.button__blue.button__question
+                    .fa.fa-question 
+                    |Вопросы и ответы 
+
+                .button__group_flip 
+                    a(href="#").button.button__round.button__green Создать заметку 
+                    a(href="#").button.button__round.button__icon.button__blue
+                        .fa.fa-paper-plane-o
+                    a(href="#").button.button__round.button__icon.button__yellow
+                        .fa.fa-print
+                    a(href="#").button.button__round.button__icon.button__red
+                        .fa.fa-trash
+
+            .traning__list 
+                // begin traning__list_item 1 
+                .traning__list_item 
+                    .traning__list_count 9 
+                    .traning__list_action 
+                        a(href="#").button.button__round.button__green.traning__btn_more
+                            span.traning__btn_more--show Подробнее 
+                            span.traning__btn_more--hide Скрыть 
+                        a(href="#").button.button__round.button__blue.button__icon 
+                            .fa.fa-star-o
+                        a(href="#").button.button__round.button__yellow.button__icon 
+                            .fa.fa-random
+                        a(href="#").button.button__round.button__icon.button__red
+                            .fa.fa-trash
+                    .traning__list_center 
+                        .traning__list_row 
+                            .traning__task 
+                                p Решите пример
+                                p (2 + 2)*10
+                        .traning__list_row 
+                            a(href="#" data-traning-link="t1").traning__link 
+                                span.traning__link--show Показать ответ
+                                span.traning__link--hide Скрыть ответ
+                            .traning__link_slide#t1 
+                                p 40
+                        .traning__list_row 
+                            a(href="#" data-traning-link="t2").traning__link 
+                                span.traning__link--show Добавить пространство для решения
+                                span.traning__link--hide Скрыть пространство для решения
+                            .traning__link_slide#t2 
+                                textarea.traning__field
+                // end traning__list_item 1 
+                // begin traning__list_item 2 
+                .traning__list_item 
+                    .traning__list_count 10 
+                    .traning__list_action 
+                        a(href="#").button.button__round.button__green.traning__btn_more
+                            span.traning__btn_more--show Подробнее 
+                            span.traning__btn_more--hide Скрыть 
+                        a(href="#").button.button__round.button__blue.button__icon 
+                            .fa.fa-star-o
+                        a(href="#").button.button__round.button__yellow.button__icon 
+                            .fa.fa-random
+                        a(href="#").button.button__round.button__icon.button__red
+                            .fa.fa-trash
+                    .traning__list_center 
+                        .traning__list_row 
+                            .traning__task 
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        .traning__list_row 
+                            a(href="#" data-traning-link="t3").traning__link 
+                                span.traning__link--show Показать ответ
+                                span.traning__link--hide Скрыть ответ
+                            .traning__link_slide#t3 
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, soluta.
+                        .traning__list_row 
+                            a(href="#" data-traning-link="t4").traning__link 
+                                span.traning__link--show Добавить пространство для решения
+                                span.traning__link--hide Скрыть пространство для решения
+                            .traning__link_slide#t4 
+                                textarea.traning__field
+                    .traning__sublist 
+                        .traning__sublist_row 
+                            .traning__sublist_name Задача №158 Неравенство с параметром
+                        .traning__sublist_row 
+                            .traning__sublist_name Тема:
+                            .traning__sublist_text Кдасс 11/Неравенства/Неравенства с параметром
+                        .traning__sublist_row 
+                            .traning__sublist_name Сложность:
+                            .traning__sublist_text 4
+                        .traning__sublist_row 
+                            .traning__sublist_name Оцененная сложность задачи:
+                            .traning__sublist_text 
+                                 .traning__rate
+                                    i.fa.fa-star-o
+                                    i.fa.fa-star-o
+                                    i.fa.fa-star-o
+                                    i.fa.fa-star-o
+                                    i.fa.fa-star-o
+                                    i.fa.fa-star-o
+                                    i.fa.fa-star-o
+                                    i.fa.fa-star-o
+                                    i.fa.fa-star-o
+                // end traning__list_item 2 
+                // begin traning__list_item 3 
+                //- .traning__list_item 
+                // end traning__list_item 3 
+    // Button trigger modal traning__modal
+    button(class="button" data-toggle="modal" data-target="#traning__modal") Click to open modal
+
+block modals
+    // begin Modal traning__modal 
+    .modal.fade.traning__modal#traning__modal
+        .modal-dialog
+            .modal-content
+                a(href="#" class="modal-close" data-dismiss="modal")
+                .traning 
+                    .traning__title Название тренировки
+                    .traning__top 
+                        a(href="#").button.button__blue.button__question
+                            .fa.fa-question 
+                            |Вопросы и ответы 
+        
+                        .button__group_flip 
+                            a(href="#").button.button__round.button__green Создать заметку 
+                            a(href="#").button.button__round.button__icon.button__blue
+                                .fa.fa-paper-plane-o
+                            a(href="#").button.button__round.button__icon.button__yellow
+                                .fa.fa-print
+                            a(href="#").button.button__round.button__icon.button__red
+                                .fa.fa-trash
+        
+                    .traning__list 
+                        // begin traning__list_item 1 
+                        .traning__list_item 
+                            .traning__list_count 9 
+                            .traning__list_action 
+                                a(href="#").button.button__round.button__green.traning__btn_more
+                                    span.traning__btn_more--show Подробнее 
+                                    span.traning__btn_more--hide Скрыть 
+                                a(href="#").button.button__round.button__blue.button__icon 
+                                    .fa.fa-star-o
+                                a(href="#").button.button__round.button__yellow.button__icon 
+                                    .fa.fa-random
+                                a(href="#").button.button__round.button__icon.button__red
+                                    .fa.fa-trash
+                            .traning__list_center 
+                                .traning__list_row 
+                                    .traning__task 
+                                        p Решите пример
+                                        p (2 + 2)*10
+                                .traning__list_row 
+                                    a(href="#" data-traning-link="t11").traning__link 
+                                        span.traning__link--show Показать ответ
+                                        span.traning__link--hide Скрыть ответ
+                                    .traning__link_slide#t11 
+                                        p 40
+                                .traning__list_row 
+                                    a(href="#" data-traning-link="t12").traning__link 
+                                        span.traning__link--show Добавить пространство для решения
+                                        span.traning__link--hide Скрыть пространство для решения
+                                    .traning__link_slide#t12 
+                                        textarea.traning__field
+                        // end traning__list_item 1 
+                        // begin traning__list_item 2 
+                        .traning__list_item 
+                            .traning__list_count 10 
+                            .traning__list_action 
+                                a(href="#").button.button__round.button__green.traning__btn_more
+                                    span.traning__btn_more--show Подробнее 
+                                    span.traning__btn_more--hide Скрыть 
+                                a(href="#").button.button__round.button__blue.button__icon 
+                                    .fa.fa-star-o
+                                a(href="#").button.button__round.button__yellow.button__icon 
+                                    .fa.fa-random
+                                a(href="#").button.button__round.button__icon.button__red
+                                    .fa.fa-trash
+                            .traning__list_center 
+                                .traning__list_row 
+                                    .traning__task 
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia         deserunt mollit anim id est laborum.
+                                .traning__list_row 
+                                    a(href="#" data-traning-link="t13").traning__link 
+                                        span.traning__link--show Показать ответ
+                                        span.traning__link--hide Скрыть ответ
+                                    .traning__link_slide#t13 
+                                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, soluta.
+                                .traning__list_row 
+                                    a(href="#" data-traning-link="t14").traning__link 
+                                        span.traning__link--show Добавить пространство для решения
+                                        span.traning__link--hide Скрыть пространство для решения
+                                    .traning__link_slide#t14 
+                                        textarea.traning__field
+                            .traning__sublist 
+                                .traning__sublist_row 
+                                    .traning__sublist_name Задача №158 Неравенство с параметром
+                                .traning__sublist_row 
+                                    .traning__sublist_name Тема:
+                                    .traning__sublist_text Кдасс 11/Неравенства/Неравенства с параметром
+                                .traning__sublist_row 
+                                    .traning__sublist_name Сложность:
+                                    .traning__sublist_text 4
+                                .traning__sublist_row 
+                                    .traning__sublist_name Оцененная сложность задачи:
+                                    .traning__sublist_text 
+                                         .traning__rate
+                                            i.fa.fa-star-o
+                                            i.fa.fa-star-o
+                                            i.fa.fa-star-o
+                                            i.fa.fa-star-o
+                                            i.fa.fa-star-o
+                                            i.fa.fa-star-o
+                                            i.fa.fa-star-o
+                                            i.fa.fa-star-o
+                                            i.fa.fa-star-o
+                        // end traning__list_item 2 
+
+    // end modal traning__modal 
+
+                            
+
+

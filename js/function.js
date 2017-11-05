@@ -105,5 +105,19 @@ $(document).ready(function(){
 		$('.profile__dropdown').slideToggle(300);
 	});
 
+	$('[data-traning-link]').on('click', function(event) {
+		event.preventDefault();
+		var id = $(this).data('traningLink');
+		console.log(id)
+		$(this).toggleClass('open');
+		$('#'+id).slideToggle(300);
+	});
+
+	$('.traning__btn_more').on('click', function(event) {
+		event.preventDefault();
+		$(this).toggleClass('active');
+		$(this).closest('.traning__list_item').find('.traning__sublist').slideToggle(300);
+	});
+
 });
 
