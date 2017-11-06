@@ -7,6 +7,7 @@
     <script src="https://use.fontawesome.com/d2e3dc5d54.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/modal.js"> </script>
+    <script src="js/jquery-ui.min.js"> </script>
     <script src="js/function.js"> </script>
     <link href="css/style.css?01.10.b" rel="stylesheet"/>
   </head>
@@ -97,7 +98,16 @@
                     </div>
                     <div class="traning__list_row"> <a class="traning__link" href="#" data-traning-link="t2"> <span class="traning__link--show">Добавить пространство для решения</span><span class="traning__link--hide">Скрыть пространство для решения</span></a>
                       <div class="traning__link_slide" id="t2"> 
-                        <textarea class="traning__field"></textarea>
+                        <div class="traning__field_wrap"> 
+                          <div class="traning__field_toggle"> 
+                            <div class="traning__field_toggle-item traning__field_toggle-item--blank"></div>
+                            <div class="traning__field_toggle-item traning__field_toggle-item--line"></div>
+                            <div class="traning__field_toggle-item traning__field_toggle-item--cage"></div>
+                          </div>
+                          <div class="traning__field"> 
+                            <textarea> </textarea>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -123,7 +133,16 @@
                     </div>
                     <div class="traning__list_row"> <a class="traning__link" href="#" data-traning-link="t4"> <span class="traning__link--show">Добавить пространство для решения</span><span class="traning__link--hide">Скрыть пространство для решения</span></a>
                       <div class="traning__link_slide" id="t4"> 
-                        <textarea class="traning__field"></textarea>
+                        <div class="traning__field_wrap"> 
+                          <div class="traning__field_toggle"> 
+                            <div class="traning__field_toggle-item traning__field_toggle-item--blank" data-style="blank"></div>
+                            <div class="traning__field_toggle-item traning__field_toggle-item--line" data-style="line"></div>
+                            <div class="traning__field_toggle-item traning__field_toggle-item--cage" data-style="cage"></div>
+                          </div>
+                          <div class="traning__field"> 
+                            <textarea> </textarea>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -149,6 +168,58 @@
                 </div>
                 <!-- end traning__list_item 2 -->
                 <!-- begin traning__list_item 3 -->
+                <div class="traning__list_item"> 
+                  <div class="traning__list_count">11</div>
+                  <div class="traning__list_action"> <a class="button button__round button__green traning__btn_more" href="#"><span class="traning__btn_more--show">Подробнее </span><span class="traning__btn_more--hide">Скрыть </span></a><a class="button button__round button__blue button__icon" href="#"> 
+                      <div class="fa fa-star-o"></div></a><a class="button button__round button__yellow button__icon" href="#"> 
+                      <div class="fa fa-random"></div></a><a class="button button__round button__icon button__red" href="#">
+                      <div class="fa fa-trash"></div></a></div>
+                  <div class="traning__list_center"> 
+                    <div class="traning__list_row"> 
+                      <div class="traning__task"> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                      </div>
+                    </div>
+                    <div class="traning__list_row"> <a class="traning__link" href="#" data-traning-link="t23"> <span class="traning__link--show">Показать ответ</span><span class="traning__link--hide">Скрыть ответ</span></a>
+                      <div class="traning__link_slide" id="t23"> 
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, soluta.</p>
+                      </div>
+                    </div>
+                    <div class="traning__list_row"> <a class="traning__link" href="#" data-traning-link="t24"> <span class="traning__link--show">Добавить пространство для решения</span><span class="traning__link--hide">Скрыть пространство для решения</span></a>
+                      <div class="traning__link_slide" id="t24"> 
+                        <div class="traning__field_wrap"> 
+                          <div class="traning__field_toggle"> 
+                            <div class="traning__field_toggle-item traning__field_toggle-item--blank"></div>
+                            <div class="traning__field_toggle-item traning__field_toggle-item--line"></div>
+                            <div class="traning__field_toggle-item traning__field_toggle-item--cage"></div>
+                          </div>
+                          <div class="traning__field"> 
+                            <textarea> </textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="traning__sublist"> 
+                    <div class="traning__sublist_row"> 
+                      <div class="traning__sublist_name">Задача №158 Неравенство с параметром</div>
+                    </div>
+                    <div class="traning__sublist_row"> 
+                      <div class="traning__sublist_name">Тема:</div>
+                      <div class="traning__sublist_text">Кдасс 11/Неравенства/Неравенства с параметром</div>
+                    </div>
+                    <div class="traning__sublist_row"> 
+                      <div class="traning__sublist_name">Сложность:</div>
+                      <div class="traning__sublist_text">4</div>
+                    </div>
+                    <div class="traning__sublist_row"> 
+                      <div class="traning__sublist_name">Оцененная сложность задачи:</div>
+                      <div class="traning__sublist_text"> 
+                        <div class="traning__rate"><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i><i class="fa fa-star-o"></i></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <!-- end traning__list_item 3 -->
               </div>
             </div>
@@ -192,8 +263,17 @@
                       </div>
                     </div>
                     <div class="traning__list_row"> <a class="traning__link" href="#" data-traning-link="t12"> <span class="traning__link--show">Добавить пространство для решения</span><span class="traning__link--hide">Скрыть пространство для решения</span></a>
-                      <div class="traning__link_slide" id="t12"> 
-                        <textarea class="traning__field"></textarea>
+                      <div class="traning__link_slide" id="t12"> </div>
+                    </div>
+                    <div class="traning__field_wrap"> 
+                      <div class="traning__field_toggle"> 
+                        <div class="traning__field_toggle-item traning__field_toggle-item--blank"></div>
+                        <div class="traning__field_toggle-item traning__field_toggle-item--line"></div>
+                        <div class="traning__field_toggle-item traning__field_toggle-item--cage">
+                          <div class="traning__field"> 
+                            <textarea> </textarea>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -217,8 +297,17 @@
                       </div>
                     </div>
                     <div class="traning__list_row"> <a class="traning__link" href="#" data-traning-link="t14"> <span class="traning__link--show">Добавить пространство для решения</span><span class="traning__link--hide">Скрыть пространство для решения</span></a>
-                      <div class="traning__link_slide" id="t14"> 
-                        <textarea class="traning__field"></textarea>
+                      <div class="traning__link_slide" id="t14"> </div>
+                    </div>
+                    <div class="traning__field_wrap"> 
+                      <div class="traning__field_toggle"> 
+                        <div class="traning__field_toggle-item traning__field_toggle-item--blank"></div>
+                        <div class="traning__field_toggle-item traning__field_toggle-item--line"></div>
+                        <div class="traning__field_toggle-item traning__field_toggle-item--cage">
+                          <div class="traning__field"> 
+                            <textarea> </textarea>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>

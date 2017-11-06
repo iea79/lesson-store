@@ -53,7 +53,13 @@ block content
                                 span.traning__link--show Добавить пространство для решения
                                 span.traning__link--hide Скрыть пространство для решения
                             .traning__link_slide#t2 
-                                textarea.traning__field
+                                .traning__field_wrap 
+                                    .traning__field_toggle 
+                                        .traning__field_toggle-item.traning__field_toggle-item--blank
+                                        .traning__field_toggle-item.traning__field_toggle-item--line
+                                        .traning__field_toggle-item.traning__field_toggle-item--cage
+                                    .traning__field 
+                                        textarea 
                 // end traning__list_item 1 
                 // begin traning__list_item 2 
                 .traning__list_item 
@@ -83,7 +89,13 @@ block content
                                 span.traning__link--show Добавить пространство для решения
                                 span.traning__link--hide Скрыть пространство для решения
                             .traning__link_slide#t4 
-                                textarea.traning__field
+                                .traning__field_wrap 
+                                    .traning__field_toggle 
+                                        .traning__field_toggle-item.traning__field_toggle-item--blank(data-style="blank")
+                                        .traning__field_toggle-item.traning__field_toggle-item--line(data-style="line")
+                                        .traning__field_toggle-item.traning__field_toggle-item--cage(data-style="cage")
+                                    .traning__field 
+                                        textarea 
                     .traning__sublist 
                         .traning__sublist_row 
                             .traning__sublist_name Задача №158 Неравенство с параметром
@@ -108,7 +120,62 @@ block content
                                     i.fa.fa-star-o
                 // end traning__list_item 2 
                 // begin traning__list_item 3 
-                //- .traning__list_item 
+                .traning__list_item 
+                    .traning__list_count 11
+                    .traning__list_action 
+                        a(href="#").button.button__round.button__green.traning__btn_more
+                            span.traning__btn_more--show Подробнее 
+                            span.traning__btn_more--hide Скрыть 
+                        a(href="#").button.button__round.button__blue.button__icon 
+                            .fa.fa-star-o
+                        a(href="#").button.button__round.button__yellow.button__icon 
+                            .fa.fa-random
+                        a(href="#").button.button__round.button__icon.button__red
+                            .fa.fa-trash
+                    .traning__list_center 
+                        .traning__list_row 
+                            .traning__task 
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        .traning__list_row 
+                            a(href="#" data-traning-link="t23").traning__link 
+                                span.traning__link--show Показать ответ
+                                span.traning__link--hide Скрыть ответ
+                            .traning__link_slide#t23 
+                                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, soluta.
+                        .traning__list_row 
+                            a(href="#" data-traning-link="t24").traning__link 
+                                span.traning__link--show Добавить пространство для решения
+                                span.traning__link--hide Скрыть пространство для решения
+                            .traning__link_slide#t24 
+                                .traning__field_wrap 
+                                    .traning__field_toggle 
+                                        .traning__field_toggle-item.traning__field_toggle-item--blank
+                                        .traning__field_toggle-item.traning__field_toggle-item--line
+                                        .traning__field_toggle-item.traning__field_toggle-item--cage
+                                    .traning__field 
+                                        textarea 
+                    .traning__sublist 
+                        .traning__sublist_row 
+                            .traning__sublist_name Задача №158 Неравенство с параметром
+                        .traning__sublist_row 
+                            .traning__sublist_name Тема:
+                            .traning__sublist_text Кдасс 11/Неравенства/Неравенства с параметром
+                        .traning__sublist_row 
+                            .traning__sublist_name Сложность:
+                            .traning__sublist_text 4
+                        .traning__sublist_row 
+                            .traning__sublist_name Оцененная сложность задачи:
+                            .traning__sublist_text 
+                                 .traning__rate
+                                    i.fa.fa-star-o
+                                    i.fa.fa-star-o
+                                    i.fa.fa-star-o
+                                    i.fa.fa-star-o
+                                    i.fa.fa-star-o
+                                    i.fa.fa-star-o
+                                    i.fa.fa-star-o
+                                    i.fa.fa-star-o
+                                    i.fa.fa-star-o
                 // end traning__list_item 3 
     // Button trigger modal traning__modal
     button(class="button" data-toggle="modal" data-target="#traning__modal") Click to open modal
@@ -165,7 +232,13 @@ block modals
                                         span.traning__link--show Добавить пространство для решения
                                         span.traning__link--hide Скрыть пространство для решения
                                     .traning__link_slide#t12 
-                                        textarea.traning__field
+                                .traning__field_wrap 
+                                    .traning__field_toggle 
+                                        .traning__field_toggle-item.traning__field_toggle-item--blank
+                                        .traning__field_toggle-item.traning__field_toggle-item--line
+                                        .traning__field_toggle-item.traning__field_toggle-item--cage
+                                            .traning__field 
+                                                textarea 
                         // end traning__list_item 1 
                         // begin traning__list_item 2 
                         .traning__list_item 
@@ -195,7 +268,13 @@ block modals
                                         span.traning__link--show Добавить пространство для решения
                                         span.traning__link--hide Скрыть пространство для решения
                                     .traning__link_slide#t14 
-                                        textarea.traning__field
+                                .traning__field_wrap 
+                                    .traning__field_toggle 
+                                        .traning__field_toggle-item.traning__field_toggle-item--blank
+                                        .traning__field_toggle-item.traning__field_toggle-item--line
+                                        .traning__field_toggle-item.traning__field_toggle-item--cage
+                                            .traning__field 
+                                                textarea 
                             .traning__sublist 
                                 .traning__sublist_row 
                                     .traning__sublist_name Задача №158 Неравенство с параметром

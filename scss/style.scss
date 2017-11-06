@@ -10,6 +10,7 @@
 @import 'core/grid';
 @import 'core/icon';
 @import 'bootstrap/modal';
+@import 'jquery_ui';
 
 //colors
 $blue: #4785fc;
@@ -290,11 +291,15 @@ $lblue-gray: #90a4ae;
         margin-top: 25px;
         font-size: 14px;
         &_item {
+            background-color: #fff;
             @extend %clear_a;
             &+.traning__list_item {
                 border-top: 1px solid $border-gray;
                 padding-top: 25px;
                 margin-top: 25px;
+            }
+            &.ui-sortable-helper {
+                // @extend %shadow;
             }
         }
         &_count {
@@ -347,11 +352,67 @@ $lblue-gray: #90a4ae;
         }
     }
     &__field {
-        width: 100%;
+        // width: auto;
+        overflow: hidden;
+        display: block;
         border-radius: 5px;
-        min-height: 100px;
-        border-color: $border-gray;
-        padding: 10px;
+        background-color: #fff;
+        textarea {
+            padding: 10px;
+            border-radius: 5px;
+            border-color: $border-gray;
+            width: 100%;
+            min-height: 147px;
+            background-color: transparent;
+            display: block;
+        }
+        &--blank {
+            background-image: none;
+        }
+        &--line {
+            background-image: url('../img/linear.png');
+            textarea {
+                padding-top: 6px;
+                line-height: 1.6;
+            }
+        }
+        &--cage {
+            background-image: url('../img/cage.jpg');
+            textarea {
+                padding-top: 6px;
+                line-height: 1.6;
+            }
+        }
+        &_wrap {
+            @extend %clear_a;
+        }
+        &_toggle {
+            float: right;
+            margin-left: 15px;
+            padding-left: 5px;
+            padding-right: 5px;
+            &-item {
+                width: 44px;
+                height: 44px;
+                border: 7px solid #fff;
+                box-shadow: 0 0 4px $border-gray;
+                border-radius: 5px;
+                margin-bottom: 8px;
+                cursor: pointer;
+                &:hover {
+                    
+                }
+                &--blank {
+                    background-image: none;
+                }
+                &--line {
+                    background-image: url('../img/linear.png');
+                }
+                &--cage {
+                    background-image: url('../img/cage.jpg');
+                }
+            }
+        }
     }
     &__sublist {
         padding-top: 15px;
@@ -1825,3 +1886,5 @@ $lblue-gray: #90a4ae;
         }
     }
 }
+
+

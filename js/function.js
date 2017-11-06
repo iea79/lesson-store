@@ -119,5 +119,16 @@ $(document).ready(function(){
 		$(this).closest('.traning__list_item').find('.traning__sublist').slideToggle(300);
 	});
 
+    $( ".traning__list" ).sortable();
+    $( ".traning__list" ).disableSelection();
+
+    $('.traning__field_toggle-item').on('click', function() {
+    	var style = $(this).data('style');
+    	var field = $(this).closest('.traning__field_wrap').find('.traning__field');
+
+    	field.removeClass('traning__field--blank traning__field--line traning__field--cage');
+    	field.addClass('traning__field--'+style+'');
+    });
+
 });
 
