@@ -10,3 +10,26 @@
 		display: inline-block;
 	}
 }
+
+.icon-plus {
+	position: relative;
+	padding-left: 45px;
+	line-height: 1;
+	display: inline-block;
+	&:before {
+		content: '+';
+		position: absolute;
+		left: 0;
+		top: 50%;
+		margin-top: -15px;
+		font-size: 24px;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		font-weight: 300;
+		display: block;
+		border: 1px solid;
+		border-radius: 30px;
+		text-align: center;
+	}
+}

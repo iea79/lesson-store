@@ -1,0 +1,88 @@
+extends templates/layout.jade
+
+block title
+    title Create Traning
+
+block aside
+    .aside.aside__left
+        .discipline 
+            .discipline__img 
+                img(src="img/matematika.png")
+            .discipline__name Математика
+            .discipline__sub 
+                |5 класс 
+                a(href="#") Изменить
+
+block content
+    .wihite__box.shadow
+        .traning
+            .traning__top 
+                a(href="#").button.button__blue.button__question 
+                    |Вопросы и ответы
+                    .fa.fa-question
+                a(href="#").button.button__round Создать пуcтую тренировку
+                .button__group_flip 
+                    .button.button__round.button__green--full Создать
+            .task__content
+                .task__row
+                    .task__row_item.task__row_item--left  
+                        a(href="#").icon-plus Делимость чисел
+                    .task__row_item.task__row_item--center  75 заданий
+                    .task__row_item.task__row_item--right.task__count_add 
+                        .task__count_add-label.show Введите кол-во заданий
+                        .task__count_add-rezult 14
+                        .task__count_add-field 
+                           input(type="text" placeholder="Кол-во задач")
+                           .fa.fa-book
+                .task__row
+                    .task__row_item.task__row_item--left  
+                        a(href="#").icon-plus Обыкновенные дроби
+                    .task__row_item.task__row_item--center  75 заданий
+                    .task__row_item.task__row_item--right.task__count_add 
+                        .task__count_add-label Введите кол-во заданий
+                        .task__count_add-rezult.show 14
+                        .task__count_add-field 
+                           input(type="text" placeholder="Кол-во задач")
+                           .fa.fa-book
+                .task__row
+                    .task__row_item.task__row_item--left  
+                        a(href="#").icon-plus Делимость чисел
+                    .task__row_item.task__row_item--center  75 заданий
+                    .task__row_item.task__row_item--right.task__count_add 
+                        .task__count_add-label Введите кол-во заданий
+                        .task__count_add-rezult 14
+                        .task__count_add-field.show 
+                           input(type="text" placeholder="Кол-во задач")
+                           .fa.fa-book
+                .task__row
+                    .task__row_item.task__row_item--left  
+                        a(href="#").icon-plus Делимость чисел
+                    .task__row_item.task__row_item--center  75 заданий
+                    .task__row_item.task__row_item--right.task__count_add 
+                        .task__count_add-label.show Введите кол-во заданий
+                        .task__count_add-rezult 14
+                        .task__count_add-field 
+                           input(type="text" placeholder="Кол-во задач")
+                           .fa.fa-book
+                .task__row.task__row_sub
+                    .task__row_item.task__row_item--left 
+                        a(href="#").icon-plus Делимость чисел
+                    .task__row_item.task__row_item--center 75 заданий
+                    .task__row_item.task__row_item--right.task__count_add 
+                        .task__count_add-label.show Введите кол-во заданий
+                        .task__count_add-rezult 14
+                        .task__count_add-field 
+                           input(type="text" placeholder="Кол-во задач")
+                           .fa.fa-book
+                .task__row.task__row_sub
+                    .task__row_item.task__row_item--left 
+                        a(href="#").icon-plus Делимость чисел
+                    .task__row_item.task__row_item--center 75 заданий
+                    .task__row_item.task__row_item--right.task__count_add 
+                        .task__count_add-label.show Введите кол-во заданий
+                        .task__count_add-rezult 14
+                        .task__count_add-field 
+                           input(type="text" placeholder="Кол-во задач")
+                           .fa.fa-book
+
+

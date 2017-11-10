@@ -130,5 +130,30 @@ $(document).ready(function(){
     	field.addClass('traning__field--'+style+'');
     });
 
+    $('.task__count_add-label').on('click', function(event) {
+    	event.preventDefault();
+    	var wrap = $(this).closest('.task__count_add');
+    	var field = wrap.find('.task__count_add-field');
+    	$(this).removeClass('show');
+    	field.addClass('show');
+    	field.find('input').focus();
+    });
+
+    $('.task__count_add-field input').on('blur', function() {
+    	var wrap = $(this).closest('.task__count_add');
+    	var fieldWrap = wrap.find('.task__count_add-field');
+    	var rezult = wrap.find('.task__count_add-rezult');
+    	var label = wrap.find('.task__count_add-label');
+
+    	if ($(this).val() !== '') {
+    		fieldWrap.removeClass('show');
+    		rezult.html($(this).val()).addClass('show');
+    	} else {
+    		fieldWrap.removeClass('show');
+    		label.addClass('show');
+    	}
+
+    });
+
 });
 

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&subset=cyrillic,cyrillic-ext,latin-ext");
-.grid:after, .wrapper:after, .button__group:after, .button__group_flip:after, .traning__top:after, .traning__top .button__group_flip:after, .traning__list_item:after, .traning__field_wrap:after, .traning__sublist_row:after, .crm__header:after, .crm__container:after, .crm__content:after, .store__ban_title-text:after, .store__filter:after, .store__filter_bottom:after, .send__traning:after, .send__traning_top:after, .send__traning_bottom:after, .send__traning_form:after {
+.grid:after, .wrapper:after, .button__group:after, .button__group_flip:after, .traning__top:after, .traning__top .button__group_flip:after, .traning__list_item:after, .traning__field_wrap:after, .traning__sublist_row:after, .crm__header:after, .crm__container:after, .crm__content:after, .store__ban_title-text:after, .store__filter:after, .store__filter_bottom:after, .send__traning:after, .send__traning_top:after, .send__traning_bottom:after, .send__traning_form:after, .discipline:after, .task__row:after, .task__count_add:after {
   content: '';
   display: table;
   clear: both; }
@@ -9,7 +9,7 @@
   display: table;
   clear: both; }
 
-.shadow, .crm__header_right .profile__dropdown, .store__filter, .grid__cube .grid__item, .send__traning_drop-item {
+.shadow, .crm__header_right .profile__dropdown, .store__filter, .grid__cube .grid__item, .send__traning_drop-item, .discipline {
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1); }
 
@@ -168,6 +168,27 @@ img {
   width: 24px;
   height: 27px;
   display: inline-block; }
+
+.icon-plus {
+  position: relative;
+  padding-left: 45px;
+  line-height: 1;
+  display: inline-block; }
+  .icon-plus:before {
+    content: '+';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -15px;
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: 300;
+    display: block;
+    border: 1px solid;
+    border-radius: 30px;
+    text-align: center; }
 
 .modal {
   display: none;
@@ -2087,11 +2108,14 @@ a.ui-button:active,
   .traning__top .button {
     margin-bottom: 10px; }
     .traning__top .button__question {
-      float: left; }
+      float: left;
+      margin-right: 10px; }
     .traning__top .button__group_flip {
       float: right;
       display: inline-block;
       white-space: nowrap; }
+  .traning__top + .event__content {
+    margin-top: 25px; }
 
 .traning__list {
   margin-top: 25px;
@@ -2635,9 +2659,19 @@ a.ui-button:active,
 
 .aside {
   float: right; }
+  .aside__left {
+    float: left;
+    margin: 30px 0 30px 30px; }
   @media (max-width: 1199px) {
     .aside {
-      float: none; } }
+      float: none; }
+      .aside__left {
+        float: none;
+        margin: 30px 30px 0 30px; } }
+  @media (max-width: 767px) {
+    .aside__left {
+      float: none;
+      margin: 10px 10px 0 10px; } }
 
 .tab-menu {
   padding: 0 30px;
@@ -3213,5 +3247,125 @@ a.ui-button:active,
       position: absolute;
       border-right: 1px solid #eaeaea;
       border-radius: 5px; }
+
+.discipline {
+  text-align: center;
+  background-color: #fff;
+  padding: 50px 30px;
+  width: 300px; }
+  .discipline__img {
+    margin-bottom: 20px; }
+  .discipline__name {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px; }
+  .discipline__sub {
+    font-size: 16px; }
+    .discipline__sub a {
+      font-size: 13px; }
+  @media (max-width: 1199px) {
+    .discipline {
+      width: 100%;
+      padding: 20px;
+      text-align: left; }
+      .discipline__img {
+        float: left;
+        margin-right: 25px;
+        margin-bottom: 0; } }
+
+.task__content {
+  margin-top: 25px; }
+
+.task__row {
+  display: table;
+  width: 100%;
+  margin-bottom: 15px;
+  background-color: #f8f9fc;
+  text-align: left;
+  height: 60px; }
+  .task__row_item {
+    display: table-cell;
+    padding: 15px;
+    vertical-align: middle; }
+    .task__row_item--left {
+      width: 34%; }
+    .task__row_item--right {
+      text-align: right;
+      width: 30%; }
+  .task__row_sub {
+    margin-top: -15px; }
+    .task__row_sub .task__row_item--left {
+      padding-left: 56px;
+      width: 40%;
+      position: relative; }
+      .task__row_sub .task__row_item--left:before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 22px;
+        left: 30px;
+        top: 50%;
+        border-top: 1px solid #4785fc; }
+      .task__row_sub .task__row_item--left:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: -10px;
+        left: 30px;
+        height: 41px;
+        border-right: 1px solid #4785fc; }
+    .task__row_sub + .task__row_sub .task__row_item--left:after {
+      top: -30px;
+      left: 30px;
+      height: 61px; }
+
+.task__count_add {
+  width: 36%; }
+
+.task__count_add-label {
+  display: none;
+  color: #d8dadf;
+  font-weight: 700;
+  font-size: 20px;
+  cursor: pointer; }
+  .task__count_add-label:hover {
+    color: #27a9f8; }
+
+.task__count_add-rezult {
+  display: none;
+  color: #4785fc;
+  font-weight: 700;
+  font-size: 17px; }
+
+.task__count_add-field {
+  display: none;
+  position: relative;
+  float: right;
+  width: 130px; }
+  .task__count_add-field .fa {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #d8dadf;
+    width: 29px;
+    text-align: center;
+    line-height: 29px;
+    font-size: 12px;
+    border-right: 1px solid #d8dadf; }
+  .task__count_add-field input {
+    width: 100%;
+    padding: 6px;
+    padding-left: 34px;
+    color: #222222;
+    border-radius: 5px;
+    border: 1px solid #d8dadf; }
+    .task__count_add-field input::-webkit-input-placeholder {
+      color: #d8dadf; }
+    .task__count_add-field input:-moz-placeholder {
+      color: #d8dadf; }
+    .task__count_add-field input::-moz-placeholder {
+      color: #d8dadf; }
+    .task__count_add-field input:-ms-input-placeholder {
+      color: #d8dadf; }
 
 /*# sourceMappingURL=style.css.map */
