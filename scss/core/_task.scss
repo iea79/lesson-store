@@ -31,7 +31,7 @@
                         &:before {
                             content: '-';
                             font-size: 30px;
-                            line-height: 23px;
+                            line-height: 22px;
                         }
                     }
                 }
@@ -117,6 +117,7 @@
             position: relative;
             float: right;
             width: 130px;
+            overflow: hidden;
             .fa {
                 position: absolute;
                 left: 0;

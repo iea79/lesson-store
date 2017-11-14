@@ -183,7 +183,7 @@ img {
     font-size: 20px;
     width: 24px;
     height: 24px;
-    line-height: 25px;
+    line-height: 24px;
     font-weight: 300;
     display: block;
     border: 1px solid;
@@ -1471,7 +1471,8 @@ img {
   text-align: center;
   background-color: #fff;
   padding: 50px 30px;
-  width: 300px; }
+  width: 300px;
+  border-radius: 6px; }
   .discipline__img {
     margin-bottom: 20px; }
   .discipline__name {
@@ -1522,7 +1523,7 @@ img {
       .task__row_item--left.active .icon-plus:before {
         content: '-';
         font-size: 30px;
-        line-height: 23px; }
+        line-height: 22px; }
     .task__row_item--right {
       text-align: right;
       width: 30%; }
@@ -1581,7 +1582,8 @@ img {
   display: none;
   position: relative;
   float: right;
-  width: 130px; }
+  width: 130px;
+  overflow: hidden; }
   .task__count_add-field .fa {
     position: absolute;
     left: 0;

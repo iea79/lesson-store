@@ -166,5 +166,11 @@ $(document).ready(function(){
     	$(this).closest('.store__create').addClass('add');
     });
 
+    $('body').on('click', '.discipline__sub a', function(event) {
+    	event.preventDefault();
+    	$(this).parent().hide();
+    	$(this).closest('.discipline').find('.store__create').addClass('add');
+    });
+
 });
 

@@ -3,6 +3,7 @@
     background-color: #fff;
     padding: 50px 30px;
     width: 300px;
+    border-radius: 6px;
     @extend %shadow;
     @extend %clear_a;
     &__img {
