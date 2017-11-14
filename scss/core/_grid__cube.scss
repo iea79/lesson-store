@@ -42,6 +42,13 @@
     .button {
         border-radius: 18px;
     }
+    &_tree {
+        .grid {
+            &__wrapper {
+                width: 33%;
+            }
+        }
+    }
     @media (max-width: 991px) {
         .grid {
             &__wrapper {

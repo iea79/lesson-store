@@ -1251,6 +1251,9 @@ img {
 .grid__cube .button {
   border-radius: 18px; }
 
+.grid__cube_tree .grid__wrapper {
+  width: 33%; }
+
 @media (max-width: 991px) {
   .grid__cube .grid__wrapper {
     width: 49.9%; }
