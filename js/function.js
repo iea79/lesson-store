@@ -161,5 +161,10 @@ $(document).ready(function(){
     	$(this).closest('.task__row_wrap').find('.task__row_wrap').first().slideToggle();
     });
 
+    $('body').on('click', '.store__create_btn', function(event) {
+    	event.preventDefault();
+    	$(this).closest('.store__create').addClass('add');
+    });
+
 });
 

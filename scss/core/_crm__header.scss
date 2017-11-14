@@ -1,0 +1,192 @@
+.crm__header {
+    width: 100%; 
+    background: #fff;
+    border-bottom: 1px solid $border-gray;
+    margin-top: -1px;
+    @extend %clear_a;
+    &_left {
+        float: left;
+        width: 20%;
+        height: 75px;
+        border-right: 1px solid $border-gray;
+    }
+    .menu_toggle{
+        display: none;
+    }
+    &_center {
+        overflow: hidden;
+    }
+    .search {
+        position: relative;
+        margin-top: 17px;
+        display: inline-block;
+        input{
+            width: 250px;
+            padding: 12px 15px;
+            border: 1px solid $border-gray;
+            border-radius: 30px;
+            margin-left: 30px;
+            
+        }    
+        i {
+            position: absolute;
+            right: 20px;
+            top: calc(50% - 10px);
+            font-size: 20px;
+            color: $blue-gray;
+        }
+    }
+    &_right {
+        float: right;
+        height: 75px;
+        display: table;
+        i {
+            color: $blue-gray;
+            font-size: 20px;
+        }
+        .drop {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            height: 75px;
+            width: 75px;
+            border-left: 1px solid transparentize(#d3d3d3, .4);
+            cursor: pointer;
+            position: relative;
+            outline: 0;
+        }
+        .profile {
+            &__img{
+                width: 64%;
+                height: 64%;
+                display: inline-block;
+                overflow: hidden;
+                border-radius: 50%;
+            }
+            &__dropdown {
+                width: 225px;
+                position: absolute;
+                top: 76px;
+                right: 0;
+                background-color: #fff;
+                @extend %shadow;
+                z-index: 20;
+                display: none;
+                &_item {
+                    display: block;
+                    white-space: nowrap;
+                    text-align: left;
+                    font-size: 14px;
+                    &:hover {
+                        background: transparentize($blue, .3);
+                        text-decoration: none;
+                        .fa {
+                            color: #fff;
+                        }
+                    }
+                }
+                &_link {
+                    padding: 12px 24px;
+                    display: block;
+                    color: $blue-gray;
+                    &:hover {
+                        text-decoration: none;
+                        color: #fff;
+                    }
+                }
+                .fa {
+                   font-size: 14px;
+                   margin-right: 10px;
+                   width: 20px; 
+                }
+            }
+            // &.open {
+            //     .profile__dropdown {
+            //         display: block;
+            //     }
+            // }
+        }
+    }
+    @media (max-width: 991px) {
+        height: 60px;
+        &_left {
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            white-space: nowrap;
+        }
+        .search {
+            margin-top: 9px;
+            input {
+                margin-left: 9px;
+            }
+        }
+        .menu_toggle {
+            display: block;
+            line-height: 60px;
+            font-size: 22px;
+            color: $blue-gray;
+            cursor: pointer;
+            &:focus {
+                color: darken($blue-gray, 10%);
+            }
+        }
+        &_right {
+            height: 60px;
+            .drop {
+                width: 60px;
+                height: 60px;
+            }
+            .profile {
+                &__dropdown {
+                    top: 60px;
+                }
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        &_center {
+            float: left;
+            overflow: initial;
+            input {
+                // display: none;
+            }
+        }
+        .search {
+            display: none;
+            position: absolute;
+            top: 59px;
+            padding: 10px;
+            left: 0;
+            right: 0;
+            z-index: 10;
+            background-color: #fff;
+            height: 60px;
+            margin-top: 0;
+            box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.1);
+            // width: 100%;
+            input {
+                width: 100%;
+                margin: 0;
+            }
+            &__toggle {
+                font-size: 20px;
+                line-height: 60px;
+                width: 60px;
+                text-align: center;
+                color: $blue-gray;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+            &.open {
+                display: block;
+            }
+        }
+        &_right {
+            i {
+                font-size: 16px;
+            }
+        }
+    }
+}

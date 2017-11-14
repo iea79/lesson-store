@@ -1,0 +1,31 @@
+.table__row {
+    display: table;
+    width: 100%;
+    // table-layout: fixed;
+    &_item {
+        display: table-cell;
+        padding: 5px;
+        .button__group {
+            white-space: nowrap;
+            text-align: right;
+            .button {
+                &:not(:last-child) {
+                    margin-right: 10px;
+                }
+            }
+        }
+        &:last-child {
+            text-align: right;            
+        }
+    }
+    &_label {
+        display: block;
+    }
+    &_sub {
+        display: block;
+        color: $blue-gray;
+    }
+    &+.table__row {
+        margin-top: 15px;
+    }
+}

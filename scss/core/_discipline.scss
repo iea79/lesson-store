@@ -1,0 +1,37 @@
+.discipline {
+    text-align: center;
+    background-color: #fff;
+    padding: 50px 30px;
+    width: 300px;
+    @extend %shadow;
+    @extend %clear_a;
+    &__img {
+        margin-bottom: 20px;
+    }
+    &__name {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    &__sub {
+        font-size: 16px;
+        a {
+            font-size: 13px;
+        }
+    }
+    @media (max-width: 1440px) {
+        width: 200px;
+        padding: 35px 20px;
+    }
+    @media (max-width: 1199px) {
+        width: 100%;
+        padding: 20px;
+        text-align: left;
+        &__img {
+            float: left;
+            margin-right: 20px;
+            margin-bottom: 0;
+            max-width: 50px;
+        }
+    }
+}

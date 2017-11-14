@@ -1,0 +1,101 @@
+.tab {
+    &-menu {
+        padding: 0 30px;
+        width: 100%;
+        border-bottom: 1px solid #eee;
+        background: #fff;
+        display: table;
+        &__label{
+            display: table-cell;
+            text-align: center;
+            padding: 22px 5px;
+            color: $lblue-gray;
+            font-weight:  400 ;
+            cursor: pointer;
+            &:hover,&.active {
+                border-bottom: 3px solid $light-blue;
+                //color: $blue;
+                padding-bottom: 19px;
+            }
+        }
+        &--short {
+            // width: auto;
+            .tab-menu__label {
+                display: inline-block;
+                margin: 0 15px;
+            }
+        }
+
+    }
+    &-content {
+        position: relative;
+        &.disabled {
+            &:after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                z-index: 9;
+                background-color: transparentize(#fff, .2);
+            }
+        }
+        &__item {
+            background: #fff;
+            padding: 30px;
+            display: none;
+            &.active {
+
+            }
+        }
+        .event{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: $light-gray;
+            padding: 15px 30px 15px 15px;
+            margin-bottom: 15px;
+            text-align: left;
+
+            img{
+                height: 45px;
+                border-radius: 50px;
+            }
+
+            .button{
+                width: 110px;
+                background: rgba(0,0,0,0);
+                text-align: center;
+            }
+        }
+
+    }
+    @media (max-width: 991px) {
+        &-menu {
+            padding: 0 10px;
+            &__label {
+
+            }
+        }
+        &-content {
+            &__item {
+                padding: 15px;
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        &-menu {
+            display: block;
+            padding: 0;
+            &__label {
+                display: block;
+            }
+        }
+        &-content {
+            &__item {
+                padding: 15px;
+            }
+        }
+    }
+}
