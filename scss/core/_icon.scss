@@ -13,7 +13,7 @@
 
 .icon-plus {
 	position: relative;
-	padding-left: 45px;
+	padding-left: 37px;
 	line-height: 1;
 	display: inline-block;
 	&:before {
@@ -21,15 +21,29 @@
 		position: absolute;
 		left: 0;
 		top: 50%;
-		margin-top: -15px;
-		font-size: 24px;
-		width: 30px;
-		height: 30px;
-		line-height: 30px;
+		margin-top: -12px;
+		font-size: 20px;
+		width: 24px;
+		height: 24px;
+		line-height: 25px;
 		font-weight: 300;
 		display: block;
 		border: 1px solid;
 		border-radius: 30px;
 		text-align: center;
+		background-color: $light-gray;
+		z-index: 3;
+	}
+	&:hover {
+		text-decoration: none;
+		&:before {
+			color: #fff;
+			background-color: $blue;
+		}
+	}
+	&.active {
+		&:before {
+			content: '-';
+		}
 	}
 }
