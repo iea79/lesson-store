@@ -1,0 +1,70 @@
+extends templates/layout.jade
+
+block title
+    title Premium
+
+block content
+    .premium
+        .store__ban
+            img(src="img/premium.jpg", alt="")
+            .store__ban_title-wrap
+                .store__ban_title
+                    .store__ban_title-text Премиум возможности для <br>работы и учебы
+        .premium__title Премиум-учитель
+        // begin premium__grid
+        .grid.premium__grid(data-grid-match)
+            .grid__wrapper
+                .grid__item 
+                    .premium__grid_title Стартовый
+                    .premium__grid_price от 399 
+                        span Рублей
+                    .premium__grid_list 
+                        .premium__grid_list-item Добавляйте себе учеников
+                        .premium__grid_list-item Объединяйте их в группы
+                        .premium__grid_list-item Создавайте заметки
+                        .premium__grid_list-item Ведите учет занятий, домашних заданий и успехов своих учеников
+                    .premium__grid_action 
+                        .premium__grid_select 
+                            select 
+                                option 1 месяц / 399 рублей
+                                option 1 месяц / 399 рублей
+                                option 1 месяц / 399 рублей
+                        a(href="#").button.button__blue--full.button__round Подключить
+            .grid__wrapper
+                .grid__item 
+                    .premium__grid_title Продвинутый
+                    .premium__grid_price от 599 
+                        span Рублей
+                    .premium__grid_list 
+                        .premium__grid_list-item Добавляйте себе учеников
+                        .premium__grid_list-item Объединяйте их в группы
+                        .premium__grid_list-item Создавайте заметки
+                        .premium__grid_list-item Ведите учет занятий, домашних заданий и успехов своих учеников
+                        .premium__grid_list-item Обменивайтесь с ними тренировками
+                    .premium__grid_action 
+                        .premium__grid_select 
+                            select 
+                                option 1 месяц / 399 рублей
+                                option 1 месяц / 399 рублей
+                                option 1 месяц / 399 рублей
+                        a(href="#").button.button__blue--full.button__round Подключить
+            .grid__wrapper
+                .grid__item 
+                    .premium__grid_title Платинум
+                    .premium__grid_price от 899 
+                        span Рублей
+                    .premium__grid_list 
+                        .premium__grid_list-item Добавляйте себе учеников
+                        .premium__grid_list-item Объединяйте их в группы
+                        .premium__grid_list-item Создавайте заметки
+                        .premium__grid_list-item Ведите учет занятий, домашних заданий и успехов своих учеников
+                        .premium__grid_list-item Обменивайтесь с ними тренировками
+                    .premium__grid_action 
+                        .premium__grid_select 
+                            select 
+                                option 1 месяц / 399 рублей
+                                option 1 месяц / 399 рублей
+                                option 1 месяц / 399 рублей
+                        a(href="#").button.button__blue--full.button__round Подключить
+        // end premium__grid
+        
