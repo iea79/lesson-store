@@ -60,12 +60,14 @@
                 }
             }
         }
-        i {
-            float: left;
-        }
-        span {
-            display: block;
-            overflow: hidden;
+        &_name {
+            i {
+                float: left;
+            }
+            span {
+                display: block;
+                overflow: hidden;
+            }
         }
     }
     &-toggle {
