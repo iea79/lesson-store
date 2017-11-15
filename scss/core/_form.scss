@@ -60,6 +60,15 @@
             color: #fff;
             background-color: $blue;
         }
+        &--full {
+            background-color: $blue;
+            color: #fff;
+            border-color: $blue;
+            &:hover {
+                color: $blue;
+                background-color: transparent;
+            }
+        }
     }
     &__green {
         color: $green;

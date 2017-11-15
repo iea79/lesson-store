@@ -30,17 +30,17 @@ $(document).ready(function(){
 
 	    // Высота плиток/grid
 	    if ('[data-grid-match]') {
-		    gridDef = 0;
+		    var gridDef = 0;
 		    $('[data-grid-match] .grid__item').removeAttr('style');
 		    $('[data-grid-match] > .grid__wrapper').each( function() {
 			    var gridHei = $(this).height();
 		    	if (gridDef < gridHei) {
 		    		gridDef = gridHei;
 		    	}
-				$('[data-grid-match] .grid__item').css('minHeight', gridDef);
-				// console.log(gridDef)
 		    });
-			// console.log(gridDef)
+			$('[data-grid-match] .grid__item').each(function() {
+				$(this).css('minHeight', gridDef);
+			});
 	    }
 	}
 
