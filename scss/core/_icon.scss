@@ -41,6 +41,17 @@
 			background-color: $blue;
 		}
 	}
+	&--empty {
+		&:before {
+			content: '' !important;
+		}
+		&:hover {
+			&:before {
+				color: $blue;
+				background-color: $light-gray;
+			}
+		}
+	}
 	&.active {
 		&:before {
 			content: '-';

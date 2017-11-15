@@ -196,6 +196,11 @@ img {
     .icon-plus:hover:before {
       color: #fff;
       background-color: #4785fc; }
+  .icon-plus--empty:before {
+    content: '' !important; }
+  .icon-plus--empty:hover:before {
+    color: #4785fc;
+    background-color: #f8f9fc; }
   .icon-plus.active:before {
     content: '-'; }
 
