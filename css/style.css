@@ -747,6 +747,11 @@ img {
         margin-top: -10px; }
     .crm__menu-item_accordeon .crm__menu-item_name {
       padding-right: 40px; }
+    .crm__menu-item i {
+      float: left; }
+    .crm__menu-item span {
+      display: block;
+      overflow: hidden; }
   .crm__menu-toggle {
     display: table;
     width: 100%;

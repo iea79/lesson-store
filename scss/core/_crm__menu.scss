@@ -60,6 +60,13 @@
                 }
             }
         }
+        i {
+            float: left;
+        }
+        span {
+            display: block;
+            overflow: hidden;
+        }
     }
     &-toggle {
         display: table;
