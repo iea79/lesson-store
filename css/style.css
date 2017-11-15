@@ -3425,7 +3425,7 @@ a.ui-button:active,
   padding-left: 20%;
   overflow-x: hidden;
   overflow-y: auto;
-  position: fixed;
+  position: absolute;
   background: #f8f9fc; }
   @media (max-width: 991px) {
     .crm__container {

@@ -105,6 +105,11 @@ $(document).ready(function(){
 		$('.profile__dropdown').slideToggle(300);
 	});
 
+	$('body').on('click', '.crm__header .bell', function(event) {
+        event.preventDefault();
+        $('.profile__dropdown.wallet').slideToggle(300);
+    });
+
 	$('body').on('click', '[data-traning-link]', function(event) {
 		event.preventDefault();
 		var id = $(this).data('traningLink');

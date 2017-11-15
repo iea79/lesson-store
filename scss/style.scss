@@ -65,7 +65,7 @@ $lblue-gray: #90a4ae;
     padding-left: 20%;
     overflow-x: hidden;
     overflow-y: auto;
-    position: fixed;
+    position: absolute;
     background: $light-gray;
     @extend %clear_a;
     @media (max-width: 991px) {
