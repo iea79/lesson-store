@@ -480,7 +480,7 @@ $lblue-gray: #90a4ae;
             right: 52px;
             width: 43.27%;
             height: 64.43%;
-            background: url('../img/promo-people.png') no-repeat;
+            background: url('../img/promo-people.png') no-repeat bottom right;
             background-size: 100%;
         }
     }
@@ -522,8 +522,8 @@ $lblue-gray: #90a4ae;
     }
     @media (max-width: 1199px) {
         .modal-content:before {
-            bottom: auto;
-            top: 125px;
+            // bottom: auto;
+            // top: 125px;
         }
         .modal-body {
             &_p {

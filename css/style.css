@@ -3786,7 +3786,7 @@ a.ui-button:active,
     right: 52px;
     width: 43.27%;
     height: 64.43%;
-    background: url("../img/promo-people.png") no-repeat;
+    background: url("../img/promo-people.png") no-repeat bottom right;
     background-size: 100%; }
 
 .modal__promocode .modal-header {
@@ -3821,9 +3821,6 @@ a.ui-button:active,
     letter-spacing: 0.8px; }
 
 @media (max-width: 1199px) {
-  .modal__promocode .modal-content:before {
-    bottom: auto;
-    top: 125px; }
   .modal__promocode .modal-body_p {
     width: 55%; } }
 

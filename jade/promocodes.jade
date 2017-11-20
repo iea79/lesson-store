@@ -118,11 +118,12 @@ block content
 
     // http://joxi.ru/bmooOZYIx8bO1m
     // Button trigger modal modal__promocode
-    // button(data-toggle="modal" data-target="#modal__promocode") Click to open modal
+    button(data-toggle="modal" data-target="#modal__promocode") Click to open modal
     // begin Modal modal__promocode 
     .modal.fade.modal__promocode#modal__promocode
         .modal-dialog
-            .modal-content
+            .modal-content 
+                a(href="#" class="modal-close" data-dismiss="modal")
                 .modal__promocode_wrap
                     .modal-header Получайте бонусы за каждого приглашенного друга
                     
