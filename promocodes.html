@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Promocodes</title>
+    <script src="https://use.fontawesome.com/d2e3dc5d54.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/modal.js"> </script>
+    <script src="js/jquery-ui.min.js"> </script>
+    <script src="js/function.js"> </script>
+    <link href="css/style.css?01.10.b" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- begin header-->
+      <header class="crm__header">
+        <!-- crm__header_left-->
+        <div class="crm__header_left">
+          <div class="menu_toggle fa fa-reorder"></div>
+        </div>
+        <!-- right-buttons-->
+        <div class="crm__header_right"><a class="drop bell" href="#"><i class="fa fa-bell"></i></a><a class="drop bell" href="#"><i class="fa fa-envelope"></i></a>
+          <div class="drop profile">
+            <div class="profile__img"><img src="img/1.png"/></div>
+          </div>
+          <div class="profile__dropdown"> 
+            <div class="profile__dropdown_item"><a class="profile__dropdown_link" href="/"> <i class="fa fa-credit-card"> </i>Кошелек</a></div>
+            <div class="profile__dropdown_item"><a class="profile__dropdown_link" href="#"> <i class="fa fa-gear"></i>Настройки</a></div>
+            <div class="profile__dropdown_item"><a class="profile__dropdown_link" href="#"> <i class="fa fa-external-link"></i>Выйти</a></div>
+          </div>
+        </div>
+        <!-- search-->
+        <div class="crm__header_center"><a class="fa fa-search search__toggle visible-xs" href="#"></a>
+          <div class="search">
+            <input type="text" placeholder="Поиск"/><i class="fa fa-search"></i>
+          </div>
+        </div>
+      </header>
+      <!-- end header-->
+      <!-- begin menu-->
+      <div class="crm__menu">
+        <ul class="crm__menu-list">
+          <li class="crm__menu-item"><a class="crm__menu-toggle" href="#"><i class="fa fa-user-o"></i><span class="crm__menu-item_name">Профиль</span></a></li>
+          <li class="crm__menu-item"><a class="crm__menu-toggle" href="#"><i class="fa fa-copy"></i><span class="crm__menu-item_name">Уроки</span></a></li>
+          <li class="crm__menu-item crm__menu-item_accordeon"> <a class="crm__menu-toggle" href="#"><i class="fa fa-calculator"></i><span class="crm__menu-item_name">Тренировки</span></a>
+            <ul class="crm__menu-sub">
+              <li class="crm__menu-sub_item"><a class="crm__menu-sub_link" href="#">Активный</a></li>
+              <li class="crm__menu-sub_item"><a class="crm__menu-sub_link" href="#">Не активный</a></li>
+              <li class="crm__menu-sub_item"><a class="crm__menu-sub_link" href="#">Не активный</a></li>
+            </ul>
+          </li>
+          <li class="crm__menu-item crm__menu-item_accordeon"> <span class="crm__menu-toggle"><i class="fa fa-envelope-o"></i><span class="crm__menu-item_name">Сообщения             </span></span>
+            <ul class="crm__menu-sub">
+              <li class="crm__menu-sub_item"><a class="crm__menu-sub_link" href="#">Активный</a></li>
+              <li class="crm__menu-sub_item"><a class="crm__menu-sub_link" href="#">Не активный</a></li>
+              <li class="crm__menu-sub_item"><a class="crm__menu-sub_link" href="#">Не активный</a></li>
+            </ul>
+          </li>
+          <li class="crm__menu-item"><a class="crm__menu-toggle" href="#"><i class="fa fa-tags"></i><span class="crm__menu-item_name">Промокоды</span></a></li>
+        </ul>
+      </div>
+      <!-- end menu-->
+      <!-- begin content-->
+      <div class="crm__container">
+        <!-- begin aside-->
+        <!-- end aside-->
+        <div class="crm__content">
+          <div class="profile__persons shadow">
+            <div class="profile__persons-header">
+              <div class="img-circle"><img src="img/1.png"/></div>
+              <h3 class="profile__persons-title">Алексей Умный</h3>
+              <div class="profile__persons-proof">Преподаватель</div><a class="button curve button__green" href="#">Добавить в друзья</a>
+              <button class="button curve button__blue" href="#">Написать                    </button><a class="button curve button__reverse" href="#"> <span>first</span><span>second</span></a><a class="button curve button__reverse button__red" href="#"> <span>first</span><span>second  </span></a>
+              <div class="button__group button__group-2">
+                <div><a class="button curve">принять                           </a></div>
+                <div><a class="button curve button__red">отказать                            </a></div>
+              </div>
+            </div>
+            <div class="profile__persons-info">
+              <div class="profile__persons-info_names"><i class="fa fa-suitcase profile__fa" aria-hidden="true"></i>образование</div>
+              <ul class="profile__persons-info_list">
+                <li>
+                  <p class="period">2010 - 2016</p>
+                  <p>МГУ</p>
+                </li>
+                <li>
+                  <p class="period">2002 - 2010</p>
+                  <p>Лицей                                    </p>
+                </li>
+                <li>
+                  <p class="period">2002 - 2010</p>
+                  <p>Лицей                                                                    </p>
+                </li>
+              </ul>
+              <div class="profile__persons-info_names"><i class="fa fa-trophy profile__fa" aria-hidden="true"></i>достижения</div>
+              <ul class="profile__persons-info_list">
+                <li>
+                  <p class="period">2010 - 2011</p>
+                  <p>Сертификация</p>
+                </li>
+              </ul>
+              <div class="profile__persons-info_names"><i class="fa fa-lightbulb-o profile__fa" aria-hidden="true"></i>навыки и умения</div>
+              <div class="store__filter_bottom-tags profile__bottom-tags"><a class="button button__tag profile__button-tag" href="#">Английский язык</a><a class="button button__tag profile__button-tag" href="#">Умный</a></div>
+            </div>
+          </div>
+          <div class="profile__events shadow">
+            <div class="tab-menu__wrap tab-menu__wrap-with--btn"><a class="button curve button__green button__green-right" href="#">Пригласить друзей</a>
+              <div class="tab-menu tab-menu-left">
+                <div class="tab-menu__label tab-menu__label-left active" data-tab="tab5">Мои промокоды</div>
+                <div class="tab-menu__label tab-menu__label-left" data-tab="tab6">Активированные</div>
+              </div>
+            </div>
+            <div class="tab-content" id="width-check">
+              <div class="tab-content__item event__content show" id="tab5">
+                <div class="promocode grid">
+                  <div class="grid__wrapper promocode__wrap">
+                    <input class="promocode__radio" type="radio" name="promo" checked="checked" id="r1"/>
+                    <label class="promocode__item promocode__item--active promocode__item--checked" for="r1">
+                      <div class="promocode__left">
+                        <div class="promocode__code">B364CGHN0K</div>
+                        <div class="promocode__gift">300 р. на бумажник</div>
+                        <div class="promocode__time">Доступен до 
+                          <div class="promocode__date">18 Сентября 2018</div>
+                        </div>
+                      </div><a class="promocode__right" href="#" data-toggle="modal" data-target="#modal__promocode"></a>
+                    </label>
+                  </div>
+                  <div class="grid__wrapper promocode__wrap">
+                    <input class="promocode__radio" type="radio" name="promo" id="r2"/>
+                    <label class="promocode__item promocode__item--active" for="r2">
+                      <div class="promocode__left">
+                        <div class="promocode__code">DKFKTC4D</div>
+                        <div class="promocode__gift">Премиум-учитель на 3 месяца</div>
+                        <div class="promocode__time">Доступен до 
+                          <div class="promocode__date">18 Декабря 2018</div>
+                        </div>
+                      </div><a class="promocode__right" href="#" data-toggle="modal" data-target="#modal__promocode"></a>
+                    </label>
+                  </div>
+                </div>
+                <div class="promocode__bottom"> 
+                  <input class="promocode__field" type="text" placeholder="Или введите промокод здесь"/>
+                  <button class="button button__green--full button__round">Активировать промокод</button>
+                </div>
+              </div>
+              <div class="tab-content__item event__content" id="tab6">
+                <div class="promocode grid">
+                  <div class="grid__wrapper promocode__wrap">
+                    <div class="promocode__item">
+                      <div class="promocode__left">
+                        <div class="promocode__code">B364CGHN0K</div>
+                        <div class="promocode__gift">300 р. на бумажник</div>
+                        <div class="promocode__time">Доступен до 
+                          <div class="promocode__date">18 Сентября 2018</div>
+                        </div>
+                      </div><a class="promocode__right" href="#" data-toggle="modal" data-target="#modal__promocode"></a>
+                    </div>
+                  </div>
+                  <div class="grid__wrapper promocode__wrap">
+                    <div class="promocode__item">
+                      <div class="promocode__left">
+                        <div class="promocode__code">DKFKTC4D</div>
+                        <div class="promocode__gift">Премиум-учитель на 3 месяца</div>
+                        <div class="promocode__time">Доступен до 
+                          <div class="promocode__date">18 Декабря 2018</div>
+                        </div>
+                      </div><a class="promocode__right" href="#" data-toggle="modal" data-target="#modal__promocode"></a>
+                    </div>
+                  </div>
+                  <div class="grid__wrapper promocode__wrap">
+                    <div class="promocode__item">
+                      <div class="promocode__left">
+                        <div class="promocode__code">DKFKTC4D</div>
+                        <div class="promocode__gift">Премиум-учитель на 3 месяца</div>
+                        <div class="promocode__time">Доступен до 
+                          <div class="promocode__date">18 Декабря 2018</div>
+                        </div>
+                      </div><a class="promocode__right" href="#" data-toggle="modal" data-target="#modal__promocode">     </a>
+                    </div>
+                  </div>
+                  <div class="grid__wrapper promocode__wrap">
+                    <div class="promocode__item">
+                      <div class="promocode__left">
+                        <div class="promocode__code">B364CGHN0K</div>
+                        <div class="promocode__gift">300 р. на бумажник</div>
+                        <div class="promocode__time">Доступен до 
+                          <div class="promocode__date">18 Сентября 2018</div>
+                        </div>
+                      </div><a class="promocode__right" href="#" data-toggle="modal" data-target="#modal__promocode"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- http://joxi.ru/bmooOZYIx8bO1m-->
+          <!-- Button trigger modal modal__promocode-->
+          <!-- button(data-toggle="modal" data-target="#modal__promocode") Click to open modal-->
+          <!-- begin Modal modal__promocode -->
+          <div class="modal fade modal__promocode" id="modal__promocode">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal__promocode_wrap">
+                  <div class="modal-header">Получайте бонусы за каждого приглашенного друга</div>
+                  <div class="modal-body">
+                    <div class="modal-body_p">Отправьте промокод вашему другу и пригласите его зарегистрироваться в Арете Онлайн. Как только он зарегистрирует учетную запись с этим промокодом, и он, и вы получите по 200 рублей в Арете-Бумажник.</div>
+                  </div>
+                  <div class="modal-footer">
+                    <div class="modal-footer_item modal-footer-promocode">DKFKTC4D</div>
+                    <div class="modal-footer_item button button__green--full">Скопировать промокод</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end modal modal__no-purchase-->
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+  </body>
+</html>

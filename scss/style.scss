@@ -321,3 +321,263 @@ $lblue-gray: #90a4ae;
         }
     }
 }
+
+.promocode {
+    width: auto;
+    margin-left: -40px;
+    @media (max-width: 1365px) {
+        margin-left: 0;
+    }
+    &__wrap {
+        width: 33%;
+        padding-left: 40px;
+        @media (max-width: 1560px) {
+            width: 50%;
+        }
+        @media (max-width: 1365px) {
+            width: 70%;
+            padding-left: 0;
+        }
+        @media (max-width: 1199px) {
+            width: 100%;
+        }
+    }
+    &__radio {
+        display: none;
+        &:checked {
+            &+.promocode {
+                &__item {
+                    border: 2px solid red;
+                    .promocode__left {            
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            display: block;
+                            top: 50%;
+                            left: -15px;
+                            margin-top: -13px;
+                            height: 20px;
+                            width: 20px;
+                            border-radius: 50%;
+                            border: 2px solid red;
+                            z-index: 4;
+                        }
+                        &:before {
+                            content: '';
+                            position: absolute;
+                            display: block;
+                            top: 50%;
+                            left: -17px;
+                            margin-top: -14px;
+                            height: 26px;
+                            width: 15px;
+                            background-color: #fff;
+                            z-index: 5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        border: 2px solid transparent;
+        display: block;
+        z-index: 1;
+        color: rgba(144, 164, 174, 0.4);
+        font-size: 14px;
+        background-color: #fff;
+        box-shadow: 0 3px 10px rgba(34, 34, 34, 0.1);
+        border-radius: 6px;
+        @extend %clear_a;
+        &:before {
+            content: url('../img/promo-circle.jpg');
+            position: absolute;
+            top: 50%;
+            margin-top: -12px;
+            left: -10px;
+            z-index: 3;
+        }
+        &--active {
+            cursor: pointer;
+            .promocode {
+                &__code {
+                    color: #000;
+                }
+                &__gift {
+                    color: #000;
+                }
+            }
+        }
+    }
+    &__left {
+        width: 83.6%;
+        padding: 20px 15px 20px 37px;
+        float: left;
+    }
+    &__right {
+        height: 100%;
+        overflow: hidden;
+        display: block;
+        background: url('../img/info.svg') no-repeat center center;
+        border-left: 1px dashed rgba(144, 164, 174, 0.4);
+    }
+    &__code {
+        margin-bottom: 5px;
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 0.32px;
+    }
+    &__gift {
+        max-height: 32px;
+        overflow: hidden;
+        margin-bottom: 8px;
+    }
+    &__time {
+        max-height: 30px;
+        overflow: hidden;
+        font-size: 13px;
+    }
+    &__date {
+        display: inline;
+    }
+    &__field {
+        border: none;
+        border-bottom: 2px solid $blue-gray;
+        margin-bottom: 20px;
+        padding: 8px 0;
+        display: block;
+        width: 218px;
+    }
+    &__bottom {
+        .button {
+            width: auto;
+        }
+    }
+}
+
+
+.modal__promocode {
+    .modal-dialog {
+        max-width: 1190px;
+        padding: 0;
+        margin: auto;
+        background-color: #fff;
+    }
+    .modal-content {
+        position: relative;
+        height: 100%;
+        padding: 37px 58px 58px;
+        color: #222222;
+        border: 1px solid #939aab;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: -4px;
+            right: 52px;
+            width: 43.27%;
+            height: 64.43%;
+            background: url('../img/promo-people.png') no-repeat;
+            background-size: 100%;
+        }
+    }
+    .modal-header {
+        margin-bottom: 28px;
+        font-size: 36px;
+        font-weight: 500;
+        letter-spacing: 0.72px;
+    }
+    .modal-body {
+        margin-bottom: 115px;
+        font-size: 26px;
+        line-height: 40px;
+        letter-spacing: 0.52px;
+        &_p {
+            width: 47%;
+        }
+    }
+    .modal-footer {
+        border-top: 0;
+        padding: 0;
+        @extend %clear_a;
+        &_item {
+            float: left;
+            &:nth-child(2) {
+                padding: 13px 28px;
+                margin-left: 37px;
+                font-size: 16px;
+                letter-spacing: 0.32px;
+                border-radius: 22px;
+            }
+        }
+        &-promocode {
+            font-size: 40px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+        }
+    }
+    @media (max-width: 1199px) {
+        .modal-content:before {
+            bottom: auto;
+            top: 125px;
+        }
+        .modal-body {
+            &_p {
+                width: 55%;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        .modal-content:before {
+            top: auto;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: none;
+        }
+        .modal-header {
+            text-align: center;
+        }
+        .modal-body {
+            margin-bottom: 40px;
+            &_p {
+                width: 100%;
+            }
+        }
+    }
+     @media (max-width: 767px) {
+        text-align: center;
+        .modal-content {
+            padding: 37px 20px;
+        }
+        .modal-header {
+            font-size: 30px;
+        }
+        .modal-body {
+            font-size: 20px;
+        }
+        .modal-footer {
+            text-align: center;
+            &-promocode {
+                display: block;
+            }
+            &_item {
+                float: none;
+                width: auto;
+                &:nth-child(1) {
+                    width: 100%;
+                    margin-bottom: 10px;
+                }
+                &:nth-child(2) {
+                    margin-left: 0;
+                    max-width: 300px;
+                    padding: 13px 15px;
+                }
+            }
+        }
+     }
+}

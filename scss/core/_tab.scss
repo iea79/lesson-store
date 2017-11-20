@@ -25,6 +25,26 @@
                 margin: 0 15px;
             }
         }
+        &__wrap {
+            &-with--btn {
+                border-bottom: 1px solid #eee;
+                .tab-menu {
+                    border-bottom: 0;
+                    &-left {
+                        width: auto;
+                    }
+                    &__label {
+                        padding-left: 25px;
+                        padding-right: 25px;
+                    }
+                }
+                .button {
+                    float: right;
+                    width: auto;
+                    margin: 10px;
+                }
+            }
+        }
 
     }
     &-content {
@@ -90,6 +110,20 @@
             padding: 0;
             &__label {
                 display: block;
+            }
+            &__wrap {
+                &-with--btn {
+                    border-bottom: 1px solid #eee;
+                    .tab-menu {
+                        border-bottom: 0;
+                    }
+                    .tab-menu-left {
+                        width: 100%;
+                    }
+                    .button {
+                        float: none;
+                    }
+                }
             }
         }
         &-content {
