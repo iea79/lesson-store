@@ -347,33 +347,45 @@ $lblue-gray: #90a4ae;
         &:checked {
             &+.promocode {
                 &__item {
-                    border: 2px solid red;
-                    .promocode__left {            
-                        &:after {
-                            content: '';
-                            position: absolute;
-                            display: block;
-                            top: 50%;
-                            left: -15px;
-                            margin-top: -13px;
-                            height: 20px;
-                            width: 20px;
-                            border-radius: 50%;
-                            border: 2px solid red;
-                            z-index: 4;
+                    border: 2px solid $green;
+                    &:after {
+                        content: '✓';
+                        color: $green;
+                        font-size: 26px;
+                        position: absolute;
+                        top: 50%;
+                        left: 11px;
+                        margin-top: -15px;
+                    }
+                    .promocode {
+                        &__left {            
+                            &:after {
+                                content: '';
+                                position: absolute;
+                                display: block;
+                                top: 50%;
+                                left: -15px;
+                                margin-top: -13px;
+                                height: 20px;
+                                width: 20px;
+                                border-radius: 50%;
+                                border: 2px solid $green;
+                                z-index: 4;
+                            }
+                            &:before {
+                                content: '';
+                                position: absolute;
+                                display: block;
+                                top: 50%;
+                                left: -17px;
+                                margin-top: -14px;
+                                height: 26px;
+                                width: 15px;
+                                background-color: #fff;
+                                z-index: 5;
+                            }
                         }
-                        &:before {
-                            content: '';
-                            position: absolute;
-                            display: block;
-                            top: 50%;
-                            left: -17px;
-                            margin-top: -14px;
-                            height: 26px;
-                            width: 15px;
-                            background-color: #fff;
-                            z-index: 5;
-                        }
+
                     }
                 }
             }
@@ -413,9 +425,13 @@ $lblue-gray: #90a4ae;
     &__left {
         width: 83.6%;
         padding: 20px 15px 20px 37px;
-        float: left;
+        // float: left;
     }
     &__right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 16.4%;
         height: 100%;
         overflow: hidden;
         display: block;
@@ -444,7 +460,7 @@ $lblue-gray: #90a4ae;
     }
     &__field {
         border: none;
-        border-bottom: 2px solid $blue-gray;
+        border-bottom: 1px solid #939aab;
         margin-bottom: 20px;
         padding: 8px 0;
         display: block;
@@ -460,41 +476,44 @@ $lblue-gray: #90a4ae;
 
 .modal__promocode {
     .modal-dialog {
-        max-width: 1190px;
-        padding: 0;
-        margin: auto;
-        background-color: #fff;
+        max-width: 900px;
+        // padding: 0;
+        // margin: auto;
+        // background-color: #fff;
     }
     .modal-content {
         position: relative;
         height: 100%;
-        padding: 37px 58px 58px;
+        padding: 30px 45px 45px;
         color: #222222;
-        border: 1px solid #939aab;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        &:before {
-            content: "";
-            position: absolute;
-            bottom: -4px;
-            right: 52px;
-            width: 43.27%;
-            height: 64.43%;
-            background: url('../img/promo-people.png') no-repeat bottom right;
-            background-size: 100%;
-        }
+        // border: 1px solid #939aab;
+        // border-radius: 5px;
+        // box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        background-image: url('../img/promo-people.png');
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: 50%;
+        // &:before {
+        //     content: "";
+        //     position: absolute;
+        //     bottom: -4px;
+        //     right: 52px;
+        //     width: 43.27%;
+        //     height: 64.43%;
+        //     background-size: 100%;
+        // }
     }
     .modal-header {
         margin-bottom: 28px;
-        font-size: 36px;
+        font-size: 30px;
         font-weight: 500;
         letter-spacing: 0.72px;
     }
     .modal-body {
         margin-bottom: 115px;
-        font-size: 26px;
-        line-height: 40px;
-        letter-spacing: 0.52px;
+        font-size: 18px;
+        line-height: 1.5;
+        // letter-spacing: 0.52px;
         &_p {
             width: 47%;
         }
@@ -502,22 +521,26 @@ $lblue-gray: #90a4ae;
     .modal-footer {
         border-top: 0;
         padding: 0;
+        text-align: left;
         @extend %clear_a;
         &_item {
-            float: left;
+            // float: left;
             &:nth-child(2) {
-                padding: 13px 28px;
-                margin-left: 37px;
-                font-size: 16px;
-                letter-spacing: 0.32px;
-                border-radius: 22px;
+                // padding: 13px 28px;
+                // margin-left: 37px;
+                // font-size: 16px;
+                // letter-spacing: 0.32px;
+                // border-radius: 22px;
             }
         }
         &-promocode {
-            font-size: 40px;
+            font-size: 30px;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.8px;
+            // letter-spacing: 0.8px;
+            margin-right: 20px;
+            display: inline-block;
+            vertical-align: middle;
         }
     }
     @media (max-width: 1199px) {
@@ -532,15 +555,21 @@ $lblue-gray: #90a4ae;
         }
     }
     @media (max-width: 991px) {
-        .modal-content:before {
-            top: auto;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            display: none;
+        // .modal-content:before {
+        //     top: auto;
+        //     bottom: 0;
+        //     left: 0;
+        //     right: 0;
+        //     display: none;
+        // }
+        .modal-content {
+            background-image: none;
+            padding: 20px;
+            text-align: center;
         }
         .modal-header {
             text-align: center;
+            margin-bottom: 10px;
         }
         .modal-body {
             margin-bottom: 40px;
@@ -548,36 +577,40 @@ $lblue-gray: #90a4ae;
                 width: 100%;
             }
         }
+        .modal-footer {
+            text-align: center;
+        }
     }
      @media (max-width: 767px) {
         text-align: center;
         .modal-content {
-            padding: 37px 20px;
+            // padding: 37px 20px;
         }
         .modal-header {
-            font-size: 30px;
+            font-size: 26px;
         }
         .modal-body {
-            font-size: 20px;
+            font-size: 16px;
         }
         .modal-footer {
-            text-align: center;
             &-promocode {
                 display: block;
+                margin-bottom: 10px;
+                margin-right: 0;
             }
-            &_item {
-                float: none;
-                width: auto;
-                &:nth-child(1) {
-                    width: 100%;
-                    margin-bottom: 10px;
-                }
-                &:nth-child(2) {
-                    margin-left: 0;
-                    max-width: 300px;
-                    padding: 13px 15px;
-                }
-            }
+            // &_item {
+            //     float: none;
+            //     width: auto;
+            //     &:nth-child(1) {
+            //         width: 100%;
+            //         margin-bottom: 10px;
+            //     }
+            //     &:nth-child(2) {
+            //         margin-left: 0;
+            //         max-width: 300px;
+            //         padding: 13px 15px;
+            //     }
+            // }
         }
      }
 }

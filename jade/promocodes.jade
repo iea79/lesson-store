@@ -52,7 +52,7 @@ block content
                 a.button.button__tag.profile__button-tag(href="#") Умный
     .profile__events.shadow
         .tab-menu__wrap.tab-menu__wrap-with--btn
-            a.button.curve.button__green.button__green-right(href='#') Пригласить друзей
+            a.button.curve.button__green.button__green-right(href='#' data-toggle="modal" data-target="#modal__promocode") Пригласить друзей
             .tab-menu.tab-menu-left
                 .tab-menu__label.tab-menu__label-left.active(data-tab="tab5") Мои промокоды
                 .tab-menu__label.tab-menu__label-left(data-tab="tab6") Активированные
@@ -61,13 +61,13 @@ block content
                 .promocode.grid
                     .grid__wrapper.promocode__wrap
                         input(type="radio" name="promo" checked)#r1.promocode__radio
-                        label(for="r1").promocode__item.promocode__item--active.promocode__item--checked
+                        label(for="r1").promocode__item.promocode__item--active
                             .promocode__left
                                 .promocode__code B364CGHN0K
                                 .promocode__gift 300 р. на бумажник
                                 .promocode__time Доступен до 
                                     .promocode__date 18 Сентября 2018
-                            a.promocode__right(href="#" data-toggle="modal" data-target="#modal__promocode")
+                            a.promocode__right(href="#")
                     .grid__wrapper.promocode__wrap
                         input(type="radio" name="promo")#r2.promocode__radio
                         label(for="r2").promocode__item.promocode__item--active
@@ -76,7 +76,7 @@ block content
                                 .promocode__gift Премиум-учитель на 3 месяца
                                 .promocode__time Доступен до 
                                     .promocode__date 18 Декабря 2018
-                            a.promocode__right(href="#" data-toggle="modal" data-target="#modal__promocode")
+                            a.promocode__right(href="#")
                 .promocode__bottom 
                     input(type="text" placeholder="Или введите промокод здесь").promocode__field
                     button.button.button__green--full.button__round Активировать промокод
@@ -89,7 +89,7 @@ block content
                                 .promocode__gift 300 р. на бумажник
                                 .promocode__time Доступен до 
                                     .promocode__date 18 Сентября 2018
-                            a.promocode__right(href="#" data-toggle="modal" data-target="#modal__promocode")
+                            a.promocode__right(href="#")
                     .grid__wrapper.promocode__wrap
                         .promocode__item
                             .promocode__left
@@ -97,7 +97,7 @@ block content
                                 .promocode__gift Премиум-учитель на 3 месяца
                                 .promocode__time Доступен до 
                                     .promocode__date 18 Декабря 2018
-                            a.promocode__right(href="#" data-toggle="modal" data-target="#modal__promocode")
+                            a.promocode__right(href="#")
                     .grid__wrapper.promocode__wrap
                         .promocode__item
                             .promocode__left
@@ -105,7 +105,7 @@ block content
                                 .promocode__gift Премиум-учитель на 3 месяца
                                 .promocode__time Доступен до 
                                     .promocode__date 18 Декабря 2018
-                            a.promocode__right(href="#" data-toggle="modal" data-target="#modal__promocode")      
+                            a.promocode__right(href="#")      
                     .grid__wrapper.promocode__wrap
                         .promocode__item
                             .promocode__left
@@ -113,12 +113,9 @@ block content
                                 .promocode__gift 300 р. на бумажник
                                 .promocode__time Доступен до 
                                     .promocode__date 18 Сентября 2018
-                            a.promocode__right(href="#" data-toggle="modal" data-target="#modal__promocode")
+                            a.promocode__right(href="#")
 
 
-    // http://joxi.ru/bmooOZYIx8bO1m
-    // Button trigger modal modal__promocode
-    button(data-toggle="modal" data-target="#modal__promocode") Click to open modal
     // begin Modal modal__promocode 
     .modal.fade.modal__promocode#modal__promocode
         .modal-dialog
@@ -131,6 +128,6 @@ block content
                         .modal-body_p Отправьте промокод вашему другу и пригласите его зарегистрироваться в Арете Онлайн. Как только он зарегистрирует учетную запись с этим промокодом, и он, и вы получите по 200 рублей в Арете-Бумажник.
                     
                     .modal-footer
-                        .modal-footer_item.modal-footer-promocode DKFKTC4D
-                        .modal-footer_item.button.button__green--full Скопировать промокод
+                        .modal-footer-promocode DKFKTC4D
+                        a(href="#").button.button__green--full.button__round Скопировать промокод
     // end modal modal__no-purchase
