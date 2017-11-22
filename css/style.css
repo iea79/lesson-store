@@ -1266,7 +1266,8 @@ img {
   height: 65px;
   margin-bottom: 20px; }
   .grid__cube_img img {
-    display: inline-block; }
+    display: inline-block;
+    max-height: 100%; }
 
 .grid__cube_name {
   font-weight: 700;
@@ -3781,7 +3782,6 @@ a.ui-button:active,
 
 .modal__promocode .modal-content {
   position: relative;
-  height: 100%;
   padding: 30px 45px 45px;
   color: #222222;
   background-image: url("../img/promo-people.png");
