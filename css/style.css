@@ -1073,7 +1073,7 @@ img {
   width: 45px; }
 
 .event__content .button {
-  width: 110px; }
+  min-width: 110px; }
 
 @media (max-width: 1199px) {
   .event__content .table__row_item {
