@@ -177,5 +177,14 @@ $(document).ready(function(){
     	$(this).closest('.discipline').find('.store__create').addClass('add');
     });
 
+    $('body').on('click', '.modal__faq_left', function(event) {
+    	event.preventDefault();
+    	var wrap = $(this).closest('.modal__faq_item'),
+    		answer = wrap.find('.modal__faq_answer');
+
+    		$(this).toggleClass('open');
+    		answer.slideToggle(300);
+    });
+
 });
 

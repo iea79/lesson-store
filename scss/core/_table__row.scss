@@ -28,4 +28,14 @@
     &+.table__row {
         margin-top: 15px;
     }
+    .button__group {
+        .button {
+            width: auto;
+            // min-width: auto;
+            &__icon {
+                min-width: auto;
+                width: 35px;
+            }
+        }
+    }
 }
