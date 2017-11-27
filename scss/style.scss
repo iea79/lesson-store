@@ -618,11 +618,10 @@ $lblue-gray: #90a4ae;
      }
 }
 
-.modal__faq {
+.modal-sm {
     .modal-dialog {
         max-width: 900px;
     }
-    .modal-content {}
     .modal-header {
         color: #353841;
         font-size: 22px;
@@ -637,6 +636,14 @@ $lblue-gray: #90a4ae;
             letter-spacing: 0.4px;
         }
     }
+    .modal-body {
+        .form {
+            margin-top: 20px;
+        }
+    }
+}
+
+.modal__faq {
     .modal-body {}
     &_item {
         padding: 20px 0;

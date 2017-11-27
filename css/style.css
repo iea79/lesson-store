@@ -221,32 +221,46 @@ img {
     font-size: 15px; }
   .form__control {
     overflow: hidden; }
-  .form__select select {
-    border-radius: 0;
-    outline: 0;
-    height: 36px;
-    -webkit-appearance: none;
-    line-height: 1;
-    /* for FF */
-    -moz-appearance: none;
-    text-indent: 0.01px;
-    -o-text-overflow: '';
-    text-overflow: '';
-    /* for IE */
-    -ms-appearance: none;
-    appearance: none !important;
-    color: #222222;
-    border-radius: 5px;
-    border: 1px solid #ededed;
-    background-color: #fff;
-    padding: 0 10px;
-    width: 170px;
-    cursor: pointer; }
-    .form__select select::-ms-expand {
-      display: none; }
-    .form__select select:disabled {
-      color: #90a4ae;
-      cursor: default; }
+  .form__select {
+    position: relative;
+    display: inline-block; }
+    .form__select:after {
+      content: '‹';
+      position: absolute;
+      color: #ededed;
+      top: 50%;
+      right: 13px;
+      margin-top: -12px;
+      font-size: 24px;
+      -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+      transform: rotate(-90deg); }
+    .form__select select {
+      border-radius: 0;
+      outline: 0;
+      height: 36px;
+      -webkit-appearance: none;
+      line-height: 1;
+      /* for FF */
+      -moz-appearance: none;
+      text-indent: 0.01px;
+      -o-text-overflow: '';
+      text-overflow: '';
+      /* for IE */
+      -ms-appearance: none;
+      appearance: none !important;
+      color: #222222;
+      border-radius: 5px;
+      border: 1px solid #ededed;
+      background-color: #fff;
+      padding: 0 22px 0 10px;
+      width: 170px;
+      cursor: pointer; }
+      .form__select select::-ms-expand {
+        display: none; }
+      .form__select select:disabled {
+        color: #90a4ae;
+        cursor: default; }
   .form__input {
     border-radius: 5px;
     border: 1px solid #ededed;
@@ -3983,21 +3997,24 @@ a.ui-button:active,
       margin-bottom: 10px;
       margin-right: 0; } }
 
-.modal__faq .modal-dialog {
+.modal-sm .modal-dialog {
   max-width: 900px; }
 
-.modal__faq .modal-header {
+.modal-sm .modal-header {
   color: #353841;
   font-size: 22px;
   font-weight: 700;
   letter-spacing: 1px;
   text-align: center; }
-  .modal__faq .modal-header__sub {
+  .modal-sm .modal-header__sub {
     margin-top: 15px;
     color: #939aab;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.4px; }
+
+.modal-sm .modal-body .form {
+  margin-top: 20px; }
 
 .modal__faq_item {
   padding: 20px 0;

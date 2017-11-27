@@ -4,49 +4,50 @@ block title
     title Мои Друзья
 
 block content
-    .wihite__box.shadow.event__content
+    .wihite__box.shadow
         .page__header_title Мои друзья
         .page__header_search-row
             .page__header_search
                 input.page__header_input(type="text" placeholder="Введите любое имя")
                 i.fa.fa-search.page__header_i
-            a.button.button__green.page__header_btn(href="#") Найти
-        .table__row 
-            .table__row_item 
-                a(href="#") Тренировка
-            .table__row_item Математика
-            .table__row_item 3 класс
-            .table__row_item 30 заданий
-            .table__row_item 
-                .table__row_label От 
-                a(href="#") Евгений Воронов 
-            .table__row_item 
-                .table__row_label Кому 
-                a(href="#") Станислав Черкасов 
-            .table__row_item 
-                a(href="#but_drop").button.button__green.button__drop Действия 
-                    i.fa.fa-angle-down
-                #but_drop.button__drop_wrap 
-        - var x = 6;
-        - for (var i = 1; i <= x; i++) {
+            a.button.button__green.page__header_btn(href="#") Найти 
+        .event__content
             .table__row 
                 .table__row_item 
                     a(href="#") Тренировка
-                .table__row_item Математика 
-                    .table__row_sub 3 класс
+                .table__row_item Математика
+                .table__row_item 3 класс
+                .table__row_item 30 заданий
                 .table__row_item 
                     .table__row_label От 
-                    a(href="#") Евгений Воронов
+                    a(href="#") Евгений Воронов 
                 .table__row_item 
                     .table__row_label Кому 
-                    a(href="#") Станислав Черкасов
+                    a(href="#") Станислав Черкасов 
                 .table__row_item 
-                    .button__group
-                        a(href="#").button.button__green Открыть
-                        a(href="#").button.button__blue.button__icon 
-                            i.fa.fa-paper-plane-o
-                        a(href="#").button.button__yellow.button__icon 
-                            i.fa.fa-print
-                        a(href="#").button.button__red.button__icon
-                            i.fa.fa-trash-o
-        -}
+                    a(href="#but_drop").button.button__green.button__drop Действия 
+                        i.fa.fa-angle-down
+                    #but_drop.button__drop_wrap 
+            - var x = 6;
+            - for (var i = 1; i <= x; i++) {
+                .table__row 
+                    .table__row_item 
+                        a(href="#") Тренировка
+                    .table__row_item Математика 
+                        .table__row_sub 3 класс
+                    .table__row_item 
+                        .table__row_label От 
+                        a(href="#") Евгений Воронов
+                    .table__row_item 
+                        .table__row_label Кому 
+                        a(href="#") Станислав Черкасов
+                    .table__row_item 
+                        .button__group
+                            a(href="#").button.button__green Открыть
+                            a(href="#").button.button__blue.button__icon 
+                                i.fa.fa-paper-plane-o
+                            a(href="#").button.button__yellow.button__icon 
+                                i.fa.fa-print
+                            a(href="#").button.button__red.button__icon
+                                i.fa.fa-trash-o
+            -}

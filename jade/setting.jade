@@ -47,3 +47,54 @@ block content
                     input(type="radio" name="radio")
                     input(type="radio" name="radio")
 
+    // Button trigger modal  
+    button(class="btn btn-primary btn-lg" data-toggle="modal" data-target="#form__modal") Click to open modal
+    // begin Modal  
+    .modal.modal-sm.fade#form__modal
+        .modal-dialog
+            .modal-content
+                a(href="#" class="modal-close" data-dismiss="modal")
+                .modal__promocode_wrap
+                    .modal-header Вопросы и ответы
+                        .modal-header__sub  Не смогли найти ответ на вопрос? Позвоните нам 8 800 555-55-55                        
+                .modal-body 
+                    .form
+                        .form__row 
+                            .form__label Старый пароль 
+                            .form__control 
+                                input(type="password").form__input 
+                                button.button Начать
+                        .form__row 
+                            .form__label Новый пароль 
+                            .form__control 
+                                input(type="password").form__input 
+                        .form__row 
+                            .form__label Повторите пароль 
+                            .form__control 
+                                input(type="password").form__input 
+                        .form__row 
+                            .form__label Статус 
+                            .form__control 
+                                .form__select
+                                    select(disabled) 
+                                        option Item 1
+                                        option Item 2
+                                        option Item 3
+                        .form__row 
+                            .form__label Выбранный селект 
+                            .form__control 
+                                .form__select
+                                    select 
+                                        option Item 1
+                                        option Item 2
+                                        option Item 3
+                        .form__row 
+                            .form__label Чекбоксы 
+                            .form__control 
+                                input(type="checkbox")
+                        .form__row 
+                            .form__label Радиобаттон
+                            .form__control 
+                                input(type="radio" name="radio")
+                                input(type="radio" name="radio")
+    // end modal  
