@@ -73,13 +73,28 @@
         padding: 9px 10px 10px;
         width: 170px;
         @include placeholder{
-            color: #eaeaea;
+            color: $blue-gray;
         };
         +.button {
             margin-left: 10px;
         }
         &:focus,&:hover {
             border: 1px solid $blue;
+        }
+    }
+    &__field_icon {
+        position: relative;
+        .form__input,select {
+            padding-left: 30px;
+        }
+        .fa {
+            font-size: 16px;
+            color: $blue-gray;
+            display: block;
+            position: absolute;
+            top: 50%;
+            margin-top: -8px;
+            left: 9px;
         }
     }
     input[type=checkbox],

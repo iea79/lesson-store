@@ -268,17 +268,29 @@ img {
     padding: 9px 10px 10px;
     width: 170px; }
     .form__input::-webkit-input-placeholder {
-      color: #eaeaea; }
+      color: #939aab; }
     .form__input:-moz-placeholder {
-      color: #eaeaea; }
+      color: #939aab; }
     .form__input::-moz-placeholder {
-      color: #eaeaea; }
+      color: #939aab; }
     .form__input:-ms-input-placeholder {
-      color: #eaeaea; }
+      color: #939aab; }
     .form__input + .button {
       margin-left: 10px; }
     .form__input:focus, .form__input:hover {
       border: 1px solid #4785fc; }
+  .form__field_icon {
+    position: relative; }
+    .form__field_icon .form__input, .form__field_icon select {
+      padding-left: 30px; }
+    .form__field_icon .fa {
+      font-size: 16px;
+      color: #939aab;
+      display: block;
+      position: absolute;
+      top: 50%;
+      margin-top: -8px;
+      left: 9px; }
   .form input[type=checkbox],
   .form input[type=radio] {
     padding: 0;
