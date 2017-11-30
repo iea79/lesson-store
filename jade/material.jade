@@ -11,11 +11,17 @@ block aside
 
 
 block content
-    .profile__events.shadow
+    .wihite__box.shadow
+        .page__header_title Мои друзья
+        .page__header_search-row
+            .page__header_search
+                input.page__header_input(type="text" placeholder="Введите любое имя")
+                i.fa.fa-search.page__header_i
+            a(href="#").button.button__green.page__header_btn Найти
         .tab-menu.tab-menu--short
             .tab-menu__label.active(data-tab="tab1") Тренировки
             .tab-menu__label(data-tab="tab2") Тестирования 
-        .tab-content
+        .tab-content.profile__events
             .tab-content__item.event__content.show#tab1
                 .send__traning
                     .send__traning_top 

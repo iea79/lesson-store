@@ -1,0 +1,144 @@
+extends templates/layout.jade
+
+block title
+    title Home
+
+block content
+    .profile__persons.shadow
+        .profile__persons-header
+            .img-circle
+                img(src='img/1.png')
+            h3.profile__persons-title Алексей Умный
+            .profile__persons-proof Преподаватель
+            a.button.curve.button__green(href='#') Добавить в друзья
+            button.button.curve.button__blue(href='#') Написать                    
+            a.button.curve.button__reverse(href='#') 
+                span first
+                span second
+            a.button.curve.button__reverse.button__red(href='#') 
+                span first
+                span second  
+            .button__group.button__group-2
+                div
+                    a.button.curve принять                           
+                div
+                    a.button.curve.button__red отказать                            
+        .profile__persons-info
+            .profile__persons-info_names
+                i.fa.fa-envelope(aria-hidden="true")
+                | образование
+            ul.profile__persons-info_list
+                li
+                    p.period 2010 - 2016
+                    p МГУ
+                li
+                    p.period 2002 - 2010
+                    p Лицей                                    
+                li
+                    p.period 2002 - 2010
+                    p Лицей                                                                    
+            .profile__persons-info_names
+                i.fa.fa-envelope(aria-hidden="true")
+                | достиж
+            .profile__persons-info_names
+                i.fa.fa-envelope(aria-hidden="true")
+                | навыки и ум
+    .profile__events
+        .wihite__box.shadow
+            .tab-menu
+                .tab-menu__label.active(data-tab="tab1") Последние уроки
+                .tab-menu__label(data-tab="tab2") Мои тренеровки
+                .tab-menu__label(data-tab="tab3") Мои тестирования
+                .tab-menu__label(data-tab="tab4") Избранные задачи
+            .tab-content#width-check
+                .tab-content__item.event__content.show#tab1
+                    - var x = 10;
+                    - for (var i = 1; i <= x; i++) {
+                        .table__row
+                            .table__row_item
+                                .img-circle
+                                    img(src='img/1.png')
+                            .table__row_item
+                                a(href="#")
+                                    p.text-lblue Математика
+                            .table__row_item
+                                p 3 класс
+                            .table__row_item
+                                a(href="#")
+                                    p.text-lblue Одночлены
+                            .table__row_item
+                                p.mob-hidden Легкий уровень
+                            .table__row_item
+                                a(href='#').button.button__green Начать
+                    -}
+                .tab-content__item.event__content#tab2
+                    - var x = 15;
+                    - for (var i = 1; i <= x; i++) {
+                        .table__row
+                            .table__row_item
+                                .img-circle
+                                    img(src='img/2.png')
+                            .table__row_item
+                                a(href="#")
+                                    p.text-lblue Математика
+                            .table__row_item
+                                p 3 класс
+                            .table__row_item
+                                a(href="#")
+                                    p.text-lblue Одночлены
+                            .table__row_item
+                                p.mob-hidden Легкий уровень
+                            .table__row_item
+                                a(href='#').button.button__green Начать
+                    -}
+                .tab-content__item.event__content#tab3
+                    - var x = 20;
+                    - for (var i = 1; i <= x; i++) {
+                        .table__row
+                            .table__row_item
+                                .img-circle
+                                    img(src='img/3.png')
+                            .table__row_item
+                                a(href="#")
+                                    p.text-lblue Математика
+                            .table__row_item
+                                p 3 класс
+                            .table__row_item
+                                a(href="#")
+                                    p.text-lblue Одночлены
+                            .table__row_item
+                                p.mob-hidden Легкий уровень
+                            .table__row_item
+                                a(href='#').button.button__green Начать
+                    -}
+                .tab-content__item.event__content#tab4
+                    - var x = 5;
+                    - for (var i = 1; i <= x; i++) {
+                        .table__row
+                            .table__row_item
+                                .img-circle
+                                    img(src='img/1.png')
+                            .table__row_item
+                                a(href="#")
+                                    p.text-lblue Математика
+                            .table__row_item
+                                p 3 класс
+                            .table__row_item
+                                a(href="#")
+                                    p.text-lblue Одночлены
+                            .table__row_item
+                                p.mob-hidden Легкий уровень
+                            .table__row_item
+                                a(href='#').button.button__green Начать
+                    -}
+
+
+            
+                
+                
+                
+                
+                
+                
+                
+                

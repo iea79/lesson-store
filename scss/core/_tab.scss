@@ -1,14 +1,14 @@
 .tab {
     &-menu {
-        padding: 0 30px;
         width: 100%;
         border-bottom: 1px solid #eee;
         background: #fff;
         display: table;
+        margin-bottom: 30px;
         &__label{
             display: table-cell;
             text-align: center;
-            padding: 22px 5px;
+            padding: 10px 5px;
             color: $lblue-gray;
             font-weight:  400 ;
             cursor: pointer;
@@ -63,7 +63,6 @@
         }
         &__item {
             background: #fff;
-            padding: 30px;
             display: none;
             &.active {
 
@@ -94,6 +93,7 @@
     @media (max-width: 991px) {
         &-menu {
             padding: 0 10px;
+            margin-bottom: 0;
             &__label {
 
             }

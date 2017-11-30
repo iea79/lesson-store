@@ -8,8 +8,9 @@
         width: 26%; 
         float: left;
         margin-right: 30px;
+        max-width: 260px;
         &-header {
-            padding: 30px;
+            padding: 27px;
             text-align: center;
             border-bottom: 1px solid #eee;
             text-align: center;
@@ -116,15 +117,13 @@
 
     }
 
-    &__events{
-        height:  100%;
-        background: #fff;
+    &__events {
         overflow: hidden;
-        border-radius: 2px;
     }
     
     @media (max-width: 991px) {
         &__persons {
+            max-width: none;
             &-header {
                 padding: 15px;
                 .button {
