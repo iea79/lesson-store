@@ -1224,6 +1224,13 @@ img {
     .table__row .button__group .button__icon {
       min-width: initial;
       width: 35px; }
+  @media (max-width: 767px) {
+    .table__row {
+      display: block; }
+      .table__row_item {
+        display: block; }
+        .table__row_item-img {
+          width: auto; } }
 
 .event__content .table__row {
   background: #f8f9fc; }

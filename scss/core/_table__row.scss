@@ -41,4 +41,13 @@
             }
         }
     }
+    @media (max-width: 767px) {
+        display: block;
+        &_item {
+            display: block;
+            &-img {
+                width: auto;
+            }
+        }
+    }
 }
