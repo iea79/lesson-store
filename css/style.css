@@ -1210,6 +1210,8 @@ img {
         margin-right: 10px; }
     .table__row_item:last-child {
       text-align: right; }
+    .table__row_item-img {
+      width: 75px; }
   .table__row_label {
     display: block; }
   .table__row_sub {

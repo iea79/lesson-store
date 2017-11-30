@@ -17,6 +17,9 @@
         &:last-child {
             text-align: right;            
         }
+        &-img {
+            width: 75px;
+        }
     }
     &_label {
         display: block;
