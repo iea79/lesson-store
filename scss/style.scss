@@ -788,3 +788,96 @@ $lblue-gray: #90a4ae;
     //    } 
     // }
 }
+
+.lesson-full {
+    padding: 0 25px;
+    margin-top: 20px;
+    margin-left: -25px;
+    margin-right: -25px;
+    color: #222222;
+    border-bottom: 1px solid #ededed;
+    &:last-child {
+        border-bottom: 0;
+    }
+    &__p {
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+    &__title {
+        margin-bottom: 15px;
+        font-size: 20px;
+        line-height: 1.67;
+        font-weight: normal; 
+    }
+    &__list {
+        list-style: decimal inside;
+    }
+    &__comments {
+        &_item {
+            padding: 15px;
+            margin-bottom: 20px;
+            display: block;
+            background-color: #f5f8f9;
+            @extend %clear_a;
+        }
+        &_top {
+            margin-bottom: 15px;
+            @extend %clear_a;
+        }
+        &_left {
+            float: left;
+            @extend %clear_a;
+        }
+        &_right {
+            overflow: hidden;
+            @extend %clear_b;
+            .form__textarea {
+                padding: 10px;
+                width: 100%;
+                height: 90px;
+                margin-bottom: 10px;
+                border: 1px solid #ededed;
+            }
+        }
+        &_img {
+            width: 60px;
+            margin-right: 20px;
+            float: left;
+            display: block;
+            border-radius: 50%;
+        }
+        &_info {
+            float: left;
+            line-height: 1.4;
+        }
+        &_user {
+            color: #4785fc;
+        }
+        &_text {
+            margin-bottom: 0;
+        }
+        &_btn {
+            float: right;
+        }
+    }
+    @media (max-width: 767px) {
+        padding: 0 10px;
+        margin-left: -10px;
+        margin-right:-10px;
+    }
+    @media (max-width: 479px) {
+        &__btn {
+            width: 100%;
+        }
+        &__comments {
+            &_left {
+                float: none;
+                margin-bottom: 15px;
+            }
+            &_btn {
+                float: none;
+                margin: 0;
+            }
+        }
+    }
+}

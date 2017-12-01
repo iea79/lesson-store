@@ -1,0 +1,35 @@
+extends templates/layout.jade
+
+block title
+    title Деление одночлена на одночлен
+
+block content
+    .wihite__box.shadow
+        .page__header_title Деление одночлена на одночлен
+        .lesson-full
+            .lesson-full__p Последнее, что вам осталось научиться делать с одночленами – это делить их друг на друга. Тема очень простая и короткая. На какие одночлены можно делить и как это делать – все это вы узнаете из данной статьи.
+            .lesson-full__title Как делить одночлены?
+            .lesson-full__p Чтобы разделить один одночлен на другой, нужно:
+                ol.lesson-full__list
+                    li Записать их со знаком деления, то есть, дробью.
+                    li Сократить эту дробь. Вот и все!
+        .lesson-full
+            .lesson-full__title Комментарии
+            ul.lesson-full__comments
+                li.lesson-full__comments_item
+                    .lesson-full__comments_top
+                        .lesson-full__comments_left
+                            img.lesson-full__comments_img(src="img/1.png", alt="")
+                            .lesson-full__comments_info
+                                a.lesson-full__comments_user(href="#") Алексей Дронов
+                                .lesson-full__comments_date 9 месяцев назад
+                        .lesson-full__comments_right
+                            a.button.button__red.lesson-full__comments_btn Удалить
+                    .lesson-full__comments_text.lesson-full__p Мы добиваемся безупречной репутации лидера индустрии как среди ведущих спортсменов мира, так и среди огромного количества поклонков и любителей водных видов спорта.
+                li.lesson-full__comments_item
+                    .lesson-full__comments_left
+                        img.lesson-full__comments_img(src="img/1.png", alt="")
+                    form.lesson-full__comments_right(action="#")
+                        textarea.form__textarea(name="comment")
+                        a.button.button__green.lesson-full__comments_btn Отправить комментарий
+                        
