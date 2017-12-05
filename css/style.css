@@ -978,17 +978,17 @@ img {
 
 .aside {
   float: right;
-  margin: 30px 30px 30px 0; }
+  margin: 25px 25px 25px 0; }
   .aside__left {
     float: left;
-    margin: 30px 0 30px 30px; }
+    margin: 25px 0 25px 25px; }
   @media (max-width: 1199px) {
     .aside {
       float: none;
-      margin: 30px 30px 0 30px; }
+      margin: 25px 25px 0 25px; }
       .aside__left {
         float: none;
-        margin: 30px 30px 0 30px; } }
+        margin: 25px 25px 0 25px; } }
   @media (max-width: 767px) {
     .aside {
       margin: 10px 10px 0 10px; }
