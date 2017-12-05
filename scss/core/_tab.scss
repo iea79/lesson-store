@@ -25,6 +25,11 @@
                 margin: 0 15px;
             }
         }
+        &--single {
+            padding-top: 10px;
+            @extend %shadow;
+            border-radius: 6px;
+        }
         &__wrap {
             &-with--btn {
                 border-bottom: 1px solid #eee;
@@ -94,6 +99,9 @@
         &-menu {
             padding: 0 10px;
             margin-bottom: 0;
+            &--single {
+                margin-bottom: 30px;
+            }
             &__label {
 
             }
@@ -108,6 +116,9 @@
         &-menu {
             display: block;
             padding: 0;
+            &--single {
+                margin-bottom: 10px;
+            }
             &__label {
                 display: block;
             }

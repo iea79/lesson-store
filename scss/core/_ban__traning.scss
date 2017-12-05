@@ -9,7 +9,6 @@
     text-align: center;
     width: 300px;
     padding: 30px;
-    margin: 30px 30px 30px 0;
     &_img {
         margin-bottom: 20px;
     }
@@ -32,7 +31,6 @@
     }
     @media (max-width: 1599px) {
         float: none;
-        margin: 30px 30px 0 30px;
         width: auto;
         padding: 20px;
         &_img {

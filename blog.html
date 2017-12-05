@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Create Traning</title>
+    <script src="https://use.fontawesome.com/d2e3dc5d54.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/modal.js"> </script>
+    <script src="js/jquery-ui.min.js"> </script>
+    <script src="js/function.js"> </script>
+    <link href="css/style.css?01.10.b" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- begin header-->
+      <header class="crm__header">
+        <!-- crm__header_left-->
+        <div class="crm__header_left">
+          <div class="menu_toggle fa fa-reorder"></div>
+        </div>
+        <!-- right-buttons-->
+        <div class="crm__header_right"><a class="drop bell" href="#"><i class="fa fa-bell"></i></a><a class="drop bell" href="#"><i class="fa fa-envelope"></i></a>
+          <div class="drop profile">
+            <div class="profile__img"><img src="img/1.png"/></div>
+          </div>
+          <div class="profile__dropdown"> 
+            <div class="profile__dropdown_item"><a class="profile__dropdown_link" href="/"> <i class="fa fa-credit-card"> </i>Кошелек</a></div>
+            <div class="profile__dropdown_item"><a class="profile__dropdown_link" href="#"> <i class="fa fa-gear"></i>Настройки</a></div>
+            <div class="profile__dropdown_item"><a class="profile__dropdown_link" href="#"> <i class="fa fa-external-link"></i>Выйти</a></div>
+          </div>
+        </div>
+        <!-- search-->
+        <div class="crm__header_center"><a class="fa fa-search search__toggle visible-xs" href="#"></a>
+          <div class="search">
+            <input type="text" placeholder="Поиск"/><i class="fa fa-search"></i>
+          </div>
+        </div>
+      </header>
+      <!-- end header-->
+      <!-- begin menu-->
+      <div class="crm__menu">
+        <ul class="crm__menu-list">
+          <li class="crm__menu-item"><a class="crm__menu-toggle" href="#"><i class="fa fa-user-o"></i><span class="crm__menu-item_name">Профиль</span></a></li>
+          <li class="crm__menu-item"><a class="crm__menu-toggle" href="#"><i class="fa fa-copy"></i><span class="crm__menu-item_name">Уроки</span></a></li>
+          <li class="crm__menu-item crm__menu-item_accordeon"> <a class="crm__menu-toggle" href="#"><i class="fa fa-calculator"></i><span class="crm__menu-item_name">Тренировки</span></a>
+            <ul class="crm__menu-sub">
+              <li class="crm__menu-sub_item"><a class="crm__menu-sub_link" href="#">Активный</a></li>
+              <li class="crm__menu-sub_item"><a class="crm__menu-sub_link" href="#">Не активный</a></li>
+              <li class="crm__menu-sub_item"><a class="crm__menu-sub_link" href="#">Не активный</a></li>
+            </ul>
+          </li>
+          <li class="crm__menu-item crm__menu-item_accordeon"> <span class="crm__menu-toggle"><i class="fa fa-envelope-o"></i><span class="crm__menu-item_name">Сообщения             </span></span>
+            <ul class="crm__menu-sub">
+              <li class="crm__menu-sub_item"><a class="crm__menu-sub_link" href="#">Активный</a></li>
+              <li class="crm__menu-sub_item"><a class="crm__menu-sub_link" href="#">Не активный</a></li>
+              <li class="crm__menu-sub_item"><a class="crm__menu-sub_link" href="#">Не активный</a></li>
+            </ul>
+          </li>
+          <li class="crm__menu-item"><a class="crm__menu-toggle" href="#"><i class="fa fa-tags"></i><span class="crm__menu-item_name">Промокоды</span></a></li>
+        </ul>
+      </div>
+      <!-- end menu-->
+      <!-- begin content-->
+      <div class="crm__container">
+        <!-- begin aside-->
+        <div class="aside tags"> 
+          <div class="tags__title">Популярное сейчас</div>
+          <div class="tags__list"> <a class="tags__item" href="#">стартапы</a><a class="tags__item tags__item--danger" href="#">маркетинг</a><a class="tags__item tags__item--warning" href="#">авто</a><a class="tags__item" href="#">будущее</a><a class="tags__item" href="#">кейсы</a><a class="tags__item" href="#">дизайн</a><a class="tags__item" href="#">оффлайн</a><a class="tags__item" href="#">блокчейн</a><a class="tags__item" href="#">переезд </a></div>
+        </div>
+        <!-- end aside-->
+        <div class="crm__content">
+          <div class="tab-menu tab-menu--short tab-menu--single">
+            <div class="tab-menu__label active" data-tab="tab1">Популярное</div>
+            <div class="tab-menu__label" data-tab="tab2">Свежее </div>
+            <div class="tab-menu__label" data-tab="tab3">Категория 1 </div>
+            <div class="tab-menu__label" data-tab="tab4">Категория 2 </div>
+          </div>
+          <div class="wihite__box shadow"> 
+            <div class="blog__list"> 
+              <div class="blog__list_item">
+                <div class="blog__list_top"> 
+                  <div class="blog__list_category">Интерфейсы </div>
+                  <div class="blog__list_date">22 сентября в 13:15</div>
+                </div>
+                <div class="blog__list_title">Краткая история жёлтой стрелки «Яндекса»</div>
+                <div class="blog__list_short">От первого концепта Артемия Лебедева до современного дизайна российского поисковика.</div>
+                <div class="blog__list_img"> <img src="img/blog.jpg" alt=""/></div>
+                <div class="blog__list_social"> 
+                  <div class="blog__list_social-item"> <i class="fa fa-comments"></i>19 комментариев</div>
+                  <div class="blog__list_social-item"> <i class="fa fa-eye"></i>280</div>
+                  <div class="blog__list_social-item blog__list_social-item--right"> <i class="fa fa-heart"></i>30</div>
+                </div>
+              </div>
+              <div class="blog__list_item">
+                <div class="blog__list_top"> 
+                  <div class="blog__list_category">Интерфейсы </div>
+                  <div class="blog__list_date">22 сентября в 13:15</div>
+                </div>
+                <div class="blog__list_title">Краткая история жёлтой стрелки «Яндекса»</div>
+                <div class="blog__list_short">От первого концепта Артемия Лебедева до современного дизайна российского поисковика.</div>
+                <div class="blog__list_img"> <img src="img/blog.jpg" alt=""/></div>
+                <div class="blog__list_social"> 
+                  <div class="blog__list_social-item"> <i class="fa fa-comments"></i>19 комментариев</div>
+                  <div class="blog__list_social-item"> <i class="fa fa-eye"></i>280</div>
+                  <div class="blog__list_social-item blog__list_social-item--right"> <i class="fa fa-heart"></i>30</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+  </body>
+</html>

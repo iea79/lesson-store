@@ -1,0 +1,64 @@
+extends templates/layout.jade
+
+block title
+    title Create Traning
+
+block aside
+    .aside.tags 
+        .tags__title Популярное сейчас
+        .tags__list 
+           a(href="#").tags__item стартапы
+           a(href="#").tags__item.tags__item--danger маркетинг
+           a(href="#").tags__item.tags__item--warning авто
+           a(href="#").tags__item будущее
+           a(href="#").tags__item кейсы
+           a(href="#").tags__item дизайн
+           a(href="#").tags__item оффлайн
+           a(href="#").tags__item блокчейн
+           a(href="#").tags__item переезд 
+
+block content
+    .tab-menu.tab-menu--short.tab-menu--single
+        .tab-menu__label.active(data-tab="tab1") Популярное
+        .tab-menu__label(data-tab="tab2") Свежее 
+        .tab-menu__label(data-tab="tab3") Категория 1 
+        .tab-menu__label(data-tab="tab4") Категория 2 
+
+    .wihite__box.shadow 
+        .blog__list 
+            .blog__list_item
+                .blog__list_top 
+                    .blog__list_category Интерфейсы 
+                    .blog__list_date 22 сентября в 13:15
+                .blog__list_title Краткая история жёлтой стрелки «Яндекса»
+                .blog__list_short От первого концепта Артемия Лебедева до современного дизайна российского поисковика.
+                .blog__list_img 
+                    img(src="img/blog.jpg", alt="")
+                .blog__list_social 
+                    .blog__list_social-item 
+                        i.fa.fa-comments
+                        |19 комментариев
+                    .blog__list_social-item 
+                        i.fa.fa-eye
+                        |280
+                    .blog__list_social-item.blog__list_social-item--right 
+                        i.fa.fa-heart
+                        |30
+            .blog__list_item
+                .blog__list_top 
+                    .blog__list_category Интерфейсы 
+                    .blog__list_date 22 сентября в 13:15
+                .blog__list_title Краткая история жёлтой стрелки «Яндекса»
+                .blog__list_short От первого концепта Артемия Лебедева до современного дизайна российского поисковика.
+                .blog__list_img 
+                    img(src="img/blog.jpg", alt="")
+                .blog__list_social 
+                    .blog__list_social-item 
+                        i.fa.fa-comments
+                        |19 комментариев
+                    .blog__list_social-item 
+                        i.fa.fa-eye
+                        |280
+                    .blog__list_social-item.blog__list_social-item--right 
+                        i.fa.fa-heart
+                        |30
