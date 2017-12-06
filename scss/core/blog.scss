@@ -30,10 +30,20 @@
         &_title {
             font-size: 24px;
             margin-bottom: 8px;
+            color: #222;
+            &:hover {
+                text-decoration: none;
+                color: #222;
+            }
         }
         &_short {
             font-size: 15px;
             margin-bottom: 15px;
+            color: #222;
+            &:hover {
+                text-decoration: none;
+                color: #222;
+            }
         }
         &_img {
             box-sizing: content-box;

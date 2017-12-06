@@ -1906,11 +1906,19 @@ img {
 
 .blog__list_title {
   font-size: 24px;
-  margin-bottom: 8px; }
+  margin-bottom: 8px;
+  color: #222; }
+  .blog__list_title:hover {
+    text-decoration: none;
+    color: #222; }
 
 .blog__list_short {
   font-size: 15px;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  color: #222; }
+  .blog__list_short:hover {
+    text-decoration: none;
+    color: #222; }
 
 .blog__list_img {
   -webkit-box-sizing: content-box;
