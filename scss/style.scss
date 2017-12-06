@@ -25,6 +25,7 @@
 @import 'core/send__traning';
 @import 'core/discipline';
 @import 'core/task';
+@import 'core/blog';
 @import 'bootstrap/modal';
 @import 'jquery_ui';
 
@@ -943,11 +944,11 @@ $lblue-gray: #90a4ae;
 .blog {
     &__list {
         &_item {
-            &+.blog__list_item {
-                margin-top: 30px;
-                border-top: 1px solid #a1b2ba;
-                padding-top: 30px;
-            }
+            padding: 25px;
+            background-color: #fff;
+            @extend %shadow;
+            border-radius: 6px;
+            margin-bottom: 30px;
         }
         &_top {
             line-height: 1;
@@ -1006,9 +1007,12 @@ $lblue-gray: #90a4ae;
     }
     @media (max-width: 767px) {
        &__list {
+            &_item {
+                padding: 15px;
+            }
             &_img {
-                margin-left: -10px;
-                margin-right: -10px;
+                margin-left: -15px;
+                margin-right: -15px;
             }
             &_top {
                 margin-bottom: 10px;
