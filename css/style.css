@@ -4355,8 +4355,10 @@ a.ui-button:active,
       .tags__item--warning:hover {
         background-color: #383838; }
   @media (max-width: 1199px) {
-    .tags__list {
-      width: initial; } }
+    .tags {
+      margin-bottom: 0; }
+      .tags__list {
+        width: initial; } }
   @media (max-width: 767px) {
     .tags__item {
       font-size: 12px; } }
@@ -4370,7 +4372,8 @@ a.ui-button:active,
       text-align: center; }
   @media (max-width: 1199px) {
     .social__widget_wrap {
-      display: inline-block; } }
+      display: inline-block;
+      display: none; } }
   @media (max-width: 767px) {
     .social__widget {
       text-align: center; } }

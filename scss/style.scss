@@ -931,6 +931,7 @@ $lblue-gray: #90a4ae;
         }
     }
     @media (max-width: 1199px) {
+        margin-bottom: 0;
         &__list {
             width: initial;
         }
@@ -955,6 +956,7 @@ $lblue-gray: #90a4ae;
     @media (max-width: 1199px) {
         &_wrap {
             display: inline-block;
+            display: none;
         }
     }
     @media (max-width: 767px) {
