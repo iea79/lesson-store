@@ -1887,6 +1887,8 @@ img {
   background-color: #fff;
   border-radius: 6px;
   margin-bottom: 30px; }
+  .blog__list_item a:hover {
+    text-decoration: none; }
 
 .blog__list_top {
   line-height: 1;
@@ -1909,7 +1911,6 @@ img {
   margin-bottom: 8px;
   color: #222; }
   .blog__list_title:hover {
-    text-decoration: none;
     color: #222; }
 
 .blog__list_short {
@@ -1917,7 +1918,6 @@ img {
   margin-bottom: 15px;
   color: #222; }
   .blog__list_short:hover {
-    text-decoration: none;
     color: #222; }
 
 .blog__list_img {

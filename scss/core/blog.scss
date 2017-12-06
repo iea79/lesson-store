@@ -9,6 +9,11 @@
             @extend %shadow;
             border-radius: 6px;
             margin-bottom: 30px;
+            a {
+                &:hover {
+                    text-decoration: none;
+                }
+            }
         }
         &_top {
             line-height: 1;
@@ -32,7 +37,6 @@
             margin-bottom: 8px;
             color: #222;
             &:hover {
-                text-decoration: none;
                 color: #222;
             }
         }
@@ -41,7 +45,6 @@
             margin-bottom: 15px;
             color: #222;
             &:hover {
-                text-decoration: none;
                 color: #222;
             }
         }
