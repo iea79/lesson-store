@@ -4,25 +4,30 @@ block title
     title Blog
 
 block aside
-    .aside.tags 
-        .tags__title Популярное сейчас
-        .tags__list 
-           a(href="#").tags__item стартапы
-           a(href="#").tags__item.tags__item--danger маркетинг
-           a(href="#").tags__item.tags__item--warning авто
-           a(href="#").tags__item будущее
-           a(href="#").tags__item кейсы
-           a(href="#").tags__item дизайн
-           a(href="#").tags__item оффлайн
-           a(href="#").tags__item блокчейн
-           a(href="#").tags__item переезд 
+    .aside
+        .tags 
+            .tags__title Популярное сейчас
+            .tags__list 
+               a(href="#").tags__item стартапы
+               a(href="#").tags__item.tags__item--danger маркетинг
+               a(href="#").tags__item.tags__item--warning авто
+               a(href="#").tags__item будущее
+               a(href="#").tags__item кейсы
+               a(href="#").tags__item дизайн
+               a(href="#").tags__item оффлайн
+               a(href="#").tags__item блокчейн
+               a(href="#").tags__item переезд 
+        #vk_groups.social__widget_wrap
+        script(type="text/javascript" src="//vk.com/js/api/openapi.js?150") 
+        script 
+            |VK.Widgets.Group("vk_groups", {mode: 5, width: '270'}, 20003922);
 
 block content
     .tab-menu.tab-menu--short.tab-menu--single
-        .tab-menu__label.active(data-tab="tab1") Популярное
-        .tab-menu__label(data-tab="tab2") Свежее 
-        .tab-menu__label(data-tab="tab3") Категория 1 
-        .tab-menu__label(data-tab="tab4") Категория 2 
+        a(href="/").tab-menu__label.active Популярное
+        a(href="/").tab-menu__label Свежее 
+        a(href="/").tab-menu__label Категория 1 
+        a(href="/").tab-menu__label Категория 2 
 
     .blog__list 
         .blog__list_item

@@ -4320,7 +4320,8 @@ a.ui-button:active,
 .tags {
   background-color: #fff;
   padding: 15px 20px 5px;
-  border-radius: 6px; }
+  border-radius: 6px;
+  margin-bottom: 20px; }
   .tags__list {
     width: 239px;
     -webkit-box-sizing: content-box;
@@ -4360,90 +4361,13 @@ a.ui-button:active,
     .tags__item {
       font-size: 12px; } }
 
-.blog__list_item {
-  padding: 25px;
-  background-color: #fff;
-  border-radius: 6px;
-  margin-bottom: 30px; }
-
-.blog__list_top {
-  line-height: 1;
-  vertical-align: bottom;
-  margin-bottom: 15px; }
-
-.blog__list_category {
-  font-weight: 500;
-  text-transform: uppercase;
-  float: left;
-  margin-right: 15px; }
-
-.blog__list_date {
-  color: #a1b2ba;
-  font-size: 12px;
-  padding-top: 3px; }
-
-.blog__list_title {
-  font-size: 24px;
-  margin-bottom: 8px; }
-
-.blog__list_short {
-  font-size: 15px;
-  margin-bottom: 15px; }
-
-.blog__list_img {
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-  margin-left: -25px;
-  margin-right: -25px;
-  margin-bottom: 15px; }
-  .blog__list_img img {
-    display: block;
-    width: 100%; }
-
-.blog__list_social-item {
-  color: #a1b2ba;
-  font-size: 14px;
-  float: left;
-  margin-right: 15px; }
-  .blog__list_social-item--right {
-    float: right;
-    margin-right: 0; }
-  .blog__list_social-item .fa {
-    font-size: 16px;
-    vertical-align: baseline;
-    display: inline-block;
-    margin-right: 5px; }
-
-@media (max-width: 767px) {
-  .blog__list_item {
-    padding: 15px; }
-  .blog__list_img {
-    margin-left: -15px;
-    margin-right: -15px; }
-  .blog__list_top {
-    margin-bottom: 10px; }
-  .blog__list_category {
-    font-size: 14px; }
-  .blog__list_date {
-    font-size: 10px;
-    padding-top: 4px; }
-  .blog__list_title {
-    font-size: 22px; }
-  .blog__list_short {
-    font-size: 14px; }
-  .blog__list_social-item {
-    font-size: 12px;
-    margin-right: 10px; }
-    .blog__list_social-item .fa {
-      font-size: 14px;
-      margin-right: 2px; } }
-
 .social__widget {
   margin-bottom: -15px; }
   .social__widget_wrap {
     background-color: #fff;
-    width: 100%;
     margin-bottom: 15px; }
+    .social__widget_wrap iframe {
+      text-align: center; }
   @media (max-width: 1199px) {
     .social__widget_wrap {
       display: inline-block; } }
