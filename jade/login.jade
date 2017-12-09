@@ -1,0 +1,29 @@
+extends templates/auth.jade
+
+block title
+    title Login
+
+block aside
+
+block content
+    form(action="").form.crm__login_form
+        .form__title Войти
+
+        div
+            input(type="email" id="email" placeholder="Введите e-mail адрес").input
+            label(for="email")
+
+            div 
+                input(type="password" id="password" placeholder="Введите ваш пароль").input
+                label(for="password")
+            
+            div.lose
+                a(href="#") Забыли пароль?
+                a(href="#").button Войти
+
+            p.or или
+
+            a(href="#").button.through.google Войти c помощью Google
+
+            a(href="#").button.through.vk Войти c помощью Вконтакте   
+

@@ -163,7 +163,7 @@ $(document).ready(function(){
     $('body').on('click', '.task__row_item--left', function(event) {
     	event.preventDefault();
     	$(this).toggleClass('active');
-    	$(this).closest('.task__row_wrap').find('.task__row_wrap').first().slideToggle();
+    	$(this).closest('.task__row_wrap').children('.task__row_wrap').slideToggle();
     });
 
     $('body').on('click', '.store__create_btn', function(event) {

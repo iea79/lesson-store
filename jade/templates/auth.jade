@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+html(lang="en")
+
+    head
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        block title
+            title Template
+        script(src="https://use.fontawesome.com/d2e3dc5d54.js")
+        script(src="js/jquery-3.2.1.min.js")
+        script(src="js/modal.js") 
+        script(src="js/jquery-ui.min.js") 
+        script(src="js/function.js") 
+        link(href="css/style.css?01.10.b" rel="stylesheet")
+
+    body
+        .wrapper.crm__login
+            // begin header
+            include header.jade
+            // end header
+            
+            // begin content
+            .crm__container
+                
+                // begin aside
+                block aside
+                // end aside
+                
+                .crm__content
+                    block content
+            // end content 
+
+            block modals

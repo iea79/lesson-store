@@ -229,6 +229,8 @@
     }
     @media (max-width: 991px) {
         &__list {
+            padding-left: 10px;
+            padding-right: 10px;
             &_item {
                 &+.traning__list_item {
                 }

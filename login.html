@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Template</title>
+    <title>Login</title>
     <script src="https://use.fontawesome.com/d2e3dc5d54.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/modal.js"> </script>
@@ -12,7 +12,7 @@
     <link href="css/style.css?01.10.b" rel="stylesheet"/>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="wrapper crm__login">
       <!-- begin header-->
       <header class="crm__header">
         <!-- crm__header_left-->
@@ -38,34 +38,24 @@
         </div>
       </header>
       <!-- end header-->
-      <!-- begin menu-->
-      <div class="crm__menu">
-        <ul class="crm__menu-list">
-          <li class="crm__menu-item"><a class="crm__menu-toggle" href="#"><i class="fa fa-user-o"></i><span class="crm__menu-item_name">Профиль</span></a></li>
-          <li class="crm__menu-item"><a class="crm__menu-toggle" href="#"><i class="fa fa-copy"></i><span class="crm__menu-item_name">Уроки</span></a></li>
-          <li class="crm__menu-item crm__menu-item_accordeon"> <a class="crm__menu-toggle" href="#"><i class="fa fa-calculator"></i><span class="crm__menu-item_name">Тренировки</span></a>
-            <ul class="crm__menu-sub">
-              <li class="crm__menu-sub_item"><a class="crm__menu-sub_link" href="#">Активный</a></li>
-              <li class="crm__menu-sub_item"><a class="crm__menu-sub_link" href="#">Не активный</a></li>
-              <li class="crm__menu-sub_item"><a class="crm__menu-sub_link" href="#">Не активный</a></li>
-            </ul>
-          </li>
-          <li class="crm__menu-item crm__menu-item_accordeon"> <span class="crm__menu-toggle"><i class="fa fa-envelope-o"></i><span class="crm__menu-item_name">Сообщения             </span></span>
-            <ul class="crm__menu-sub">
-              <li class="crm__menu-sub_item"><a class="crm__menu-sub_link" href="#">Активный</a></li>
-              <li class="crm__menu-sub_item"><a class="crm__menu-sub_link" href="#">Не активный</a></li>
-              <li class="crm__menu-sub_item"><a class="crm__menu-sub_link" href="#">Не активный</a></li>
-            </ul>
-          </li>
-          <li class="crm__menu-item"><a class="crm__menu-toggle" href="#"><i class="fa fa-tags"></i><span class="crm__menu-item_name">Промокоды</span></a></li>
-        </ul>
-      </div>
-      <!-- end menu-->
       <!-- begin content-->
       <div class="crm__container">
         <!-- begin aside-->
         <!-- end aside-->
         <div class="crm__content">
+          <form class="form crm__login_form" action="">
+            <div class="form__title">Войти</div>
+            <div>
+              <input class="input" type="email" id="email" placeholder="Введите e-mail адрес"/>
+              <label for="email"></label>
+              <div> 
+                <input class="input" type="password" id="password" placeholder="Введите ваш пароль"/>
+                <label for="password"></label>
+              </div>
+              <div class="lose"><a href="#">Забыли пароль?</a><a class="button" href="#">Войти</a></div>
+              <p class="or">или</p><a class="button through google" href="#">Войти c помощью Google</a><a class="button through vk" href="#">Войти c помощью Вконтакте   </a>
+            </div>
+          </form>
         </div>
       </div>
       <!-- end content -->

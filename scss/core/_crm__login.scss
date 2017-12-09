@@ -1,0 +1,26 @@
+.crm__login {
+    .crm__header {
+        @media (max-width: 991px) {
+            &_left {
+                width: 120px;
+            }
+            .menu_toggle {
+                display: none;
+            }
+        }
+        @media (max-width: 767px) {
+            &_left {
+                width: 90px;
+            }
+        }
+        @media (max-width: 374px) {
+            &_left {
+                width: 80px;
+            }
+        }
+    }
+    .crm__container {
+        padding-left: 0;
+    }
+}
+

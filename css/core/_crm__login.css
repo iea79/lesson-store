@@ -1,0 +1,15 @@
+@media (max-width: 991px) {
+  .crm__login .crm__header_left {
+    width: 120px; }
+  .crm__login .crm__header .menu_toggle {
+    display: none; } }
+
+@media (max-width: 767px) {
+  .crm__login .crm__header_left {
+    width: 90px; } }
+
+@media (max-width: 374px) {
+  .crm__login .crm__header_left {
+    width: 80px; } }
+
+/*# sourceMappingURL=_crm__login.css.map */

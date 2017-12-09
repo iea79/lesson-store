@@ -4,8 +4,13 @@
     border-bottom: 1px solid $border-gray;
     margin-top: -1px;
     @extend %clear_a;
+    &_logo {
+        width: 150px;
+        text-align: center;
+    }
     &_left {
         float: left;
+        padding: 10px;
         width: 250px;
         height: 75px;
         border-right: 1px solid $border-gray;
@@ -110,10 +115,14 @@
     @media (max-width: 991px) {
         height: 60px;
         &_left {
-            width: 60px;
+            width: 160px;
             height: 60px;
             text-align: center;
             white-space: nowrap;
+        }
+        &_logo {
+            width: 100px;
+            float: right;
         }
         .search {
             margin-top: 9px;
@@ -123,7 +132,8 @@
         }
         .menu_toggle {
             display: block;
-            line-height: 60px;
+            float: left;
+            line-height: 40px;
             font-size: 22px;
             color: $blue-gray;
             cursor: pointer;
@@ -145,6 +155,13 @@
         }
     }
     @media (max-width: 767px) {
+        &_left {
+            width: 130px;
+        }
+        &_logo {
+            width: 70px;
+            margin-top: 7px;
+        }
         &_center {
             float: left;
             overflow: initial;
@@ -189,4 +206,25 @@
             }
         }
     }
+    @media (max-width: 374px) {
+        &_left {
+            width: 120px;
+        }
+        &_logo {
+            margin-top: 8px;
+            width: 60px;
+        }
+        &_right {
+            .drop {
+                width: 50px;
+            }
+            .profile__img {
+                height: 52%;
+            }
+        }
+        .search__toggle {
+            width: 50px;
+        }
+    }
 }
+
