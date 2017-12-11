@@ -8,6 +8,7 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/modal.js"> </script>
     <script src="js/jquery-ui.min.js"> </script>
+    <script src="js/slick.min.js"> </script>
     <script src="js/function.js"> </script>
     <link href="css/style.css?01.10.b" rel="stylesheet"/>
   </head>
@@ -43,19 +44,34 @@
         <!-- begin aside-->
         <!-- end aside-->
         <div class="crm__content">
-          <form class="form crm__login_form" action="">
-            <div class="form__title">Войти</div>
-            <div>
-              <input class="input" type="email" id="email" placeholder="Введите e-mail адрес"/>
-              <label for="email"></label>
-              <div> 
-                <input class="input" type="password" id="password" placeholder="Введите ваш пароль"/>
-                <label for="password"></label>
-              </div>
-              <div class="lose"><a href="#">Забыли пароль?</a><a class="button" href="#">Войти</a></div>
-              <p class="or">или</p><a class="button through google" href="#">Войти c помощью Google</a><a class="button through vk" href="#">Войти c помощью Вконтакте   </a>
+          <div class="auth">
+            <div class="auth__wrap">
+              <form class="form" action="">
+                <div class="form__title">Войти</div>
+                <div class="input__block">
+                  <div class="form-group field-email required has-success">
+                    <label class="control-label fa fa-user" for="email"></label>
+                    <input class="form-control" type="email" id="email" name="LoginForm[email]" placeholder="Введите ваш e-mail адрес" aria-required="true" aria-invalid="true"/>
+                    <!-- Form error-->
+                    <div class="help-block"></div>
+                  </div>
+                </div>
+                <div class="input__block">
+                  <div class="form-group field-password required has-error">
+                    <label class="control-label fa fa-lock" for="password"></label>
+                    <input class="form-control" type="password" id="password" name="LoginForm[password]" placeholder="Введите ваш пароль" aria-required="true" aria-invalid="true"/>
+                    <!-- Form error-->
+                    <div class="help-block"></div>
+                  </div>
+                </div>
+                <div class="lose"><a class="form__lose" href="#">Забыли пароль?</a>
+                  <button class="button button__green--full" type="submit">Войти</button>
+                </div>
+                <p class="or">или</p><a class="button button__blue--full through google" href="#"> <i class="fa fa-google"></i>Войти c помощью Google </a>
+                <div class="form__sub">Вы еще не стали пользователем Арете Онлайн?  <br><a href="#">Зарегистрируйтесь</a>!</div>
+              </form>
             </div>
-          </form>
+          </div>
         </div>
       </div>
       <!-- end content -->

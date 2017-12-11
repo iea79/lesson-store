@@ -124,8 +124,10 @@ $(document).ready(function(){
 		$(this).closest('.traning__list_item').find('.traning__sublist').slideToggle(300);
 	});
 
-    $( ".traning__list" ).sortable();
-    $( ".traning__list" ).disableSelection();
+	if (!isXsWidth()) {
+	    $( ".traning__list" ).sortable();
+	    $( ".traning__list" ).disableSelection();
+	};
 
     $('body').on('click', '.traning__field_toggle-item', function() {
     	var style = $(this).data('style');
@@ -184,6 +186,16 @@ $(document).ready(function(){
 
     		$(this).toggleClass('open');
     		answer.slideToggle(300);
+    });
+
+    $('.auth__slider').slick({
+    	arrows: false,
+    	dots: true,
+    	slidesToShow: 1,
+    	// adaptiveHeight: true,
+    	// infinite: true,
+    	// speed: 500,
+    	// autoplaySpeed: 3000,
     });
 
 });

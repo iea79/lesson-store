@@ -6,24 +6,36 @@ block title
 block aside
 
 block content
-    form(action="").form.crm__login_form
-        .form__title Войти
+    .auth
+        .auth__wrap
+            form(action="").form
+                .form__title Войти
+    
+                div.input__block
+                    div.form-group.field-email.required.has-success
+                        label(for="email").control-label.fa.fa-user
+                        input(type="email" id="email" name="LoginForm[email]" placeholder="Введите ваш e-mail адрес" aria-required="true" aria-invalid="true").form-control
+                        // Form error
+                        .help-block
+    
+                div.input__block
+                    div.form-group.field-password.required.has-error
+                        label(for="password").control-label.fa.fa-lock
+                        input(type="password" id="password" name="LoginForm[password]" placeholder="Введите ваш пароль" aria-required="true" aria-invalid="true").form-control
+                        // Form error
+                        .help-block
+    
+                div.lose
+                    a(href="#").form__lose Забыли пароль?
+                    button(type="submit").button.button__green--full Войти
+    
+                p.or или
+    
+                a(href="#").button.button__blue--full.through.google 
+                    i.fa.fa-google
+                    | Войти c помощью Google 
 
-        div
-            input(type="email" id="email" placeholder="Введите e-mail адрес").input
-            label(for="email")
-
-            div 
-                input(type="password" id="password" placeholder="Введите ваш пароль").input
-                label(for="password")
-            
-            div.lose
-                a(href="#") Забыли пароль?
-                a(href="#").button Войти
-
-            p.or или
-
-            a(href="#").button.through.google Войти c помощью Google
-
-            a(href="#").button.through.vk Войти c помощью Вконтакте   
+                .form__sub Вы еще не стали пользователем Арете Онлайн?  <br>
+                    a(href="#") Зарегистрируйтесь
+                    |!
 

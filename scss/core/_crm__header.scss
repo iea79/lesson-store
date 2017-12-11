@@ -5,6 +5,7 @@
     margin-top: -1px;
     @extend %clear_a;
     &_logo {
+        margin-left: 20px;
         width: 150px;
         text-align: center;
     }
@@ -123,6 +124,7 @@
         &_logo {
             width: 100px;
             float: right;
+            margin-left: 10px;
         }
         .search {
             margin-top: 9px;

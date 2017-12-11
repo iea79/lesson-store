@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Регистрация</title>
+    <script src="https://use.fontawesome.com/d2e3dc5d54.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/modal.js"> </script>
+    <script src="js/jquery-ui.min.js"> </script>
+    <script src="js/slick.min.js"> </script>
+    <script src="js/function.js"> </script>
+    <link href="css/style.css?01.10.b" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="wrapper crm__login">
+      <!-- begin header-->
+      <header class="crm__header">
+        <!-- crm__header_left-->
+        <div class="crm__header_left"><a href="./"><img class="crm__header_logo" src="img/logo.png" alt=""/></a>
+          <div class="menu_toggle fa fa-reorder"></div>
+        </div>
+        <!-- right-buttons-->
+        <div class="crm__header_right"><a class="drop bell" href="#"><i class="fa fa-bell"></i></a><a class="drop bell" href="#"><i class="fa fa-envelope"></i></a>
+          <div class="drop profile">
+            <div class="profile__img"><img src="img/1.png"/></div>
+          </div>
+          <div class="profile__dropdown"> 
+            <div class="profile__dropdown_item"><a class="profile__dropdown_link" href="/"> <i class="fa fa-credit-card"> </i>Кошелек</a></div>
+            <div class="profile__dropdown_item"><a class="profile__dropdown_link" href="#"> <i class="fa fa-gear"></i>Настройки</a></div>
+            <div class="profile__dropdown_item"><a class="profile__dropdown_link" href="#"> <i class="fa fa-external-link"></i>Выйти</a></div>
+          </div>
+        </div>
+        <!-- search-->
+        <div class="crm__header_center"><a class="fa fa-search search__toggle visible-xs" href="#"></a>
+          <div class="search">
+            <input type="text" placeholder="Поиск"/><i class="fa fa-search"></i>
+          </div>
+        </div>
+      </header>
+      <!-- end header-->
+      <!-- begin content-->
+      <div class="crm__container">
+        <!-- begin aside-->
+        <!-- end aside-->
+        <div class="crm__content">
+          <div class="auth reg"> 
+            <div class="auth__wrap">
+              <!-- форма регистрации -->
+              <form class="form" action="">
+                <div class="form__title">Добро пожаловать в Арете Онлайн!</div>
+                <div class="input__block">
+                  <div class="form-group field-name required">
+                    <label class="control-label fa fa-user" for="name"></label>
+                    <input class="form-control" type="name" id="name" name="" placeholder="Введите ваше имя" aria-required="true" aria-invalid="true"/>
+                    <!-- Form error-->
+                    <div class="help-block"></div>
+                  </div>
+                </div>
+                <div class="input__block">
+                  <div class="form-group field-apprentice required">
+                    <label class="control-label fa fa-book" for="apprentice"></label>
+                    <select class="form-control" type="text" id="apprentice" name="" placeholder="Введите ваш e-mail адрес" aria-required="true" aria-invalid="true">
+                      <option value="Ученик 1-го класса">Ученик 1-го класса</option>
+                      <option value="Ученик 2-го класса">Ученик 2-го класса</option>
+                      <option value="Ученик 3-го класса">Ученик 3-го класса</option>
+                      <option value="Ученик 4-го класса">Ученик 4-го класса</option>
+                    </select>
+                    <!-- Form error-->
+                    <div class="help-block"></div>
+                  </div>
+                </div>
+                <div class="input__block">
+                  <div class="form-group field-email required has-success">
+                    <label class="control-label fa fa-envelope-o" for="email"></label>
+                    <input class="form-control" type="email" id="email" name="LoginForm[email]" placeholder="Введите ваш e-mail адрес" aria-required="true" aria-invalid="true"/>
+                    <!-- Form error-->
+                    <div class="help-block"></div>
+                  </div>
+                </div>
+                <div class="input__block">
+                  <div class="form-group field-password required has-error">
+                    <label class="control-label fa fa-lock" for="password"></label>
+                    <input class="form-control" type="password" id="password" name="LoginForm[password]" placeholder="Введите ваш пароль" aria-required="true" aria-invalid="true"/>
+                    <!-- Form error-->
+                    <div class="help-block">Error</div>
+                  </div>
+                </div>
+                <button class="button button__blue--full">Начать бесплатно</button>
+                <div class="form__sub">Уже являетесь пользователем Арете Онлайн? <a href="#">Войдите</a>!</div>
+              </form>
+              <!-- begin auth__slider -->
+              <div class="auth__slider">
+                <div class="auth__slider_item" style="background-image: url(img/auih.jpg);">
+                  <div class="auth__slider_text">
+                    <div class="auth__slider_title">Изучение теории </div>
+                    <p>Уроки от Арете доступно объяснят любую тему из школьной программы. Многие уроки доступны бесплатно!</p>
+                  </div>
+                </div>
+                <div class="auth__slider_item" style="background-image: url(img/auih.jpg);">
+                  <div class="auth__slider_text">
+                    <div class="auth__slider_title">Изучение теории </div>
+                    <p>Уроки от Арете доступно объяснят любую тему из школьной программы. Многие уроки доступны бесплатно!</p>
+                  </div>
+                </div>
+                <div class="auth__slider_item" style="background-image: url(img/auih.jpg);">
+                  <div class="auth__slider_text">
+                    <div class="auth__slider_title">Изучение теории </div>
+                    <p>Уроки от Арете доступно объяснят любую тему из школьной программы. Многие уроки доступны бесплатно!</p>
+                  </div>
+                </div>
+              </div>
+              <!-- end auth__slider -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end content -->
+    </div>
+  </body>
+</html>

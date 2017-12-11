@@ -6,6 +6,9 @@
 @import 'variables/variables';
 @import 'mixins/mixins';
 
+@import 'jquery_ui';
+@import 'slick';
+
 @import 'core/reset';
 @import 'core/hide-show';
 @import 'core/grid';
@@ -27,8 +30,8 @@
 @import 'core/task';
 @import 'core/blog';
 @import 'core/crm__login';
+@import 'core/auth';
 @import 'bootstrap/modal';
-@import 'jquery_ui';
 
 //colors
 $blue: #4785fc;
@@ -964,3 +967,4 @@ $lblue-gray: #90a4ae;
         text-align: center;
     }
 }
+
