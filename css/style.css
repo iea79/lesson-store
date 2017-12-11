@@ -3714,6 +3714,20 @@ img {
 .crm__login .crm__container {
   padding-left: 0; }
 
+.grid:after, .form__row:after, .button__group:after, .button__group_flip:after, .traning__top:after, .traning__top .button__group_flip:after, .traning__list_item:after, .traning__field_wrap:after, .traning__sublist_row:after, .crm__header:after, .store__ban_title-text:after, .store__filter:after, .store__filter_bottom:after, .send__traning:after, .send__traning_top:after, .send__traning_bottom:after, .send__traning_form:after, .discipline:after, .task__row:after, .task__row_wrap:after, .task__count_add:after, .blog__list_top:after, .blog__list_social:after, .auth:after, .auth .lose:after, .wrapper:after, .crm__container:after, .crm__content:after, .promocode__item:after, .modal__promocode .modal-footer:after, .modal__faq_item:after, .page__header_search-row:after, .lesson-full__comments_item:after, .lesson-full__comments_top:after, .lesson-full__comments_left:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.grid:before, .lesson-full__comments_right:before {
+  content: '';
+  display: table;
+  clear: both; }
+
+.crm__header_right .profile__dropdown, .tab-menu--single, .store__filter, .grid__cube .grid__item, .send__traning_drop-item, .discipline, .blog__list_item, .auth .form, .shadow, .tags, .social__widget_wrap {
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1); }
+
 .auth {
   margin: auto;
   max-width: 980px;
