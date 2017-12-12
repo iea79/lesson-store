@@ -198,5 +198,10 @@ $(document).ready(function(){
     	// autoplaySpeed: 3000,
     });
 
+    $('body').on('click', 'a[data-form-swich]', function(event) {
+    	event.preventDefault();
+    	$('.form').toggleClass('hide');
+    });
+
 });
 

@@ -3,10 +3,6 @@
   display: table;
   clear: both; }
 
-.auth .form {
-  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1); }
-
 .auth {
   margin: auto;
   max-width: 980px;
@@ -19,10 +15,10 @@
     text-align: left;
     padding: 20px;
     background-color: #fff;
-    border-radius: 6px;
     float: left;
     width: 380px;
-    max-width: 100%; }
+    max-width: 100%;
+    border: none !important; }
     .auth .form__title {
       font-size: 30px;
       margin-bottom: 25px;
@@ -117,7 +113,8 @@
   .auth__slider {
     overflow: hidden;
     max-width: 100%;
-    width: 570px; }
+    width: 570px;
+    border-radius: 6px; }
     .auth__slider_item {
       height: 557px;
       background-repeat: no-repeat;
@@ -188,6 +185,7 @@
       text-align: center;
       line-height: 44px;
       font-size: 28px;
+      border-radius: 3px 0 0 3px;
       background-color: #3f74e7; }
     .auth .button.google:hover .fa {
       background-color: #fff; }

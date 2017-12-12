@@ -6,9 +6,10 @@ block title
 block aside
 
 block content
-    .auth
+    .auth.login
         .auth__wrap
-            form(action="").form
+            // Форма авторизации
+            form(action="").form#login_form
                 .form__title Войти
     
                 div.input__block
@@ -36,6 +37,66 @@ block content
                     | Войти c помощью Google 
 
                 .form__sub Вы еще не стали пользователем Арете Онлайн?  <br>
-                    a(href="#") Зарегистрируйтесь
+                    a(href="#" data-form-swich="register_form") Зарегистрируйтесь
                     |!
+            // форма регистрации 
+            form(action="").form.hide#register_form
+                .form__title Добро пожаловать в Арете Онлайн!
+            
+                div.input__block
+                    div.form-group.field-name.required
+                        label(for="name").control-label.fa.fa-user
+                        input(type="name" id="name" name="" placeholder="Введите ваше имя" aria-required="true" aria-invalid="true").form-control
+                        // Form error
+                        .help-block
+    
+                div.input__block
+                    div.form-group.field-apprentice.required
+                        label(for="apprentice").control-label.fa.fa-book
+                        select(type="text" id="apprentice" name="" placeholder="Введите ваш e-mail адрес" aria-required="true" aria-invalid="true").form-control
+                            option(value="Ученик 1-го класса") Ученик 1-го класса
+                            option(value="Ученик 2-го класса") Ученик 2-го класса
+                            option(value="Ученик 3-го класса") Ученик 3-го класса
+                            option(value="Ученик 4-го класса") Ученик 4-го класса
+                        // Form error
+                        .help-block
+    
+                div.input__block
+                    div.form-group.field-email.required.has-success
+                        label(for="email").control-label.fa.fa-envelope-o
+                        input(type="email" id="email" name="LoginForm[email]" placeholder="Введите ваш e-mail адрес" aria-required="true" aria-invalid="true").form-control
+                        // Form error
+                        .help-block
+    
+                div.input__block
+                    div.form-group.field-password.required.has-error
+                        label(for="password").control-label.fa.fa-lock
+                        input(type="password" id="password" name="LoginForm[password]" placeholder="Введите ваш пароль" aria-required="true" aria-invalid="true").form-control
+                        // Form error
+                        .help-block Error
+            
+                button(type=submit).button.button__blue--full Начать бесплатно
+
+                .form__sub Уже являетесь пользователем Арете Онлайн? 
+                    a(href="#" data-form-swich="login_form") Войдите
+                    |!
+
+            // begin auth__slider 
+            .auth__slider
+                .auth__slider_item(style="background-image: url(img/auih.jpg)")
+                    .auth__slider_text
+                        .auth__slider_title Изучение теории 
+                        p Уроки от Арете доступно объяснят любую тему из школьной программы. Многие уроки доступны бесплатно!
+
+                .auth__slider_item(style="background-image: url(img/auih.jpg)")
+                    .auth__slider_text
+                        .auth__slider_title Изучение теории 
+                        p Уроки от Арете доступно объяснят любую тему из школьной программы. Многие уроки доступны бесплатно!
+
+                .auth__slider_item(style="background-image: url(img/auih.jpg)")
+                    .auth__slider_text
+                        .auth__slider_title Изучение теории 
+                        p Уроки от Арете доступно объяснят любую тему из школьной программы. Многие уроки доступны бесплатно!
+
+            // end auth__slider 
 
