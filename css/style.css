@@ -3773,9 +3773,10 @@ img {
     padding: 20px;
     background-color: #fff;
     float: left;
-    width: 380px;
+    width: 360px;
     max-width: 100%;
-    border: none !important; }
+    border: none !important;
+    margin-right: 30px; }
     .auth .form__title {
       font-size: 30px;
       margin-bottom: 25px;
@@ -3805,7 +3806,7 @@ img {
       border: 1px solid rgba(34, 34, 34, 0.2);
       border-radius: 5px;
       height: 44px;
-      padding: 8px 8px 8px 54px;
+      padding: 0 8px 0 54px;
       width: 100%;
       display: block;
       margin: 0 0 5px;
@@ -3870,7 +3871,7 @@ img {
   .auth__slider {
     overflow: hidden;
     max-width: 100%;
-    width: 570px;
+    width: 540px;
     border-radius: 6px; }
     .auth__slider_item {
       height: 557px;
@@ -3962,7 +3963,7 @@ img {
     min-height: 44px; }
   @media (max-width: 1199px) {
     .auth__slider {
-      width: 500px; } }
+      width: 450px; } }
   @media (max-width: 991px) {
     .auth__slider {
       display: none; } }
@@ -3970,8 +3971,10 @@ img {
     .auth {
       padding-left: 0;
       padding-right: 0; }
-      .auth .form__title {
-        font-size: 26px; }
+      .auth .form {
+        margin-right: 0; }
+        .auth .form__title {
+          font-size: 26px; }
       .auth .input__block {
         margin-bottom: 15px; } }
 

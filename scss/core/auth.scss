@@ -16,9 +16,10 @@
         padding: 20px;
         background-color: #fff;
         float: left;
-        width: 380px;
+        width: 360px;
         max-width: 100%;
         border: none !important;
+        margin-right: 30px;
         &__title {
             font-size: 30px;
             margin-bottom: 25px;
@@ -63,7 +64,7 @@
             border: 1px solid transparentize(#222222, .8);
             border-radius: 5px;
             height: 44px;
-            padding: 8px 8px 8px 54px;
+            padding: 0 8px 0 54px;
             width: 100%;
             display: block;
             margin: 0 0 5px;
@@ -141,7 +142,7 @@
     &__slider {
         overflow: hidden;
         max-width: 100%;
-        width: 570px;
+        width: 540px;
         border-radius: 6px;
         &_item {
             height: 557px;
@@ -264,7 +265,7 @@
     }
     @media (max-width: 1199px) {
         &__slider {
-            width: 500px;
+            width: 450px;
         }
     }
     @media (max-width: 991px) {
@@ -276,6 +277,7 @@
         padding-left: 0;
         padding-right: 0;
         .form {
+            margin-right: 0;
             &__title {
                 font-size: 26px;
             }
