@@ -4,6 +4,10 @@
         margin: -30px -30px 50px;
         position: relative;
         overflow: hidden;
+        min-height: 320px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
         img {
             display: block;
         }

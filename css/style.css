@@ -3018,7 +3018,11 @@ img {
   box-sizing: content-box;
   margin: -30px -30px 50px;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  min-height: 320px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
   .store__ban img {
     display: block; }
   .store__ban_title {
