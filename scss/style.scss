@@ -968,3 +968,180 @@ $lblue-gray: #90a4ae;
     }
 }
 
+
+.promo {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    &__line {
+        box-sizing: content-box;
+        margin-left: -25px;
+        margin-right: -25px;
+        margin-bottom: 40px;
+        // display: inline-table;
+        // width: 100%;
+        @extend %clear_a;
+        &--invert {
+            .promo {
+                &__img {
+                    float: right;
+                }
+                &__descr {
+                    padding: 12% 0% 5% 7%;
+                }
+            }
+        }
+    }
+    &__img {
+        width: 61%;
+        float: left;
+    }
+    &__descr {
+        overflow: hidden;
+        padding: 12% 5% 7% 0%;
+        font-weight: 300;
+        line-height: 1.8;
+    }
+    &__title {
+        font-size: 42px;
+        position: relative;
+        padding-bottom: 12px;
+        margin-bottom: 33px;
+        color: #222222;
+        line-height: 1.2;
+        &:after {
+            content: '';
+            display: block;
+            width: 46px;
+            height: 3px;
+            border-radius: 2px;
+            background-color: #4786ff;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+        }
+    }
+    @media (max-width: 1199px) {
+        &__descr {
+
+        }
+        &__title {
+            font-size: 32px;
+        }
+    }
+    @media (max-width: 991px) {
+        &__line {
+            &--invert {
+                .promo {
+                    &__img {
+                    }
+                    &__descr {
+                        padding: 5% 0% 5% 7%;
+                    }
+                }
+            }
+        }
+        &__img {
+            width: 45%;
+        }
+        &__descr {
+            padding-top: 5%;
+        }
+    }
+    @media (max-width: 767px) {
+        &__descr {
+            font-size: 14px;
+            overflow: initial;
+            width: 100%;
+            clear: both;
+            padding: 15px 30px !important;
+        }
+        &__img {
+            width: 250px;
+        }
+        &__title {
+            font-size: 28px;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.infobox {
+    margin-top: 160px;
+    margin-bottom: 100px;
+    &__title {
+        text-align: center;
+        font-size: 42px;
+        font-weight: 300;
+        &:after {
+            content: '';
+            width: 46px;
+            height: 3px;
+            border-radius: 2px;
+            background-color: $green;
+            display: block;
+            margin: 15px auto 30px;
+        }
+    }
+    &__grid {
+        text-align: center;
+        font-weight: 300;
+        color: transparentize( #222222, .4);
+        line-height: 1.8;
+        margin-left: -130px;
+        .grid__wrapper {
+            padding-left: 130px;
+        }
+        img {
+            // max-width: 110px;
+            max-height: 130px;
+        }
+    }
+    &__name {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.2;
+        margin-bottom: 15px;
+        color: #222222;
+    }
+    .button {
+        margin-top: 30px;
+        border-radius: 30px;
+    }
+    @media (max-width: 1199px) {
+        &__title {
+        }
+        &__grid {
+            margin-left: -60px;
+            .grid__wrapper {
+                padding-left: 60px;
+            }
+        }
+        &__name {
+        }
+    }
+    @media (max-width: 767px) {
+        margin-bottom: 0px;
+        &__title {
+        }
+        &__grid {
+            .grid__wrapper {
+                width: 100%;
+                margin-bottom: 20px;
+                &:after {
+                    content: '';
+                    border-bottom: 1px solid #eee;
+                    display: block;
+                    margin-top: 25px;
+                }
+                &:last-child {
+                    &:after {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &__name {
+        }
+    }
+}
