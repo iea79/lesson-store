@@ -984,6 +984,7 @@ $lblue-gray: #90a4ae;
             .promo {
                 &__img {
                     float: right;
+                    text-align: right;
                 }
                 &__descr {
                     padding: 12% 0% 5% 7%;
@@ -1103,6 +1104,10 @@ $lblue-gray: #90a4ae;
         line-height: 1.2;
         margin-bottom: 15px;
         color: #222222;
+    }
+    &__text {
+        max-width: 240px;
+        margin: auto;
     }
     .button {
         margin-top: 30px;

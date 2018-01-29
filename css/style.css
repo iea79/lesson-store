@@ -4770,7 +4770,8 @@ img {
     margin-right: -25px;
     margin-bottom: 40px; }
     .promo__line--invert .promo__img {
-      float: right; }
+      float: right;
+      text-align: right; }
     .promo__line--invert .promo__descr {
       padding: 12% 0% 5% 7%; }
   .promo__img {
@@ -4853,6 +4854,9 @@ img {
     line-height: 1.2;
     margin-bottom: 15px;
     color: #222222; }
+  .infobox__text {
+    max-width: 240px;
+    margin: auto; }
   .infobox .button {
     margin-top: 30px;
     border-radius: 30px; }
