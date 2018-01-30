@@ -1057,7 +1057,9 @@ $lblue-gray: #90a4ae;
             padding: 15px 30px !important;
         }
         &__img {
-            width: 250px;
+            // width: 250px;
+            width: 100%;
+            max-width: 500px;
         }
         &__title {
             font-size: 28px;
